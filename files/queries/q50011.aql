@@ -1,0 +1,13 @@
+USE unlimitedMemory;
+set `compiler.joinmemory`
+@PARAM
+;
+select * from
+@PARAM
+ds1,
+@PARAM
+ds2 where ds1.unique2 /*+ build-size
+@PARAM
+, min-build-partitions 20, data-insertion RANDOM_BEST_PARAM
+@PARAM
+*/=ds2.unique2 limit 1;

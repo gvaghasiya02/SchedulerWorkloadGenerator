@@ -1,0 +1,2 @@
+SELECT SUM (w1.unique3) FROM w1
+GROUP BY w1.onePercent;

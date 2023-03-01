@@ -1,0 +1,34 @@
+SET `compiler.seqbuild` "8";
+
+SET `compiler.joinmemory`"
+@PARAM
+";
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5,
+(SELECT ds3.string4, ds3.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000)) and ds3.unique1 <= 200000 and ds1.unique1/*+  min-build-partitions 20 , build-size
+@PARAM
+ */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size
+@PARAM
+ */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size
+@PARAM
+ */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size
+@PARAM
+ */= ds3.string4) temp1
+WHERE
+ ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+ and (temp1.unique1) % 25000 /*+  min-build-partitions 20 , build-size
+@PARAM
+ */=( ds4.unique1) % 25000
+and temp1.string4 /*+  min-build-partitions 20 , build-size
+@PARAM
+ */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size
+@PARAM
+ */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size
+@PARAM
+ */= ds5.string4 LIMIT 1;

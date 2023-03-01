@@ -1,0 +1,62 @@
+{"qidvid": "Q(960000,2)", 
+"rt":537729,
+"query":"SET `compiler.joinmemory` "12000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_40960_ds3 ds1, wisconsin_dataset_40960_ds5 ds2 WHERE ds1.unique2 >= int64("764845") and
+ds1.unique2 <= int64("9420218") and
+ds2.unique2 >= int64("764845") and
+ds2.unique2 <= int64("9420218") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 11:01:29.558",
+"end":"2022-08-25 11:10:27.297",
+"content":{
+	"requestID": "cfe2737f-e083-4451-afdb-e0e1047f2cf4",
+	"signature": {
+		"*": "*"
+	},
+	"errors": [{ 
+		"code": 1,		"msg": "ASX0041: Request cfe2737f-e083-4451-afdb-e0e1047f2cf4 has been cancelled"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "343.299912066s",
+		"executionTime": "343.297672475s",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,2)", 
+"rt":537827,
+"query":"SET `compiler.joinmemory` "12000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_40960_ds2 ds1, wisconsin_dataset_40960_ds4 ds2 WHERE ds1.unique2 >= int64("3669208") and
+ds1.unique2 <= int64("12324581") and
+ds2.unique2 >= int64("3669208") and
+ds2.unique2 <= int64("12324581") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 11:01:29.461",
+"end":"2022-08-25 11:10:27.298",
+"content":{
+	"requestID": "cfe2737f-e083-4451-afdb-e0e1047f2cf4",
+	"signature": {
+		"*": "*"
+	},
+	"errors": [{ 
+		"code": 1,		"msg": "ASX0041: Request cfe2737f-e083-4451-afdb-e0e1047f2cf4 has been cancelled"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "343.299912066s",
+		"executionTime": "343.297672475s",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+

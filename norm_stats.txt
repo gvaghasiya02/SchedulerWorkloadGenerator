@@ -1,0 +1,2546 @@
+objc[21656]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/bin/java (0x10f2c34c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1102e54e0). One of the two will be used. Which one is undefined.
+started at : 2021-05-01 16:18:40.344
+[
+{ "Iteration":0,
+"queries":[
+Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910002,1)", 
+"rt":14709,
+"query":"use unlimitedMemory;
+
+SELECT ds5.unique1, ds5.string4
+FROM wisconsin_fixed_record_size_200000_ds5 ds5 , ( SELECT ds4.unique1 , ds4.string4
+                        FROM wisconsin_fixed_record_size_500000_ds4 ds4  , ( SELECT ds3.unique1, ds3.string4
+                                                 FROM wisconsin_fixed_record_size_1000000_ds3 ds3 , ( SELECT ds2.unique1, ds2.string4
+                                                                        FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <= 50000 or (ds2.unique1 > 500000 and ds2.unique1 < 950000 ))
+and ds1.unique1 /*+  min-build-partitions 20 , build-size 511 , join-mem 5 */=  ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 5 */= ds2.string4 ) temp1
+WHERE ds3.unique1 <= 200000 and temp1.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 5 */=  ds3.unique1 and temp1.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 5 */= ds3.string4 ) temp2
+WHERE ds4.unique1 <= 50000 and (temp2.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 5 */= ( ds4.unique1) % 25000 and temp2.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 5 */= ds4.string4) temp3
+WHERE ds5.unique1 <= 50000 and temp3.unique1 /*+  min-build-partitions 20 , build-size 102 , join-mem 5 */= ds5.unique1 and temp3.string4 /*+  min-build-partitions 20 , build-size 102 , join-mem 5 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:18:40.384",
+"end":"2021-05-01 16:18:55.127",
+"content":{
+	"requestID": "f4b2b107-ae7d-4573-abcf-5945147de27c",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "unique1": 11928, "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "14.652301398s",
+		"executionTime": "14.650681848s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910002,2)", 
+"rt":12108,
+"query":"use unlimitedMemory;
+
+SELECT ds5.unique1, ds5.string4
+FROM wisconsin_fixed_record_size_200000_ds5 ds5 , ( SELECT ds4.unique1 , ds4.string4
+                        FROM wisconsin_fixed_record_size_500000_ds4 ds4  , ( SELECT ds3.unique1, ds3.string4
+                                                 FROM wisconsin_fixed_record_size_1000000_ds3 ds3 , ( SELECT ds2.unique1, ds2.string4
+                                                                        FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <= 50000 or (ds2.unique1 > 500000 and ds2.unique1 < 950000 ))
+and ds1.unique1 /*+  min-build-partitions 20 , build-size 511 , join-mem 10 */=  ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 10 */= ds2.string4 ) temp1
+WHERE ds3.unique1 <= 200000 and temp1.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 10 */=  ds3.unique1 and temp1.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 10 */= ds3.string4 ) temp2
+WHERE ds4.unique1 <= 50000 and (temp2.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 10 */= ( ds4.unique1) % 25000 and temp2.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 10 */= ds4.string4) temp3
+WHERE ds5.unique1 <= 50000 and temp3.unique1 /*+  min-build-partitions 20 , build-size 102 , join-mem 10 */= ds5.unique1 and temp3.string4 /*+  min-build-partitions 20 , build-size 102 , join-mem 10 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:18:55.13",
+"end":"2021-05-01 16:19:07.239",
+"content":{
+	"requestID": "6a929268-8cf6-4a9e-8816-035c2dc50bc2",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "unique1": 32850, "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "12.103549082s",
+		"executionTime": "12.101621143s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910002,3)", 
+"rt":11617,
+"query":"use unlimitedMemory;
+
+SELECT ds5.unique1, ds5.string4
+FROM wisconsin_fixed_record_size_200000_ds5 ds5 , ( SELECT ds4.unique1 , ds4.string4
+                        FROM wisconsin_fixed_record_size_500000_ds4 ds4  , ( SELECT ds3.unique1, ds3.string4
+                                                 FROM wisconsin_fixed_record_size_1000000_ds3 ds3 , ( SELECT ds2.unique1, ds2.string4
+                                                                        FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <= 50000 or (ds2.unique1 > 500000 and ds2.unique1 < 950000 ))
+and ds1.unique1 /*+  min-build-partitions 20 , build-size 511 , join-mem 25 */=  ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 25 */= ds2.string4 ) temp1
+WHERE ds3.unique1 <= 200000 and temp1.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 25 */=  ds3.unique1 and temp1.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 25 */= ds3.string4 ) temp2
+WHERE ds4.unique1 <= 50000 and (temp2.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 25 */= ( ds4.unique1) % 25000 and temp2.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 25 */= ds4.string4) temp3
+WHERE ds5.unique1 <= 50000 and temp3.unique1 /*+  min-build-partitions 20 , build-size 102 , join-mem 25 */= ds5.unique1 and temp3.string4 /*+  min-build-partitions 20 , build-size 102 , join-mem 25 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:19:07.241",
+"end":"2021-05-01 16:19:18.86",
+"content":{
+	"requestID": "52d27caa-6cae-43ae-a5ba-674ae707eb02",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "unique1": 18744, "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "11.612746253s",
+		"executionTime": "11.610873229s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910002,4)", 
+"rt":9452,
+"query":"use unlimitedMemory;
+
+SELECT ds5.unique1, ds5.string4
+FROM wisconsin_fixed_record_size_200000_ds5 ds5 , ( SELECT ds4.unique1 , ds4.string4
+                        FROM wisconsin_fixed_record_size_500000_ds4 ds4  , ( SELECT ds3.unique1, ds3.string4
+                                                 FROM wisconsin_fixed_record_size_1000000_ds3 ds3 , ( SELECT ds2.unique1, ds2.string4
+                                                                        FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <= 50000 or (ds2.unique1 > 500000 and ds2.unique1 < 950000 ))
+and ds1.unique1 /*+  min-build-partitions 20 , build-size 511 , join-mem 51 */=  ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 51 */= ds2.string4 ) temp1
+WHERE ds3.unique1 <= 200000 and temp1.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=  ds3.unique1 and temp1.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds3.string4 ) temp2
+WHERE ds4.unique1 <= 50000 and (temp2.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ( ds4.unique1) % 25000 and temp2.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4) temp3
+WHERE ds5.unique1 <= 50000 and temp3.unique1 /*+  min-build-partitions 20 , build-size 102 , join-mem 51 */= ds5.unique1 and temp3.string4 /*+  min-build-partitions 20 , build-size 102 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:19:18.862",
+"end":"2021-05-01 16:19:28.315",
+"content":{
+	"requestID": "52066258-ba93-4ea1-b214-b97b572cebee",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "unique1": 5112, "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "9.444735127s",
+		"executionTime": "9.442287491s",
+		"resultCount": 1,
+		"resultSize": 1092,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910002,5)", 
+"rt":8564,
+"query":"use unlimitedMemory;
+
+SELECT ds5.unique1, ds5.string4
+FROM wisconsin_fixed_record_size_200000_ds5 ds5 , ( SELECT ds4.unique1 , ds4.string4
+                        FROM wisconsin_fixed_record_size_500000_ds4 ds4  , ( SELECT ds3.unique1, ds3.string4
+                                                 FROM wisconsin_fixed_record_size_1000000_ds3 ds3 , ( SELECT ds2.unique1, ds2.string4
+                                                                        FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <= 50000 or (ds2.unique1 > 500000 and ds2.unique1 < 950000 ))
+and ds1.unique1 /*+  min-build-partitions 20 , build-size 511 , join-mem 153 */=  ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 153 */= ds2.string4 ) temp1
+WHERE ds3.unique1 <= 200000 and temp1.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=  ds3.unique1 and temp1.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds3.string4 ) temp2
+WHERE ds4.unique1 <= 50000 and (temp2.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ( ds4.unique1) % 25000 and temp2.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4) temp3
+WHERE ds5.unique1 <= 50000 and temp3.unique1 /*+  min-build-partitions 20 , build-size 102 , join-mem 102 */= ds5.unique1 and temp3.string4 /*+  min-build-partitions 20 , build-size 102 , join-mem 102 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:19:28.316",
+"end":"2021-05-01 16:19:36.881",
+"content":{
+	"requestID": "2cac7451-d004-4ea8-9c70-ca5d1f682250",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "unique1": 11928, "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.557535875s",
+		"executionTime": "8.555641567s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910002,6)", 
+"rt":8358,
+"query":"use unlimitedMemory;
+
+SELECT ds5.unique1, ds5.string4
+FROM wisconsin_fixed_record_size_200000_ds5 ds5 , ( SELECT ds4.unique1 , ds4.string4
+                        FROM wisconsin_fixed_record_size_500000_ds4 ds4  , ( SELECT ds3.unique1, ds3.string4
+                                                 FROM wisconsin_fixed_record_size_1000000_ds3 ds3 , ( SELECT ds2.unique1, ds2.string4
+                                                                        FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <= 50000 or (ds2.unique1 > 500000 and ds2.unique1 < 950000 ))
+and ds1.unique1 /*+  min-build-partitions 20 , build-size 511 , join-mem 204 */=  ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 204 */= ds2.string4 ) temp1
+WHERE ds3.unique1 <= 200000 and temp1.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=  ds3.unique1 and temp1.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds3.string4 ) temp2
+WHERE ds4.unique1 <= 50000 and (temp2.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ( ds4.unique1) % 25000 and temp2.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4) temp3
+WHERE ds5.unique1 <= 50000 and temp3.unique1 /*+  min-build-partitions 20 , build-size 102 , join-mem 102 */= ds5.unique1 and temp3.string4 /*+  min-build-partitions 20 , build-size 102 , join-mem 102 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:19:36.882",
+"end":"2021-05-01 16:19:45.243",
+"content":{
+	"requestID": "1805fa0d-fac1-478d-b3e5-898ac0052d1f",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "unique1": 5680, "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.354585202s",
+		"executionTime": "8.352773206s",
+		"resultCount": 1,
+		"resultSize": 1092,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910002,7)", 
+"rt":8151,
+"query":"use unlimitedMemory;
+
+SELECT ds5.unique1, ds5.string4
+FROM wisconsin_fixed_record_size_200000_ds5 ds5 , ( SELECT ds4.unique1 , ds4.string4
+                        FROM wisconsin_fixed_record_size_500000_ds4 ds4  , ( SELECT ds3.unique1, ds3.string4
+                                                 FROM wisconsin_fixed_record_size_1000000_ds3 ds3 , ( SELECT ds2.unique1, ds2.string4
+                                                                        FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <= 50000 or (ds2.unique1 > 500000 and ds2.unique1 < 950000 ))
+and ds1.unique1 /*+  min-build-partitions 20 , build-size 511 , join-mem 255 */=  ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 255 */= ds2.string4 ) temp1
+WHERE ds3.unique1 <= 200000 and temp1.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=  ds3.unique1 and temp1.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds3.string4 ) temp2
+WHERE ds4.unique1 <= 50000 and (temp2.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ( ds4.unique1) % 25000 and temp2.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4) temp3
+WHERE ds5.unique1 <= 50000 and temp3.unique1 /*+  min-build-partitions 20 , build-size 102 , join-mem 102 */= ds5.unique1 and temp3.string4 /*+  min-build-partitions 20 , build-size 102 , join-mem 102 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:19:45.244",
+"end":"2021-05-01 16:19:53.396",
+"content":{
+	"requestID": "2e984a15-8b84-4be2-a828-e12d4be7a0a6",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "unique1": 3408, "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.14665179s",
+		"executionTime": "8.144597951s",
+		"resultCount": 1,
+		"resultSize": 1092,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910002,8)", 
+"rt":7819,
+"query":"use unlimitedMemory;
+
+SELECT ds5.unique1, ds5.string4
+FROM wisconsin_fixed_record_size_200000_ds5 ds5 , ( SELECT ds4.unique1 , ds4.string4
+                        FROM wisconsin_fixed_record_size_500000_ds4 ds4  , ( SELECT ds3.unique1, ds3.string4
+                                                 FROM wisconsin_fixed_record_size_1000000_ds3 ds3 , ( SELECT ds2.unique1, ds2.string4
+                                                                        FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <= 50000 or (ds2.unique1 > 500000 and ds2.unique1 < 950000 ))
+and ds1.unique1 /*+  min-build-partitions 20 , build-size 511 , join-mem 358 */=  ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 358 */= ds2.string4 ) temp1
+WHERE ds3.unique1 <= 200000 and temp1.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=  ds3.unique1 and temp1.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds3.string4 ) temp2
+WHERE ds4.unique1 <= 50000 and (temp2.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ( ds4.unique1) % 25000 and temp2.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4) temp3
+WHERE ds5.unique1 <= 50000 and temp3.unique1 /*+  min-build-partitions 20 , build-size 102 , join-mem 102 */= ds5.unique1 and temp3.string4 /*+  min-build-partitions 20 , build-size 102 , join-mem 102 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:19:53.397",
+"end":"2021-05-01 16:20:01.217",
+"content":{
+	"requestID": "89c6485c-5bee-4ca6-9022-3b515dc5c7ca",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "unique1": 568, "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "7.815943175s",
+		"executionTime": "7.814089056s",
+		"resultCount": 1,
+		"resultSize": 1091,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910002,9)", 
+"rt":9013,
+"query":"use unlimitedMemory;
+
+SELECT ds5.unique1, ds5.string4
+FROM wisconsin_fixed_record_size_200000_ds5 ds5 , ( SELECT ds4.unique1 , ds4.string4
+                        FROM wisconsin_fixed_record_size_500000_ds4 ds4  , ( SELECT ds3.unique1, ds3.string4
+                                                 FROM wisconsin_fixed_record_size_1000000_ds3 ds3 , ( SELECT ds2.unique1, ds2.string4
+                                                                        FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <= 50000 or (ds2.unique1 > 500000 and ds2.unique1 < 950000 ))
+and ds1.unique1 /*+  min-build-partitions 20 , build-size 511 , join-mem 460 */=  ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 460 */= ds2.string4 ) temp1
+WHERE ds3.unique1 <= 200000 and temp1.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=  ds3.unique1 and temp1.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds3.string4 ) temp2
+WHERE ds4.unique1 <= 50000 and (temp2.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ( ds4.unique1) % 25000 and temp2.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4) temp3
+WHERE ds5.unique1 <= 50000 and temp3.unique1 /*+  min-build-partitions 20 , build-size 102 , join-mem 102 */= ds5.unique1 and temp3.string4 /*+  min-build-partitions 20 , build-size 102 , join-mem 102 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:20:01.218",
+"end":"2021-05-01 16:20:10.232",
+"content":{
+	"requestID": "945fd5e5-8e8e-480c-a4f3-527b1f7046a5",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "unique1": 19880, "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "9.010589996s",
+		"executionTime": "9.009366687s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910002,10)", 
+"rt":9053,
+"query":"use unlimitedMemory;
+
+SELECT ds5.unique1, ds5.string4
+FROM wisconsin_fixed_record_size_200000_ds5 ds5 , ( SELECT ds4.unique1 , ds4.string4
+                        FROM wisconsin_fixed_record_size_500000_ds4 ds4  , ( SELECT ds3.unique1, ds3.string4
+                                                 FROM wisconsin_fixed_record_size_1000000_ds3 ds3 , ( SELECT ds2.unique1, ds2.string4
+                                                                        FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <= 50000 or (ds2.unique1 > 500000 and ds2.unique1 < 950000 ))
+and ds1.unique1 /*+  min-build-partitions 20 , build-size 511 , join-mem 511 */=  ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 511 */= ds2.string4 ) temp1
+WHERE ds3.unique1 <= 200000 and temp1.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=  ds3.unique1 and temp1.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds3.string4 ) temp2
+WHERE ds4.unique1 <= 50000 and (temp2.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ( ds4.unique1) % 25000 and temp2.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4) temp3
+WHERE ds5.unique1 <= 50000 and temp3.unique1 /*+  min-build-partitions 20 , build-size 102 , join-mem 102 */= ds5.unique1 and temp3.string4 /*+  min-build-partitions 20 , build-size 102 , join-mem 102 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:20:10.233",
+"end":"2021-05-01 16:20:19.287",
+"content":{
+	"requestID": "c7ce2b4d-4b98-4fb3-9171-edfcb3363b3d",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "unique1": 11928, "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "9.049896217s",
+		"executionTime": "9.04866338s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910002,11)", 
+"rt":9035,
+"query":"use unlimitedMemory;
+
+SELECT ds5.unique1, ds5.string4
+FROM wisconsin_fixed_record_size_200000_ds5 ds5 , ( SELECT ds4.unique1 , ds4.string4
+                        FROM wisconsin_fixed_record_size_500000_ds4 ds4  , ( SELECT ds3.unique1, ds3.string4
+                                                 FROM wisconsin_fixed_record_size_1000000_ds3 ds3 , ( SELECT ds2.unique1, ds2.string4
+                                                                        FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <= 50000 or (ds2.unique1 > 500000 and ds2.unique1 < 950000 ))
+and ds1.unique1 /*+  min-build-partitions 20 , build-size 511 , join-mem 511 */=  ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 511 */= ds2.string4 ) temp1
+WHERE ds3.unique1 <= 200000 and temp1.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=  ds3.unique1 and temp1.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds3.string4 ) temp2
+WHERE ds4.unique1 <= 50000 and (temp2.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ( ds4.unique1) % 25000 and temp2.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4) temp3
+WHERE ds5.unique1 <= 50000 and temp3.unique1 /*+  min-build-partitions 20 , build-size 102 , join-mem 102 */= ds5.unique1 and temp3.string4 /*+  min-build-partitions 20 , build-size 102 , join-mem 102 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:20:19.289",
+"end":"2021-05-01 16:20:28.326",
+"content":{
+	"requestID": "bf9447ec-0d37-49c8-a215-79df468f34a0",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "unique1": 11928, "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "9.031776609s",
+		"executionTime": "9.029652532s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910002,12)", 
+"rt":8311,
+"query":"use unlimitedMemory;
+
+SELECT ds5.unique1, ds5.string4
+FROM wisconsin_fixed_record_size_200000_ds5 ds5 , ( SELECT ds4.unique1 , ds4.string4
+                        FROM wisconsin_fixed_record_size_500000_ds4 ds4  , ( SELECT ds3.unique1, ds3.string4
+                                                 FROM wisconsin_fixed_record_size_1000000_ds3 ds3 , ( SELECT ds2.unique1, ds2.string4
+                                                                        FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <= 50000 or (ds2.unique1 > 500000 and ds2.unique1 < 950000 ))
+and ds1.unique1 /*+  min-build-partitions 20 , build-size 511 , join-mem 511 */=  ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 511 */= ds2.string4 ) temp1
+WHERE ds3.unique1 <= 200000 and temp1.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=  ds3.unique1 and temp1.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds3.string4 ) temp2
+WHERE ds4.unique1 <= 50000 and (temp2.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ( ds4.unique1) % 25000 and temp2.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4) temp3
+WHERE ds5.unique1 <= 50000 and temp3.unique1 /*+  min-build-partitions 20 , build-size 102 , join-mem 102 */= ds5.unique1 and temp3.string4 /*+  min-build-partitions 20 , build-size 102 , join-mem 102 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:20:28.328",
+"end":"2021-05-01 16:20:36.64",
+"content":{
+	"requestID": "49677748-25cd-41ad-9555-a10110e8a602",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "unique1": 18744, "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.303430484s",
+		"executionTime": "8.301708855s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910002,13)", 
+"rt":8058,
+"query":"use unlimitedMemory;
+
+SELECT ds5.unique1, ds5.string4
+FROM wisconsin_fixed_record_size_200000_ds5 ds5 , ( SELECT ds4.unique1 , ds4.string4
+                        FROM wisconsin_fixed_record_size_500000_ds4 ds4  , ( SELECT ds3.unique1, ds3.string4
+                                                 FROM wisconsin_fixed_record_size_1000000_ds3 ds3 , ( SELECT ds2.unique1, ds2.string4
+                                                                        FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <= 50000 or (ds2.unique1 > 500000 and ds2.unique1 < 950000 ))
+and ds1.unique1 /*+  min-build-partitions 20 , build-size 511 , join-mem 511 */=  ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 511 */= ds2.string4 ) temp1
+WHERE ds3.unique1 <= 200000 and temp1.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=  ds3.unique1 and temp1.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds3.string4 ) temp2
+WHERE ds4.unique1 <= 50000 and (temp2.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ( ds4.unique1) % 25000 and temp2.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4) temp3
+WHERE ds5.unique1 <= 50000 and temp3.unique1 /*+  min-build-partitions 20 , build-size 102 , join-mem 102 */= ds5.unique1 and temp3.string4 /*+  min-build-partitions 20 , build-size 102 , join-mem 102 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:20:36.642",
+"end":"2021-05-01 16:20:44.7",
+"content":{
+	"requestID": "ec92c1bf-cb36-46b0-ae29-3b95e9d09ab9",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "unique1": 20448, "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.056222496s",
+		"executionTime": "8.053713702s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,1)", 
+"rt":16143,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 1 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 1 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 1 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 1 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 1 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 1 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 1 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 1 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:20:44.703",
+"end":"2021-05-01 16:21:00.847",
+"content":{
+	"requestID": "aa20aac4-fe93-47ff-9c41-d974d6fd59db",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 19380 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "16.139613252s",
+		"executionTime": "16.134426325s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,2)", 
+"rt":13120,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 2 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 2 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 2 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 2 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 2 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 2 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 2 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 2 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:21:00.85",
+"end":"2021-05-01 16:21:13.972",
+"content":{
+	"requestID": "6aaa9d55-bc08-449c-8e8e-7bf6ec7fdcfd",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 35316 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "13.118114495s",
+		"executionTime": "13.113445551s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,3)", 
+"rt":11280,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 6 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 6 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 6 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 6 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 6 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 6 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 6 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 6 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:21:13.975",
+"end":"2021-05-01 16:21:25.258",
+"content":{
+	"requestID": "8369a7c4-cd33-480f-bc63-6ed2753eb126",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 3171 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "11.274399147s",
+		"executionTime": "11.272790923s",
+		"resultCount": 1,
+		"resultSize": 1092,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,4)", 
+"rt":9922,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 12 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 12 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 12 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 12 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 12 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 12 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 12 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 12 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:21:25.259",
+"end":"2021-05-01 16:21:35.182",
+"content":{
+	"requestID": "c58e0171-237f-4cd1-b6c6-841061254358",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 47311 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "9.9204159s",
+		"executionTime": "9.918715661s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,5)", 
+"rt":9924,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 25 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 25 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 25 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 25 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 25 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 25 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 25 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 25 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:21:35.185",
+"end":"2021-05-01 16:21:45.111",
+"content":{
+	"requestID": "03cc0573-c632-451c-ad82-92bc86cefcc4",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 35550 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "9.922211996s",
+		"executionTime": "9.921162405s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,6)", 
+"rt":9356,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 31 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 31 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 31 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 31 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 31 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 31 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 31 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 31 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:21:45.112",
+"end":"2021-05-01 16:21:54.47",
+"content":{
+	"requestID": "eecce99f-a224-436c-8641-b248db1a8470",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 46576 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "9.353692508s",
+		"executionTime": "9.352732439s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,7)", 
+"rt":9742,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 38 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 38 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 38 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 38 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 38 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 38 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 38 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 38 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:21:54.472",
+"end":"2021-05-01 16:22:04.216",
+"content":{
+	"requestID": "d5d80ae6-fc35-426b-a98e-275f4d2da38c",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 16472 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "9.739624913s",
+		"executionTime": "9.738420343s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,8)", 
+"rt":9356,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 51 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 51 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 51 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 51 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:22:04.216",
+"end":"2021-05-01 16:22:13.575",
+"content":{
+	"requestID": "4cd32e12-0a83-458d-a805-b9fecbbdd5c1",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 12496 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "9.353612914s",
+		"executionTime": "9.352687889s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,9)", 
+"rt":7931,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 204 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 204 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:22:13.576",
+"end":"2021-05-01 16:22:21.508",
+"content":{
+	"requestID": "d1bc00d4-5164-4b05-be08-62a6f54662c1",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 9656 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "7.928594142s",
+		"executionTime": "7.927186323s",
+		"resultCount": 1,
+		"resultSize": 1092,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,10)", 
+"rt":7615,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 306 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 306 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:22:21.509",
+"end":"2021-05-01 16:22:29.125",
+"content":{
+	"requestID": "237c07fc-8951-4e5f-8319-3e25179f4f82",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 20448 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "7.612188959s",
+		"executionTime": "7.611444934s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,11)", 
+"rt":8182,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 409 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 409 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:22:29.126",
+"end":"2021-05-01 16:22:37.309",
+"content":{
+	"requestID": "7d8d02d0-2219-4884-9f65-9375a1c9df87",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 1704 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.180118022s",
+		"executionTime": "8.179108633s",
+		"resultCount": 1,
+		"resultSize": 1092,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,12)", 
+"rt":7625,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 460 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 460 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:22:37.31",
+"end":"2021-05-01 16:22:44.936",
+"content":{
+	"requestID": "021bd6a9-98dc-44b4-9ac8-6d1179abf467",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 5680 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "7.622341135s",
+		"executionTime": "7.620033575s",
+		"resultCount": 1,
+		"resultSize": 1092,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,13)", 
+"rt":8189,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 511 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 511 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:22:44.937",
+"end":"2021-05-01 16:22:53.126",
+"content":{
+	"requestID": "737d32f7-9503-4520-8884-56055531d6b0",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 6248 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.183758005s",
+		"executionTime": "8.182931173s",
+		"resultCount": 1,
+		"resultSize": 1092,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,1)", 
+"rt":15534,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 1 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 1 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 1 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 1 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 1 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 1 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 1 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 1 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:22:53.128",
+"end":"2021-05-01 16:23:08.663",
+"content":{
+	"requestID": "d5e01f0f-62e0-48fa-b82d-919d1aed6ea2",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 25894 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "15.53222057s",
+		"executionTime": "15.531212457s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,2)", 
+"rt":15576,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 2 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 2 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 2 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 2 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 2 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 2 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 2 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 2 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:23:08.665",
+"end":"2021-05-01 16:23:24.244",
+"content":{
+	"requestID": "a3fc9ace-1ec2-4271-946c-b2f9f4c18f5d",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 43524 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "15.574531428s",
+		"executionTime": "15.573643239s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,3)", 
+"rt":11149,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 6 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 6 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 6 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 6 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 6 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 6 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 6 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 6 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:23:24.247",
+"end":"2021-05-01 16:23:35.398",
+"content":{
+	"requestID": "76e00200-55e8-48c6-ba01-6e90dffa22a8",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 44624 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "11.146192456s",
+		"executionTime": "11.145270424s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,4)", 
+"rt":11460,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 12 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 12 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 12 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 12 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 12 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 12 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 12 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 12 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:23:35.4",
+"end":"2021-05-01 16:23:46.862",
+"content":{
+	"requestID": "c9c37e05-67b8-42f4-8751-0e7d9cf6317a",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 31897 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "11.455956058s",
+		"executionTime": "11.454764009s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,5)", 
+"rt":9680,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 25 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 25 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 25 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 25 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 25 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 25 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 25 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 25 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:23:46.865",
+"end":"2021-05-01 16:23:56.546",
+"content":{
+	"requestID": "0d4e6feb-5d5c-4959-9f53-a157fcd1b7b8",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 21673 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "9.677523194s",
+		"executionTime": "9.676574991s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,6)", 
+"rt":9525,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 31 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 31 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 31 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 31 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 31 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 31 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 31 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 31 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:23:56.548",
+"end":"2021-05-01 16:24:06.074",
+"content":{
+	"requestID": "fe174b15-ab4f-4d9c-9899-6d5f9802d9fb",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 27754 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "9.523068774s",
+		"executionTime": "9.52233917s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,7)", 
+"rt":9303,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 38 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 38 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 38 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 38 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 38 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 38 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 38 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 38 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:24:06.08",
+"end":"2021-05-01 16:24:15.384",
+"content":{
+	"requestID": "6985c43e-e33f-4478-97ac-973b94c913de",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 23288 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "9.292782413s",
+		"executionTime": "9.291725947s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,8)", 
+"rt":9080,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 51 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 51 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 51 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 51 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:24:15.385",
+"end":"2021-05-01 16:24:24.465",
+"content":{
+	"requestID": "d0e5731a-368e-49b1-bdce-6de72be0108a",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 10224 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.982496646s",
+		"executionTime": "8.981774056s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,9)", 
+"rt":7547,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 204 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 204 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:24:24.467",
+"end":"2021-05-01 16:24:32.015",
+"content":{
+	"requestID": "395f0bd9-e2b9-423c-87e3-defdb4537c78",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 1136 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "7.543538996s",
+		"executionTime": "7.542554105s",
+		"resultCount": 1,
+		"resultSize": 1092,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,10)", 
+"rt":8333,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 306 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 306 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:24:32.017",
+"end":"2021-05-01 16:24:40.35",
+"content":{
+	"requestID": "e34f11b3-20cf-4055-ad07-386b443e6aa5",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 3408 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.330491351s",
+		"executionTime": "8.32940604s",
+		"resultCount": 1,
+		"resultSize": 1092,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,11)", 
+"rt":8002,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 409 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 409 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:24:40.352",
+"end":"2021-05-01 16:24:48.356",
+"content":{
+	"requestID": "da9a1411-5574-4b66-98e1-be83a40a90ab",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 4544 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "7.999185482s",
+		"executionTime": "7.998330528s",
+		"resultCount": 1,
+		"resultSize": 1092,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,12)", 
+"rt":8156,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 460 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 460 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:24:48.357",
+"end":"2021-05-01 16:24:56.515",
+"content":{
+	"requestID": "510a263d-9d76-4840-9fd9-eeee5d6bf97c",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 6248 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.153202488s",
+		"executionTime": "8.152225533s",
+		"resultCount": 1,
+		"resultSize": 1092,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,13)", 
+"rt":8070,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 511 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 511 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:24:56.516",
+"end":"2021-05-01 16:25:04.594",
+"content":{
+	"requestID": "36902860-a925-4cb7-af75-2e3a83536b38",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 4544 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.063991261s",
+		"executionTime": "8.062738537s",
+		"resultCount": 1,
+		"resultSize": 1092,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910003,1)", 
+"rt":17405,
+"query":"SET `compiler.seqbuild` "1" ;
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , temp , build-size 511 , join-mem 10 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , temp , build-size 511 , join-mem 10 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , temp , build-size 204 , join-mem 10 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , temp ,  build-size 204 , join-mem 10 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , temp , build-size 51 , join-mem 10 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , temp , build-size 51 , join-mem 10 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 10 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 10 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:25:04.603",
+"end":"2021-05-01 16:25:22.01",
+"content":{
+	"requestID": "759d87d1-7a51-48e6-8969-51e3d8d4bdfc",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 11274 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "17.398229899s",
+		"executionTime": "17.396378426s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910003,2)", 
+"rt":12421,
+"query":"SET `compiler.seqbuild` "1" ;
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , temp , build-size 511 , join-mem 20 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , temp , build-size 511 , join-mem 20 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , temp , build-size 204 , join-mem 20 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , temp ,  build-size 204 , join-mem 20 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , temp , build-size 51 , join-mem 20 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , temp , build-size 51 , join-mem 20 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 20 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 20 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:25:22.018",
+"end":"2021-05-01 16:25:34.439",
+"content":{
+	"requestID": "86024de3-d9c9-4040-8458-364bbd5083a7",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 35873 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "12.411240405s",
+		"executionTime": "12.406747547s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910003,3)", 
+"rt":12266,
+"query":"SET `compiler.seqbuild` "1" ;
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , temp , build-size 511 , join-mem 51 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , temp , build-size 511 , join-mem 51 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , temp , build-size 204 , join-mem 51 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , temp ,  build-size 204 , join-mem 51 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , temp , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , temp , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:25:34.443",
+"end":"2021-05-01 16:25:46.711",
+"content":{
+	"requestID": "e4c204e9-c245-4c85-bf41-8a499d76b0bf",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 18744 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "12.262076901s",
+		"executionTime": "12.261150837s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910004,1)", 
+"rt":10192,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , temp , build-size 511 , join-mem 102 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 ,   temp , build-size 511 , join-mem 102 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , temp , build-size 204 , join-mem 102 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , temp ,  build-size 204 , join-mem 102 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20  , build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:25:46.717",
+"end":"2021-05-01 16:25:56.909",
+"content":{
+	"requestID": "39b6cd35-3a3c-46d3-8c5f-f278c62aabe0",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 17040 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "10.182360196s",
+		"executionTime": "10.181509506s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910004,2)", 
+"rt":8593,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , temp , build-size 511 , join-mem 204 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 ,   temp , build-size 511 , join-mem 204 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , temp , build-size 204 , join-mem 204 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , temp ,  build-size 204 , join-mem 204 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20  , build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:25:56.915",
+"end":"2021-05-01 16:26:05.508",
+"content":{
+	"requestID": "4ed61bfb-b49f-4a88-9a78-8454efcd3ea1",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 11928 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.588056191s",
+		"executionTime": "8.587264988s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910005,1)", 
+"rt":8721,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , temp , build-size 511 , join-mem 255 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 ,   temp , build-size 511 , join-mem 255 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , temp , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , temp , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 ,  build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20  ,  build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:26:05.511",
+"end":"2021-05-01 16:26:14.235",
+"content":{
+	"requestID": "ea34fb3c-eaa5-4b1b-918a-865369233434",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 3408 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.721299286s",
+		"executionTime": "8.720349881s",
+		"resultCount": 1,
+		"resultSize": 1092,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910006,1)", 
+"rt":8799,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4 , ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , temp , build-size 511 , join-mem 306 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 ,   temp , build-size 511 , join-mem 306 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 ,  build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20  ,  build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:26:14.246",
+"end":"2021-05-01 16:26:23.05",
+"content":{
+	"requestID": "afadddaa-4a64-4d0b-8952-7bc76f3d6f94",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 19880 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.794239041s",
+		"executionTime": "8.79029849s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910006,2)", 
+"rt":8917,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4 , ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , temp , build-size 511 , join-mem 409 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 ,   temp , build-size 511 , join-mem 409 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 ,  build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20  ,  build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:26:23.053",
+"end":"2021-05-01 16:26:31.971",
+"content":{
+	"requestID": "90eabcdf-3d07-4cf7-bc27-7ee6adaa26bb",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 1136 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.914230598s",
+		"executionTime": "8.91245034s",
+		"resultCount": 1,
+		"resultSize": 1092,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910006,3)", 
+"rt":8224,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4 , ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , temp , build-size 511 , join-mem 511 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 ,   temp , build-size 511 , join-mem 511 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 ,  build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20  ,  build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:26:31.973",
+"end":"2021-05-01 16:26:40.199",
+"content":{
+	"requestID": "939987fd-d77f-4bfb-98f1-c24e515cc122",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 39760 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.218095896s",
+		"executionTime": "8.216486555s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910006,4)", 
+"rt":8022,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4 , ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , temp , build-size 511 , join-mem 511 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 ,   temp , build-size 511 , join-mem 511 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 ,  build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20  ,  build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:26:40.201",
+"end":"2021-05-01 16:26:48.224",
+"content":{
+	"requestID": "cf950c62-fe6c-4737-9bd5-f29fe336e9cb",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 11928 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.018061574s",
+		"executionTime": "8.01638317s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910007,1)", 
+"rt":8170,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4 , ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 511 */= ds2.unique1 and ds1.string4  /*+  min-build-partitions 20 , build-size 511 , join-mem 511 */= ds2.string4  and ds2.unique1/*+  min-build-partitions 20 , temp , build-size 204 , join-mem 204 */= ds3.unique1
+and ds2.string4  /*+  min-build-partitions 20 , temp , build-size 204 , join-mem 204 */= ds3.string4  and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4  /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4  and ds4.unique1 /*+  min-build-partitions 20 ,  build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4  /*+  min-build-partitions 20  ,  build-size 51 , join-mem 51 */= ds5.string4  LIMIT 1; ",
+"start":"2021-05-01 16:26:48.228",
+"end":"2021-05-01 16:26:56.399",
+"content":{
+	"requestID": "d21a2b5d-f54c-498c-8404-84952d8c00af",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 3408 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.165591954s",
+		"executionTime": "8.164817083s",
+		"resultCount": 1,
+		"resultSize": 1092,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910008,1)", 
+"rt":80,
+"query":"SET `compiler.seqbuild` "1" ;
+use unlimitedMemory;
+
+SELECT ds5.string4 , ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 511 */= ds2.unique1 and ds1.string4  /*+  min-build-partitions 20 , build-size 511 , join-mem 511 */= ds2.string4  and ds2.unique1/*+  min-build-partitions 20 ,  build-size 204 , join-mem 204 */= ds3.unique1 204 , join-mem 204 */= ds3.string4  and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , temp , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4  /*+  min-build-partitions 20 , temp , build-size 51 , join-mem 51 */= ds4.string4  and ds4.unique1 /*+  min-build-partitions 20 ,  build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4  /*+  min-build-partitions 20  ,  build-size 51 , join-mem 51 */= ds5.string4  LIMIT 1; ",
+"start":"2021-05-01 16:26:56.403",
+"end":"2021-05-01 16:26:56.49",
+"content":{
+	"requestID": "d4f7b102-6c92-4210-b876-df7d2fe81d89",
+	"signature": {
+		"*": "*"
+	},
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1001: Syntax error: In line 8 >>and ds1.unique1\/*+  min-build-partitions 20 , build-size 511 , join-mem 511 *\/= ds2.unique1 and ds1.string4  \/*+  min-build-partitions 20 , build-size 511 , join-mem 511 *\/= ds2.string4  and ds2.unique1\/*+  min-build-partitions 20 ,  build-size 204 , join-mem 204 *\/= ds3.unique1 204 , join-mem 204 *\/= ds3.string4  and (ds3.unique1) % 25000 \/*+  min-build-partitions 20 , temp , build-size 51 , join-mem 51 *\/=( ds4.unique1) % 25000<< Encountered <INTEGER_LITERAL> \"204\" at column 281. "	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "4.599869ms",
+		"executionTime": "0ns",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,13)", 
+"rt":8297,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 511 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 511 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:26:56.491",
+"end":"2021-05-01 16:27:04.789",
+"content":{
+	"requestID": "fcc8f2c9-e103-4c04-987d-673a3f08d09d",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 4544 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.293904551s",
+		"executionTime": "8.29172309s",
+		"resultCount": 1,
+		"resultSize": 1092,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910003,1)", 
+"rt":11023,
+"query":"SET `compiler.seqbuild` "1" ;
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , temp , build-size 511 , join-mem 10 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , temp , build-size 511 , join-mem 10 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , temp , build-size 204 , join-mem 10 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , temp ,  build-size 204 , join-mem 10 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , temp , build-size 51 , join-mem 10 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , temp , build-size 51 , join-mem 10 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 10 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 10 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:27:04.79",
+"end":"2021-05-01 16:27:15.814",
+"content":{
+	"requestID": "4c11f4e7-8fa4-4b17-985c-eecb6e7a8724",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 4157 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "11.020352617s",
+		"executionTime": "11.019219435s",
+		"resultCount": 1,
+		"resultSize": 1092,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910003,2)", 
+"rt":9998,
+"query":"SET `compiler.seqbuild` "1" ;
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , temp , build-size 511 , join-mem 20 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , temp , build-size 511 , join-mem 20 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , temp , build-size 204 , join-mem 20 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , temp ,  build-size 204 , join-mem 20 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , temp , build-size 51 , join-mem 20 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , temp , build-size 51 , join-mem 20 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 20 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 20 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:27:15.815",
+"end":"2021-05-01 16:27:25.814",
+"content":{
+	"requestID": "8b8261eb-230e-4c57-9f55-5f6f51b012a8",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 24424 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "9.996696412s",
+		"executionTime": "9.996075573s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910003,3)", 
+"rt":10306,
+"query":"SET `compiler.seqbuild` "1" ;
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , temp , build-size 511 , join-mem 51 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , temp , build-size 511 , join-mem 51 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , temp , build-size 204 , join-mem 51 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , temp ,  build-size 204 , join-mem 51 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , temp , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , temp , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:27:25.815",
+"end":"2021-05-01 16:27:36.122",
+"content":{
+	"requestID": "ae2d4d69-60ca-4506-812d-ec5ca0578780",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 36597 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "10.304389521s",
+		"executionTime": "10.30348134s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910004,1)", 
+"rt":8528,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , temp , build-size 511 , join-mem 102 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 ,   temp , build-size 511 , join-mem 102 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , temp , build-size 204 , join-mem 102 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , temp ,  build-size 204 , join-mem 102 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20  , build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:27:36.123",
+"end":"2021-05-01 16:27:44.654",
+"content":{
+	"requestID": "611333e7-3b83-4254-9704-6a8928febd35",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 1136 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.525549745s",
+		"executionTime": "8.524426857s",
+		"resultCount": 1,
+		"resultSize": 1092,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910004,2)", 
+"rt":8659,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , temp , build-size 511 , join-mem 204 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 ,   temp , build-size 511 , join-mem 204 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , temp , build-size 204 , join-mem 204 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , temp ,  build-size 204 , join-mem 204 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20  , build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:27:44.656",
+"end":"2021-05-01 16:27:53.316",
+"content":{
+	"requestID": "07741330-e1c7-444c-bf13-3747a5230784",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 18744 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.656289903s",
+		"executionTime": "8.655574026s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910005,1)", 
+"rt":8360,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , temp , build-size 511 , join-mem 255 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 ,   temp , build-size 511 , join-mem 255 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , temp , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , temp , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 ,  build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20  ,  build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:27:53.317",
+"end":"2021-05-01 16:28:01.678",
+"content":{
+	"requestID": "26ad9df3-273a-4b84-9e39-2be258bcaa7d",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 11928 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.357268791s",
+		"executionTime": "8.356327993s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910006,1)", 
+"rt":8023,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4 , ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , temp , build-size 511 , join-mem 306 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 ,   temp , build-size 511 , join-mem 306 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 ,  build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20  ,  build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:28:01.679",
+"end":"2021-05-01 16:28:09.705",
+"content":{
+	"requestID": "15d7d9e7-9bbd-4bd6-b9bc-f5b3abfb3735",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 39760 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.022176295s",
+		"executionTime": "8.021331672s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910006,2)", 
+"rt":8821,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4 , ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , temp , build-size 511 , join-mem 409 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 ,   temp , build-size 511 , join-mem 409 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 ,  build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20  ,  build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:28:09.706",
+"end":"2021-05-01 16:28:18.528",
+"content":{
+	"requestID": "242e3560-20af-466b-ad18-4ee48f7a6b9a",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 34648 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.819460723s",
+		"executionTime": "8.818799468s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910006,3)", 
+"rt":8387,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4 , ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , temp , build-size 511 , join-mem 511 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 ,   temp , build-size 511 , join-mem 511 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 ,  build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20  ,  build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:28:18.529",
+"end":"2021-05-01 16:28:26.917",
+"content":{
+	"requestID": "c427bafa-af48-4f41-a132-72bc8e26ec6c",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 20448 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.384393967s",
+		"executionTime": "8.383601429s",
+		"resultCount": 1,
+		"resultSize": 1093,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910006,4)", 
+"rt":8255,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4 , ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , temp , build-size 511 , join-mem 511 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 ,   temp , build-size 511 , join-mem 511 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 ,  build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20  ,  build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:28:26.919",
+"end":"2021-05-01 16:28:35.176",
+"content":{
+	"requestID": "e144c268-85f6-44ae-a6c8-6e720f8bfbf9",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 3408 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.25469361s",
+		"executionTime": "8.253900454s",
+		"resultCount": 1,
+		"resultSize": 1092,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910007,1)", 
+"rt":12125,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4 , ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 511 */= ds2.unique1 and ds1.string4  /*+  min-build-partitions 20 , build-size 511 , join-mem 511 */= ds2.string4  and ds2.unique1/*+  min-build-partitions 20 , temp , build-size 204 , join-mem 204 */= ds3.unique1
+and ds2.string4  /*+  min-build-partitions 20 , temp , build-size 204 , join-mem 204 */= ds3.string4  and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4  /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4  and ds4.unique1 /*+  min-build-partitions 20 ,  build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4  /*+  min-build-partitions 20  ,  build-size 51 , join-mem 51 */= ds5.string4  LIMIT 1; ",
+"start":"2021-05-01 16:28:35.176",
+"end":"2021-05-01 16:28:47.304",
+"content":{
+	"requestID": "332a0081-ddac-4ffb-971b-6a78ebd99487",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 3976 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "12.112036416s",
+		"executionTime": "12.111071906s",
+		"resultCount": 1,
+		"resultSize": 1092,
+		"processedObjects": 3700000
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910008,1)", 
+"rt":9,
+"query":"SET `compiler.seqbuild` "1" ;
+use unlimitedMemory;
+
+SELECT ds5.string4 , ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 511 */= ds2.unique1 and ds1.string4  /*+  min-build-partitions 20 , build-size 511 , join-mem 511 */= ds2.string4  and ds2.unique1/*+  min-build-partitions 20 ,  build-size 204 , join-mem 204 */= ds3.unique1 204 , join-mem 204 */= ds3.string4  and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , temp , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4  /*+  min-build-partitions 20 , temp , build-size 51 , join-mem 51 */= ds4.string4  and ds4.unique1 /*+  min-build-partitions 20 ,  build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4  /*+  min-build-partitions 20  ,  build-size 51 , join-mem 51 */= ds5.string4  LIMIT 1; ",
+"start":"2021-05-01 16:28:47.308",
+"end":"2021-05-01 16:28:47.318",
+"content":{
+	"requestID": "424a2984-c962-4b07-8dcf-3937a5b1c568",
+	"signature": {
+		"*": "*"
+	},
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1001: Syntax error: In line 8 >>and ds1.unique1\/*+  min-build-partitions 20 , build-size 511 , join-mem 511 *\/= ds2.unique1 and ds1.string4  \/*+  min-build-partitions 20 , build-size 511 , join-mem 511 *\/= ds2.string4  and ds2.unique1\/*+  min-build-partitions 20 ,  build-size 204 , join-mem 204 *\/= ds3.unique1 204 , join-mem 204 *\/= ds3.string4  and (ds3.unique1) % 25000 \/*+  min-build-partitions 20 , temp , build-size 51 , join-mem 51 *\/=( ds4.unique1) % 25000<< Encountered <INTEGER_LITERAL> \"204\" at column 281. "	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "2.321135ms",
+		"executionTime": "0ns",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+,Connection: close
+User-Agent: Bigfun
+Authorization: Basic QWRtaW5pc3RyYXRvcjpwYXNzMTIz
+
+{"qidvid": "Q(910001,13)", 
+"rt":8053,
+"query":"SET `compiler.seqbuild` "1" ;
+
+use unlimitedMemory;
+
+SELECT ds5.string4, ds5.unique1
+FROM wisconsin_fixed_record_size_1000000_ds1 ds1 , wisconsin_fixed_record_size_1000000_ds2 ds2 , wisconsin_fixed_record_size_1000000_ds3 ds3 , wisconsin_fixed_record_size_500000_ds4 ds4 , wisconsin_fixed_record_size_200000_ds5 ds5
+WHERE ds1.unique1 <= 500000 and (ds2.unique1 <=50000 or ( ds2.unique1 > 500000 and ds2.unique1 < 950000))
+and ds3.unique1 <= 200000 and  ds4.unique1 <= 50000 and ds5.unique1 <= 50000
+and ds1.unique1/*+  min-build-partitions 20 , build-size 511 , join-mem 511 */= ds2.unique1 and ds1.string4 /*+  min-build-partitions 20 , build-size 511 , join-mem 511 */= ds2.string4 and ds2.unique1/*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.unique1
+and ds2.string4 /*+  min-build-partitions 20 , build-size 204 , join-mem 204 */= ds3.string4 and (ds3.unique1) % 25000 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */=( ds4.unique1) % 25000
+and ds3.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds4.string4 and ds4.unique1 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.unique1 and ds4.string4 /*+  min-build-partitions 20 , build-size 51 , join-mem 51 */= ds5.string4 LIMIT 1; ",
+"start":"2021-05-01 16:28:47.319",
+"end":"2021-05-01 16:28:55.373",
+"content":{
+	"requestID": "d9f509e3-5ba9-40f6-916b-2eab945035e8",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "string4": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "unique1": 3408 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.050936615s",
+		"executionTime": "8.050093392s",
+		"resultCount": 1,
+		"resultSize": 1092,
+		"processedObjects": 3700000
+	}
+}
+}
+
+],
+"TotalTime 0" :615031
+}]Finished at: 2021-05-01 16:28:55.378

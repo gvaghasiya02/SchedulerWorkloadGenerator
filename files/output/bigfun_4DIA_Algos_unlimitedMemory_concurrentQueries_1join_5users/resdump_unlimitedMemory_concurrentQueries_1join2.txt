@@ -1,0 +1,32 @@
+{"qidvid": "Q(99999,1)", 
+"rt":29859,
+"query":"SET `compiler.joinmemory` "1024MB" ;
+use unlimitedMemory;
+
+SELECT ds2.unique1 ,ds2.unique2 ,ds2.two ,ds2.four ,ds2.ten ,ds2.twenty ,ds2.onePercent ,ds2.tenPercent ,ds2.twentyPercent ,ds2.fiftyPercent ,ds2.unique3 ,ds2.evenOnePercent ,ds2.oddOnePercent ,ds2.stringu1 ,ds2.stringu2 ,ds2.string4
+ FROM wisconsin_fixed_record_size_1GB_1000000_ds1 ds1 , wisconsin_fixed_record_size_1GB_1000000_ds2 ds2
+ WHERE ds1.unique1 /*+  min-build-partitions 20 , build-size 1024 */= ds2.unique1 and ds1.unique2 = ds2.unique2 and ds1.two = ds2.two and ds1.four = ds2.four and ds1.ten = ds2.ten and ds1.twenty = ds2.twenty and ds1.onePercent = ds2.onePercent and ds1.tenPercent = ds2.tenPercent and ds1.twentyPercent = ds2.twentyPercent and ds1.fiftyPercent = ds2.fiftyPercent and ds1.unique3 = ds2.unique3 and ds1.evenOnePercent = ds2.evenOnePercent and ds1.oddOnePercent = ds2.oddOnePercent and ds1.stringu1 = ds2.stringu1 and ds1.stringu2 = ds2.stringu2 and ds1.string4 = ds2.string4
+ limit 1; ",
+"start":"2021-11-07 23:25:09.172",
+"end":"2021-11-07 23:25:39.056",
+"content":{
+	"requestID": "6934c50d-9a0e-4141-a14e-c2a0b7cf3885",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "unique1": 568, "unique2": 1, "two": 0, "four": 0, "ten": 8, "twenty": 8, "onePercent": 68, "tenPercent": 8, "twentyPercent": 3, "fiftyPercent": 0, "unique3": 568, "evenOnePercent": 136, "oddOnePercent": 137, "stringu1": "BAAAAAAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "stringu2": "BAAAAAAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "string4": "BAAAAAAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "29.739521428s",
+		"executionTime": "29.737947284s",
+		"resultCount": 1,
+		"resultSize": 1090,
+		"processedObjects": 2000000,
+		"warningCount": 1
+	}
+}
+}
+

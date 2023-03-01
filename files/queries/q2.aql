@@ -1,0 +1,8 @@
+use unlimitedMemory;
+select count(*) from unlimitedMemory.wisconsin_dataset_1024_ds1
+ds1 WHERE ds1.unique1 /*+ skip-index*/ >=
+1
+and
+ds1.unique1 /*+ skip-index*/ <=
+10000
+;

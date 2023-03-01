@@ -1,0 +1,72 @@
+USE tpch;
+
+SELECT  year,
+        SUM( CASE t.s_name = 'BRAZIL' WHEN true THEN t.revenue ELSE 0.0 END ) / SUM(t.revenue) AS mkt_share
+FROM  (
+        SELECT o_year AS year,
+               srncolp.l_extendedprice * (1 - srncolp.l_discount) AS revenue,
+               n2.n_name AS s_name
+        FROM  Nation2 n2 , (
+                SELECT rncolp.o_orderdate, rncolp.l_discount, rncolp.l_extendedprice, s.s_nationkey
+                FROM  Supplier s,
+                (
+                  SELECT ncolp.o_orderdate, ncolp.l_discount, ncolp.l_extendedprice, ncolp.l_suppkey
+                  FROM  Region r , (
+                         SELECT n.n_regionkey , colp.o_orderdate, colp.o_orderkey, colp.l_discount, colp.l_extendedprice , colp.l_suppkey
+                         FROM Nation n ,
+                               (
+                                SELECT  c.c_nationkey , olp.o_orderdate, olp.o_orderkey, olp.l_discount, olp.l_extendedprice , olp.l_suppkey
+                                FROM  Customer c,
+                                      (
+                                        SELECT o.o_orderdate, o.o_orderkey, lp.l_discount, lp.l_extendedprice, lp.l_suppkey , o.o_custkey
+                                        FROM  Orders o,
+                                              (
+                                                SELECT l.l_discount, l.l_extendedprice, l.l_suppkey , l.l_orderkey
+                                                FROM  LineItem l ,
+                                                      Part p
+                                                WHERE p.p_partkey /*+ build-size
+                                                                  @PARAM
+                                                                  , join-mem
+                                                                  @PARAM
+                                                                   */ = l.l_partkey and p.p_type = 'ECONOMY ANODIZED STEEL'
+                                                ) AS lp
+                                         WHERE lp.l_orderkey /*+ build-size
+                                                             @PARAM
+                                                             , join-mem
+                                                             @PARAM
+                                                              */= o.o_orderkey and o.o_orderdate >= '1995-01-01' and o.o_orderdate < '1996-12-31'
+                                       ) AS olp
+                                WHERE c.c_custkey /*+ build-size
+                                                  @PARAM
+                                                  , join-mem
+                                                  @PARAM
+                                                   */= olp.o_custkey
+                                ) AS colp
+                        WHERE colp.c_nationkey /*+ build-size
+                                               @PARAM
+                                               , join-mem
+                                               @PARAM
+                                                */= n.n_nationkey
+                        ) AS ncolp
+                        WHERE ncolp.n_regionkey /*+ build-size
+                                                @PARAM
+                                                , join-mem
+                                                @PARAM
+                                                 */= r.r_regionkey AND r.r_name = 'AMERICA'
+                    ) AS rncolp
+                WHERE s.s_suppkey /*+ build-size
+                                  @PARAM
+                                  , join-mem
+                                  @PARAM
+                                   */= rncolp.l_suppkey
+                ) AS srncolp
+                LET o_year = `get-year`(srncolp.o_orderdate)
+                WHERE srncolp.s_nationkey /*+ build-size
+                                          @PARAM
+                                          , join-mem
+                                          @PARAM
+                                           */= n2.n_nationkey
+             ) as t
+GROUP BY year
+ORDER BY year
+;

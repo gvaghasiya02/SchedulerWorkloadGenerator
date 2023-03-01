@@ -1,0 +1,28 @@
+{"qidvid": "Q(960001,1)", 
+"rt":15247,
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds9 ds1 WHERE ds1.unique1 >= int64("9484414") and
+ds1.unique1 <= int64("13812114") ; ",
+"start":"2022-08-21 19:37:20.327",
+"end":"2022-08-21 19:37:35.578",
+"content":{
+	"requestID": "d423090b-70d2-4d5c-be6e-99a55cb5986d",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 749260 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "14.818361745s",
+		"executionTime": "14.816378805s",
+		"resultCount": 1,
+		"resultSize": 17,
+		"processedObjects": 1498520
+	}
+}
+}
+

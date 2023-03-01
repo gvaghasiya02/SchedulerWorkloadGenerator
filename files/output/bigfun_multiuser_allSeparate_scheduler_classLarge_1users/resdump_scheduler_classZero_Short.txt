@@ -1,0 +1,4383 @@
+{"qidvid": "Q(960001,1)", 
+"rt":38170,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds5 ds1 WHERE ds1.unique1 >= int64("12645826") and
+ds1.unique1 <= int64("12645906") ; ",
+"start":"2022-10-23 17:27:57.287",
+"end":"2022-10-23 17:28:35.606",
+"content":{
+	"requestID": "bec820b6-ac4c-4076-a5c0-ab0db17c8eda",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "37.187440125s",
+		"executionTime": "36.433863292s",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396767470608667,
+		"addedToTheMemoryQueueTimeNano": 396767471422792,
+		"executionStartTimeNano": 396767472938500,
+		"executionEndTimeNano": 396769878005125
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":9061,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("10591013") and
+ds1.unique1 <= int64("10591093") ; ",
+"start":"2022-10-23 17:28:35.615",
+"end":"2022-10-23 17:28:44.698",
+"content":{
+	"requestID": "a64bce06-ade9-4822-95f5-86082c00de4a",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "8.857649709s",
+		"executionTime": "8.721741166s",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396775285950209,
+		"addedToTheMemoryQueueTimeNano": 396778802535792,
+		"executionStartTimeNano": 396778803752792,
+		"executionEndTimeNano": 396779130811000
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":2010,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("7994736") and
+ds1.unique1 <= int64("7994816") ; ",
+"start":"2022-10-23 17:28:44.698",
+"end":"2022-10-23 17:28:46.713",
+"content":{
+	"requestID": "ad252f66-33da-4933-b1cb-9948e8350d88",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "1.991147834s",
+		"executionTime": "1.958339042s",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396779936260084,
+		"addedToTheMemoryQueueTimeNano": 396781055189917,
+		"executionStartTimeNano": 396781082249667,
+		"executionEndTimeNano": 396781182418167
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":1508,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("7401366") and
+ds1.unique1 <= int64("7401446") ; ",
+"start":"2022-10-23 17:28:46.714",
+"end":"2022-10-23 17:28:48.222",
+"content":{
+	"requestID": "06b39040-7726-46ac-add1-86c524a47685",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "1.489463542s",
+		"executionTime": "1.470066s",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396781350932334,
+		"addedToTheMemoryQueueTimeNano": 396782662718500,
+		"executionStartTimeNano": 396782672559834,
+		"executionEndTimeNano": 396782699672209
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":1097,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("4808353") and
+ds1.unique1 <= int64("4808433") ; ",
+"start":"2022-10-23 17:28:48.223",
+"end":"2022-10-23 17:28:49.321",
+"content":{
+	"requestID": "44fc12e8-835b-4ec1-87dd-7ad5685d64b2",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "1.078196917s",
+		"executionTime": "1.073842792s",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396782749664917,
+		"addedToTheMemoryQueueTimeNano": 396783731514875,
+		"executionStartTimeNano": 396783737566917,
+		"executionEndTimeNano": 396783796702125
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":1070,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("14525141") and
+ds1.unique1 <= int64("14525221") ; ",
+"start":"2022-10-23 17:28:49.321",
+"end":"2022-10-23 17:28:50.392",
+"content":{
+	"requestID": "74e214c7-7899-4deb-b930-79290ce2fec8",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "1.055593833s",
+		"executionTime": "1.007780208s",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396783915249792,
+		"addedToTheMemoryQueueTimeNano": 396784692253417,
+		"executionStartTimeNano": 396784797130459,
+		"executionEndTimeNano": 396784869285334
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":845,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("15933031") and
+ds1.unique1 <= int64("15933111") ; ",
+"start":"2022-10-23 17:28:50.392",
+"end":"2022-10-23 17:28:51.243",
+"content":{
+	"requestID": "fb02b5ec-7304-490b-8d15-d320e8e69520",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "838.987458ms",
+		"executionTime": "836.232833ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396785067299209,
+		"addedToTheMemoryQueueTimeNano": 396785638843125,
+		"executionStartTimeNano": 396785670075542,
+		"executionEndTimeNano": 396785722291000
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":1230,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds2 ds1 WHERE ds1.unique1 >= int64("5506030") and
+ds1.unique1 <= int64("5506110") ; ",
+"start":"2022-10-23 17:28:51.243",
+"end":"2022-10-23 17:28:52.474",
+"content":{
+	"requestID": "2a52a2c8-0d4d-440b-b9c3-55d1d5437914",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "1.223167875s",
+		"executionTime": "1.214364333s",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396785822496334,
+		"addedToTheMemoryQueueTimeNano": 396786803942125,
+		"executionStartTimeNano": 396786826036292,
+		"executionEndTimeNano": 396786953906250
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":2024,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("15300576") and
+ds1.unique1 <= int64("15300656") ; ",
+"start":"2022-10-23 17:28:52.474",
+"end":"2022-10-23 17:28:54.498",
+"content":{
+	"requestID": "65447ac8-426a-4164-9fba-18eeb65cd148",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "2.012720333s",
+		"executionTime": "2.008444792s",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396787147106334,
+		"addedToTheMemoryQueueTimeNano": 396788952071917,
+		"executionStartTimeNano": 396788952400375,
+		"executionEndTimeNano": 396788978880959
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":595,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("5483487") and
+ds1.unique1 <= int64("5483567") ; ",
+"start":"2022-10-23 17:28:54.499",
+"end":"2022-10-23 17:28:55.101",
+"content":{
+	"requestID": "9639e5b5-8079-4cb6-99eb-e8992c4e44a5",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "577.741083ms",
+		"executionTime": "571.905417ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396789038330417,
+		"addedToTheMemoryQueueTimeNano": 396789496912584,
+		"executionStartTimeNano": 396789502907834,
+		"executionEndTimeNano": 396789580882834
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":657,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("17219529") and
+ds1.unique1 <= int64("17219609") ; ",
+"start":"2022-10-23 17:28:55.102",
+"end":"2022-10-23 17:28:55.76",
+"content":{
+	"requestID": "d786f50f-6bf5-40bc-9ea0-b993613bcec8",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "640.479ms",
+		"executionTime": "638.40775ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396789615507875,
+		"addedToTheMemoryQueueTimeNano": 396790184628125,
+		"executionStartTimeNano": 396790188098500,
+		"executionEndTimeNano": 396790240375334
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":7604,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("3461439") and
+ds1.unique1 <= int64("3461519") ; ",
+"start":"2022-10-23 17:28:55.76",
+"end":"2022-10-23 17:29:03.374",
+"content":{
+	"requestID": "96695340-c115-41ff-8a8e-4c1d21337044",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "7.573547625s",
+		"executionTime": "7.553782958s",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396790457537792,
+		"addedToTheMemoryQueueTimeNano": 396797679375167,
+		"executionStartTimeNano": 396797758998459,
+		"executionEndTimeNano": 396797821690792
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":2671,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds5 ds1 WHERE ds1.unique1 >= int64("4290036") and
+ds1.unique1 <= int64("4290116") ; ",
+"start":"2022-10-23 17:29:03.374",
+"end":"2022-10-23 17:29:06.048",
+"content":{
+	"requestID": "e284c92f-f282-40cf-ae08-c01e37f3bd26",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "2.659753334s",
+		"executionTime": "2.644516167s",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396798988524542,
+		"addedToTheMemoryQueueTimeNano": 396800422832209,
+		"executionStartTimeNano": 396800428500542,
+		"executionEndTimeNano": 396800526280250
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":2108,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds2 ds1 WHERE ds1.unique1 >= int64("8474005") and
+ds1.unique1 <= int64("8474085") ; ",
+"start":"2022-10-23 17:29:06.049",
+"end":"2022-10-23 17:29:08.157",
+"content":{
+	"requestID": "e550a79e-4383-47b9-bd18-e6219de5216f",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "2.095066708s",
+		"executionTime": "2.091508708s",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396800585067584,
+		"addedToTheMemoryQueueTimeNano": 396802605134042,
+		"executionStartTimeNano": 396802605465042,
+		"executionEndTimeNano": 396802634108834
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":407,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds2 ds1 WHERE ds1.unique1 >= int64("1336518") and
+ds1.unique1 <= int64("1336598") ; ",
+"start":"2022-10-23 17:29:08.157",
+"end":"2022-10-23 17:29:08.569",
+"content":{
+	"requestID": "73c81a84-e037-4f9b-ae11-443af494d5ff",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "400.440125ms",
+		"executionTime": "395.909917ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396802686246917,
+		"addedToTheMemoryQueueTimeNano": 396802927687875,
+		"executionStartTimeNano": 396802927978209,
+		"executionEndTimeNano": 396803047347625
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":482,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("5842147") and
+ds1.unique1 <= int64("5842227") ; ",
+"start":"2022-10-23 17:29:08.569",
+"end":"2022-10-23 17:29:09.051",
+"content":{
+	"requestID": "35c78541-ac44-488b-9e2c-db9c09e266bf",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "470.619917ms",
+		"executionTime": "445.8265ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396803154231917,
+		"addedToTheMemoryQueueTimeNano": 396803511181834,
+		"executionStartTimeNano": 396803511630334,
+		"executionEndTimeNano": 396803532560709
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":517,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("7802532") and
+ds1.unique1 <= int64("7802612") ; ",
+"start":"2022-10-23 17:29:09.052",
+"end":"2022-10-23 17:29:09.57",
+"content":{
+	"requestID": "680e7856-7242-4ff0-8efb-97ffb4bc5913",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "510.29725ms",
+		"executionTime": "507.132583ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396803578388875,
+		"addedToTheMemoryQueueTimeNano": 396803802887625,
+		"executionStartTimeNano": 396803803595542,
+		"executionEndTimeNano": 396804049378250
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":293,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("12572410") and
+ds1.unique1 <= int64("12572490") ; ",
+"start":"2022-10-23 17:29:09.573",
+"end":"2022-10-23 17:29:09.867",
+"content":{
+	"requestID": "6872accf-02fd-4e83-a0d8-b5971c1bbc41",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "282.833917ms",
+		"executionTime": "279.316ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396804106666334,
+		"addedToTheMemoryQueueTimeNano": 396804285133792,
+		"executionStartTimeNano": 396804285725000,
+		"executionEndTimeNano": 396804345845667
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":569,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds5 ds1 WHERE ds1.unique1 >= int64("2171354") and
+ds1.unique1 <= int64("2171434") ; ",
+"start":"2022-10-23 17:29:09.878",
+"end":"2022-10-23 17:29:10.447",
+"content":{
+	"requestID": "b9edbd5b-407f-4c57-9666-df3da8f62f2e",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "533.419834ms",
+		"executionTime": "479.548917ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396804688417209,
+		"addedToTheMemoryQueueTimeNano": 396804861309750,
+		"executionStartTimeNano": 396804861554042,
+		"executionEndTimeNano": 396804924537125
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":322,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds2 ds1 WHERE ds1.unique1 >= int64("10215821") and
+ds1.unique1 <= int64("10215901") ; ",
+"start":"2022-10-23 17:29:10.447",
+"end":"2022-10-23 17:29:10.773",
+"content":{
+	"requestID": "1677e8cf-3ac5-4fe5-890d-37ad486d6249",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "314.605417ms",
+		"executionTime": "309.189416ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396805083677084,
+		"addedToTheMemoryQueueTimeNano": 396805201833792,
+		"executionStartTimeNano": 396805202126167,
+		"executionEndTimeNano": 396805250304875
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":154,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("3505798") and
+ds1.unique1 <= int64("3505878") ; ",
+"start":"2022-10-23 17:29:10.773",
+"end":"2022-10-23 17:29:10.927",
+"content":{
+	"requestID": "0a3df6cf-f148-4b77-9044-2c10124bc719",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "148.137167ms",
+		"executionTime": "144.875375ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396805278828167,
+		"addedToTheMemoryQueueTimeNano": 396805393380125,
+		"executionStartTimeNano": 396805393673292,
+		"executionEndTimeNano": 396805408414959
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":206,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("5577306") and
+ds1.unique1 <= int64("5577386") ; ",
+"start":"2022-10-23 17:29:10.927",
+"end":"2022-10-23 17:29:11.134",
+"content":{
+	"requestID": "f2ef0e7e-a135-4555-8c5e-393b382221ee",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "196.775666ms",
+		"executionTime": "194.962125ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396805441143584,
+		"addedToTheMemoryQueueTimeNano": 396805591748792,
+		"executionStartTimeNano": 396805592029292,
+		"executionEndTimeNano": 396805614047334
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":2245,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds5 ds1 WHERE ds1.unique1 >= int64("4021888") and
+ds1.unique1 <= int64("4021968") ; ",
+"start":"2022-10-23 17:29:11.134",
+"end":"2022-10-23 17:29:13.396",
+"content":{
+	"requestID": "7e366dd0-e07f-4615-a61e-97f5c22c2a31",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "2.25398625s",
+		"executionTime": "2.235246042s",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396805817341334,
+		"addedToTheMemoryQueueTimeNano": 396807812686959,
+		"executionStartTimeNano": 396807824487875,
+		"executionEndTimeNano": 396807876620084
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":487,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds2 ds1 WHERE ds1.unique1 >= int64("5895803") and
+ds1.unique1 <= int64("5895883") ; ",
+"start":"2022-10-23 17:29:13.397",
+"end":"2022-10-23 17:29:13.884",
+"content":{
+	"requestID": "5e566a13-f610-4008-91b5-be80c7fb7f69",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "471.99425ms",
+		"executionTime": "468.13875ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396807967430750,
+		"addedToTheMemoryQueueTimeNano": 396808344388834,
+		"executionStartTimeNano": 396808344788250,
+		"executionEndTimeNano": 396808365273125
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":444,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("10095212") and
+ds1.unique1 <= int64("10095292") ; ",
+"start":"2022-10-23 17:29:13.885",
+"end":"2022-10-23 17:29:14.338",
+"content":{
+	"requestID": "e1c7b654-dfeb-4fa0-9afd-a1dab3c011d0",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "445.419708ms",
+		"executionTime": "440.938125ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396808594662084,
+		"addedToTheMemoryQueueTimeNano": 396808726485750,
+		"executionStartTimeNano": 396808726867292,
+		"executionEndTimeNano": 396808818696709
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":235,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("13288215") and
+ds1.unique1 <= int64("13288295") ; ",
+"start":"2022-10-23 17:29:14.339",
+"end":"2022-10-23 17:29:14.58",
+"content":{
+	"requestID": "f6a9b9b6-2fd2-4412-a18e-d300edef0790",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "232.54575ms",
+		"executionTime": "231.097917ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396808840637667,
+		"addedToTheMemoryQueueTimeNano": 396808955190209,
+		"executionStartTimeNano": 396808955468042,
+		"executionEndTimeNano": 396809058230417
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":174,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("11262086") and
+ds1.unique1 <= int64("11262166") ; ",
+"start":"2022-10-23 17:29:14.58",
+"end":"2022-10-23 17:29:14.754",
+"content":{
+	"requestID": "6d19725b-32b7-4135-b568-5a05dc12f2ca",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "163.016958ms",
+		"executionTime": "154.784042ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396809122288542,
+		"addedToTheMemoryQueueTimeNano": 396809209372667,
+		"executionStartTimeNano": 396809209659292,
+		"executionEndTimeNano": 396809235305417
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":385,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("13352847") and
+ds1.unique1 <= int64("13352927") ; ",
+"start":"2022-10-23 17:29:14.755",
+"end":"2022-10-23 17:29:15.141",
+"content":{
+	"requestID": "2efcd8fa-b72f-4bef-b814-54e0fc4ae1c4",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "316.076083ms",
+		"executionTime": "293.0645ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396809346459375,
+		"addedToTheMemoryQueueTimeNano": 396809602201500,
+		"executionStartTimeNano": 396809602622292,
+		"executionEndTimeNano": 396809621608667
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":1102,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("17297207") and
+ds1.unique1 <= int64("17297287") ; ",
+"start":"2022-10-23 17:29:15.141",
+"end":"2022-10-23 17:29:16.277",
+"content":{
+	"requestID": "88c6c2c4-1c1e-46ee-b428-5d915cd680cd",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "1.099241041s",
+		"executionTime": "1.090362291s",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396809646277667,
+		"addedToTheMemoryQueueTimeNano": 396809873740417,
+		"executionStartTimeNano": 396809876779084,
+		"executionEndTimeNano": 396810726990000
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":1827,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("1921747") and
+ds1.unique1 <= int64("1921827") ; ",
+"start":"2022-10-23 17:29:16.279",
+"end":"2022-10-23 17:29:18.107",
+"content":{
+	"requestID": "60fa119d-8661-49f6-918f-6ed4fbd15cf0",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "1.770504125s",
+		"executionTime": "1.736478292s",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396811146835750,
+		"addedToTheMemoryQueueTimeNano": 396811406806542,
+		"executionStartTimeNano": 396812564723250,
+		"executionEndTimeNano": 396812586970750
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":744,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("14851204") and
+ds1.unique1 <= int64("14851284") ; ",
+"start":"2022-10-23 17:29:18.107",
+"end":"2022-10-23 17:29:18.898",
+"content":{
+	"requestID": "15e20926-f912-4e37-ad62-eafcb7ddd688",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "733.517583ms",
+		"executionTime": "731.224125ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396812667674334,
+		"addedToTheMemoryQueueTimeNano": 396813071205125,
+		"executionStartTimeNano": 396813071581500,
+		"executionEndTimeNano": 396813329391042
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":326,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("5198561") and
+ds1.unique1 <= int64("5198641") ; ",
+"start":"2022-10-23 17:29:18.904",
+"end":"2022-10-23 17:29:19.231",
+"content":{
+	"requestID": "77a83f5e-71ab-4866-b66c-e4475615dc06",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "298.203834ms",
+		"executionTime": "294.309875ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396813504618584,
+		"addedToTheMemoryQueueTimeNano": 396813669403084,
+		"executionStartTimeNano": 396813669847167,
+		"executionEndTimeNano": 396813711430375
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":148,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds5 ds1 WHERE ds1.unique1 >= int64("14478032") and
+ds1.unique1 <= int64("14478112") ; ",
+"start":"2022-10-23 17:29:19.232",
+"end":"2022-10-23 17:29:19.381",
+"content":{
+	"requestID": "9a70f5f6-6cab-42e6-8141-9dcb9039f161",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "140.446708ms",
+		"executionTime": "136.481834ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396813842177917,
+		"addedToTheMemoryQueueTimeNano": 396813842328917,
+		"executionStartTimeNano": 396813842901959,
+		"executionEndTimeNano": 396813861268625
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":559,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("9798234") and
+ds1.unique1 <= int64("9798314") ; ",
+"start":"2022-10-23 17:29:19.381",
+"end":"2022-10-23 17:29:19.94",
+"content":{
+	"requestID": "04f5de5d-a6ff-49d8-9031-1dda27fa9e10",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "553.087584ms",
+		"executionTime": "551.19225ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396813912849125,
+		"addedToTheMemoryQueueTimeNano": 396814403822167,
+		"executionStartTimeNano": 396814404289417,
+		"executionEndTimeNano": 396814420967542
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":289,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds5 ds1 WHERE ds1.unique1 >= int64("3191734") and
+ds1.unique1 <= int64("3191814") ; ",
+"start":"2022-10-23 17:29:19.94",
+"end":"2022-10-23 17:29:20.229",
+"content":{
+	"requestID": "c113b098-ed57-4f0d-bf3e-a526f892bc4c",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "282.724584ms",
+		"executionTime": "281.351ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396814449144417,
+		"addedToTheMemoryQueueTimeNano": 396814681434709,
+		"executionStartTimeNano": 396814681761625,
+		"executionEndTimeNano": 396814710038709
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":355,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("6605355") and
+ds1.unique1 <= int64("6605435") ; ",
+"start":"2022-10-23 17:29:20.229",
+"end":"2022-10-23 17:29:20.592",
+"content":{
+	"requestID": "8950bec0-72b7-448e-be47-13eb5d3dec46",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "346.286958ms",
+		"executionTime": "342.868875ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396814729599500,
+		"addedToTheMemoryQueueTimeNano": 396814852343459,
+		"executionStartTimeNano": 396814852658834,
+		"executionEndTimeNano": 396815062948250
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":207,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds2 ds1 WHERE ds1.unique1 >= int64("16338961") and
+ds1.unique1 <= int64("16339041") ; ",
+"start":"2022-10-23 17:29:20.593",
+"end":"2022-10-23 17:29:20.8",
+"content":{
+	"requestID": "d68b7acc-695b-4bae-be71-2cc318e42ca1",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "198.840084ms",
+		"executionTime": "196.075292ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396815108485709,
+		"addedToTheMemoryQueueTimeNano": 396815256402959,
+		"executionStartTimeNano": 396815256743292,
+		"executionEndTimeNano": 396815281115375
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":191,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("1487590") and
+ds1.unique1 <= int64("1487670") ; ",
+"start":"2022-10-23 17:29:20.801",
+"end":"2022-10-23 17:29:20.993",
+"content":{
+	"requestID": "f50e9ed1-c2f5-41bc-a320-afe657476cbd",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "184.405084ms",
+		"executionTime": "183.438875ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396815317070500,
+		"addedToTheMemoryQueueTimeNano": 396815454224792,
+		"executionStartTimeNano": 396815454490625,
+		"executionEndTimeNano": 396815473505834
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":230,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("9936914") and
+ds1.unique1 <= int64("9936994") ; ",
+"start":"2022-10-23 17:29:20.993",
+"end":"2022-10-23 17:29:21.225",
+"content":{
+	"requestID": "e013c9d7-e69f-418f-914c-7d7170c26d74",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "212.215959ms",
+		"executionTime": "210.49125ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396815498327667,
+		"addedToTheMemoryQueueTimeNano": 396815670113334,
+		"executionStartTimeNano": 396815670611875,
+		"executionEndTimeNano": 396815696945000
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":259,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("7161452") and
+ds1.unique1 <= int64("7161532") ; ",
+"start":"2022-10-23 17:29:21.225",
+"end":"2022-10-23 17:29:21.484",
+"content":{
+	"requestID": "03aeee1c-08b1-46ef-bb29-74aad14be9d4",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "247.58225ms",
+		"executionTime": "246.452042ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396815744097250,
+		"addedToTheMemoryQueueTimeNano": 396815934050375,
+		"executionStartTimeNano": 396815934264084,
+		"executionEndTimeNano": 396815965208500
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":462,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds5 ds1 WHERE ds1.unique1 >= int64("5117832") and
+ds1.unique1 <= int64("5117912") ; ",
+"start":"2022-10-23 17:29:21.485",
+"end":"2022-10-23 17:29:21.947",
+"content":{
+	"requestID": "b30fd5d7-cf2f-440f-861f-b4dd44bf48f7",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "453.019042ms",
+		"executionTime": "450.66075ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396816201084209,
+		"addedToTheMemoryQueueTimeNano": 396816402205209,
+		"executionStartTimeNano": 396816402487792,
+		"executionEndTimeNano": 396816427938667
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":272,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("1959021") and
+ds1.unique1 <= int64("1959101") ; ",
+"start":"2022-10-23 17:29:21.948",
+"end":"2022-10-23 17:29:22.22",
+"content":{
+	"requestID": "f7ff5ebc-acdc-47c6-aa21-390c675a3b35",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "265.132709ms",
+		"executionTime": "263.792792ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396816448954167,
+		"addedToTheMemoryQueueTimeNano": 396816668741000,
+		"executionStartTimeNano": 396816669259834,
+		"executionEndTimeNano": 396816700826584
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":321,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds2 ds1 WHERE ds1.unique1 >= int64("10291075") and
+ds1.unique1 <= int64("10291155") ; ",
+"start":"2022-10-23 17:29:22.22",
+"end":"2022-10-23 17:29:22.541",
+"content":{
+	"requestID": "201f9942-31f8-4993-9cfb-a16f98520b36",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "307.491625ms",
+		"executionTime": "306.562375ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396816752100834,
+		"addedToTheMemoryQueueTimeNano": 396816999887334,
+		"executionStartTimeNano": 396817000114375,
+		"executionEndTimeNano": 396817022241209
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":324,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("8875259") and
+ds1.unique1 <= int64("8875339") ; ",
+"start":"2022-10-23 17:29:22.542",
+"end":"2022-10-23 17:29:22.866",
+"content":{
+	"requestID": "0768894f-247f-42ba-906a-9fdd3cba6a96",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "317.393ms",
+		"executionTime": "316.011417ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396817041479250,
+		"addedToTheMemoryQueueTimeNano": 396817314807042,
+		"executionStartTimeNano": 396817315063125,
+		"executionEndTimeNano": 396817346694084
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":634,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("5772307") and
+ds1.unique1 <= int64("5772387") ; ",
+"start":"2022-10-23 17:29:22.866",
+"end":"2022-10-23 17:29:23.5",
+"content":{
+	"requestID": "971efec6-ed8c-4323-9ea1-c359a1106d0a",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "627.114125ms",
+		"executionTime": "626.433541ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396817367602917,
+		"addedToTheMemoryQueueTimeNano": 396817952168750,
+		"executionStartTimeNano": 396817965321667,
+		"executionEndTimeNano": 396817980759750
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":323,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("12074870") and
+ds1.unique1 <= int64("12074950") ; ",
+"start":"2022-10-23 17:29:23.501",
+"end":"2022-10-23 17:29:23.824",
+"content":{
+	"requestID": "19f7c1e4-660c-4dd0-8e6e-24f2c90e2279",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "307.317584ms",
+		"executionTime": "305.962333ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396818014776959,
+		"addedToTheMemoryQueueTimeNano": 396818280626000,
+		"executionStartTimeNano": 396818285136625,
+		"executionEndTimeNano": 396818304625959
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":271,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds5 ds1 WHERE ds1.unique1 >= int64("1192252") and
+ds1.unique1 <= int64("1192332") ; ",
+"start":"2022-10-23 17:29:23.824",
+"end":"2022-10-23 17:29:24.096",
+"content":{
+	"requestID": "2a77fa8d-7198-4e09-934f-5ce395e1548e",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "265.211458ms",
+		"executionTime": "262.717875ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396818324505709,
+		"addedToTheMemoryQueueTimeNano": 396818551382792,
+		"executionStartTimeNano": 396818558239500,
+		"executionEndTimeNano": 396818576633750
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":361,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("5167320") and
+ds1.unique1 <= int64("5167400") ; ",
+"start":"2022-10-23 17:29:24.096",
+"end":"2022-10-23 17:29:24.457",
+"content":{
+	"requestID": "e04ec20b-3a70-4f34-9773-ae6dfd1a2281",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "347.163041ms",
+		"executionTime": "346.100959ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396818615170667,
+		"addedToTheMemoryQueueTimeNano": 396818912097959,
+		"executionStartTimeNano": 396818912348459,
+		"executionEndTimeNano": 396818938286667
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":398,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds5 ds1 WHERE ds1.unique1 >= int64("17103905") and
+ds1.unique1 <= int64("17103985") ; ",
+"start":"2022-10-23 17:29:24.457",
+"end":"2022-10-23 17:29:24.856",
+"content":{
+	"requestID": "3cc670e7-02d4-470c-b888-54e8e331ecf1",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "389.859291ms",
+		"executionTime": "387.845833ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396818963267250,
+		"addedToTheMemoryQueueTimeNano": 396819282934834,
+		"executionStartTimeNano": 396819283172875,
+		"executionEndTimeNano": 396819335534292
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":692,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds5 ds1 WHERE ds1.unique1 >= int64("7294693") and
+ds1.unique1 <= int64("7294773") ; ",
+"start":"2022-10-23 17:29:24.856",
+"end":"2022-10-23 17:29:25.549",
+"content":{
+	"requestID": "c3d98fdd-53d5-47f7-93a0-e469143b10da",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "286.203292ms",
+		"executionTime": "268.145875ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396819867300875,
+		"addedToTheMemoryQueueTimeNano": 396819950367542,
+		"executionStartTimeNano": 396819972694000,
+		"executionEndTimeNano": 396820028197542
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":746,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("479774") and
+ds1.unique1 <= int64("479854") ; ",
+"start":"2022-10-23 17:29:25.549",
+"end":"2022-10-23 17:29:26.297",
+"content":{
+	"requestID": "9fd3879e-380b-43e2-9607-4816c4b77a32",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "737.190833ms",
+		"executionTime": "735.420167ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396820132244750,
+		"addedToTheMemoryQueueTimeNano": 396820631360250,
+		"executionStartTimeNano": 396820632488459,
+		"executionEndTimeNano": 396820775443292
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":897,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("5113935") and
+ds1.unique1 <= int64("5114015") ; ",
+"start":"2022-10-23 17:29:26.297",
+"end":"2022-10-23 17:29:27.194",
+"content":{
+	"requestID": "7ebf0c2d-aa92-45ae-ba89-4b9ad106e813",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "875.719125ms",
+		"executionTime": "868.891333ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396820869029875,
+		"addedToTheMemoryQueueTimeNano": 396821646211959,
+		"executionStartTimeNano": 396821646674250,
+		"executionEndTimeNano": 396821675174209
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":549,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("14020442") and
+ds1.unique1 <= int64("14020522") ; ",
+"start":"2022-10-23 17:29:27.196",
+"end":"2022-10-23 17:29:27.745",
+"content":{
+	"requestID": "37b7590c-bd0c-41ef-9ebe-626e0353956b",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "534.892417ms",
+		"executionTime": "532.4925ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396821719158084,
+		"addedToTheMemoryQueueTimeNano": 396822124549917,
+		"executionStartTimeNano": 396822144445250,
+		"executionEndTimeNano": 396822226047917
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":1898,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds5 ds1 WHERE ds1.unique1 >= int64("4395083") and
+ds1.unique1 <= int64("4395163") ; ",
+"start":"2022-10-23 17:29:27.745",
+"end":"2022-10-23 17:29:29.644",
+"content":{
+	"requestID": "b59b9975-562d-4e1c-a145-f9b367c15ff9",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "1.8930485s",
+		"executionTime": "1.890446667s",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396822330920625,
+		"addedToTheMemoryQueueTimeNano": 396823936256000,
+		"executionStartTimeNano": 396823936668834,
+		"executionEndTimeNano": 396824124448917
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":398,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds2 ds1 WHERE ds1.unique1 >= int64("13205093") and
+ds1.unique1 <= int64("13205173") ; ",
+"start":"2022-10-23 17:29:29.644",
+"end":"2022-10-23 17:29:30.045",
+"content":{
+	"requestID": "ee3e82a7-3123-4d53-9d92-67232509e00c",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "389.930542ms",
+		"executionTime": "387.367334ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396824173973250,
+		"addedToTheMemoryQueueTimeNano": 396824487239375,
+		"executionStartTimeNano": 396824487547000,
+		"executionEndTimeNano": 396824523236000
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":342,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds2 ds1 WHERE ds1.unique1 >= int64("13806139") and
+ds1.unique1 <= int64("13806219") ; ",
+"start":"2022-10-23 17:29:30.046",
+"end":"2022-10-23 17:29:30.389",
+"content":{
+	"requestID": "f8b9e3a9-48de-413e-bd05-1000cc416c7b",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "337.577583ms",
+		"executionTime": "336.588667ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396824549710000,
+		"addedToTheMemoryQueueTimeNano": 396824844189167,
+		"executionStartTimeNano": 396824844692834,
+		"executionEndTimeNano": 396824869565375
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":308,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds2 ds1 WHERE ds1.unique1 >= int64("2073985") and
+ds1.unique1 <= int64("2074065") ; ",
+"start":"2022-10-23 17:29:30.389",
+"end":"2022-10-23 17:29:30.697",
+"content":{
+	"requestID": "70538ae7-4174-47fe-b808-3f0ce5df8e3f",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "298.805292ms",
+		"executionTime": "297.0225ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396824901623375,
+		"addedToTheMemoryQueueTimeNano": 396825149602000,
+		"executionStartTimeNano": 396825149979209,
+		"executionEndTimeNano": 396825178167125
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":266,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("7493604") and
+ds1.unique1 <= int64("7493684") ; ",
+"start":"2022-10-23 17:29:30.698",
+"end":"2022-10-23 17:29:30.964",
+"content":{
+	"requestID": "6047f2ba-779d-4e07-a440-a09afdc25cb8",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "259.358875ms",
+		"executionTime": "257.860917ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396825256206959,
+		"addedToTheMemoryQueueTimeNano": 396825372802334,
+		"executionStartTimeNano": 396825373248584,
+		"executionEndTimeNano": 396825444675209
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":312,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("15939766") and
+ds1.unique1 <= int64("15939846") ; ",
+"start":"2022-10-23 17:29:30.964",
+"end":"2022-10-23 17:29:31.276",
+"content":{
+	"requestID": "4d61c1f6-f167-4ded-8138-eb778b877786",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "301.656666ms",
+		"executionTime": "299.92975ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396825570613084,
+		"addedToTheMemoryQueueTimeNano": 396825730939792,
+		"executionStartTimeNano": 396825731279167,
+		"executionEndTimeNano": 396825757297709
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":187,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("2244333") and
+ds1.unique1 <= int64("2244413") ; ",
+"start":"2022-10-23 17:29:31.276",
+"end":"2022-10-23 17:29:31.463",
+"content":{
+	"requestID": "ea53bcff-c72e-4aca-a596-212c15ffce0a",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "182.006875ms",
+		"executionTime": "181.037708ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396825774556209,
+		"addedToTheMemoryQueueTimeNano": 396825919459084,
+		"executionStartTimeNano": 396825919820792,
+		"executionEndTimeNano": 396825943774125
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":280,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("7697170") and
+ds1.unique1 <= int64("7697250") ; ",
+"start":"2022-10-23 17:29:31.463",
+"end":"2022-10-23 17:29:31.743",
+"content":{
+	"requestID": "e45c6888-6718-48c1-b2b5-549b58e69ccd",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "273.48425ms",
+		"executionTime": "272.539125ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396825980795167,
+		"addedToTheMemoryQueueTimeNano": 396826185661834,
+		"executionStartTimeNano": 396826186247625,
+		"executionEndTimeNano": 396826224194000
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":233,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("8933231") and
+ds1.unique1 <= int64("8933311") ; ",
+"start":"2022-10-23 17:29:31.743",
+"end":"2022-10-23 17:29:31.976",
+"content":{
+	"requestID": "5071e774-6903-48fb-85cb-ad2ddb4603e6",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "223.571083ms",
+		"executionTime": "222.618375ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396826252327709,
+		"addedToTheMemoryQueueTimeNano": 396826436495584,
+		"executionStartTimeNano": 396826436937084,
+		"executionEndTimeNano": 396826456263792
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":380,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds2 ds1 WHERE ds1.unique1 >= int64("16787690") and
+ds1.unique1 <= int64("16787770") ; ",
+"start":"2022-10-23 17:29:31.976",
+"end":"2022-10-23 17:29:32.357",
+"content":{
+	"requestID": "71f0dcb3-efab-42b3-abc4-c91e24a3ce0d",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "374.086959ms",
+		"executionTime": "372.039ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396826493497250,
+		"addedToTheMemoryQueueTimeNano": 396826816119000,
+		"executionStartTimeNano": 396826816626042,
+		"executionEndTimeNano": 396826837409417
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":327,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("12512593") and
+ds1.unique1 <= int64("12512673") ; ",
+"start":"2022-10-23 17:29:32.357",
+"end":"2022-10-23 17:29:32.684",
+"content":{
+	"requestID": "83c6e5e4-01b1-4388-915b-06e29aa75173",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "319.206666ms",
+		"executionTime": "318.181542ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396826874308667,
+		"addedToTheMemoryQueueTimeNano": 396827117191209,
+		"executionStartTimeNano": 396827117592959,
+		"executionEndTimeNano": 396827164880417
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":250,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds2 ds1 WHERE ds1.unique1 >= int64("9585055") and
+ds1.unique1 <= int64("9585135") ; ",
+"start":"2022-10-23 17:29:32.684",
+"end":"2022-10-23 17:29:32.934",
+"content":{
+	"requestID": "6c14bed2-b614-428f-b5c2-2e8d9950f650",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "242.517167ms",
+		"executionTime": "241.289417ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396827196314959,
+		"addedToTheMemoryQueueTimeNano": 396827379167000,
+		"executionStartTimeNano": 396827379999125,
+		"executionEndTimeNano": 396827414620875
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":253,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("13820761") and
+ds1.unique1 <= int64("13820841") ; ",
+"start":"2022-10-23 17:29:32.934",
+"end":"2022-10-23 17:29:33.188",
+"content":{
+	"requestID": "502ef50a-14cb-4bae-ab0b-baf1a182f9d0",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "248.772459ms",
+		"executionTime": "243.872291ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396827452069417,
+		"addedToTheMemoryQueueTimeNano": 396827582838959,
+		"executionStartTimeNano": 396827583504417,
+		"executionEndTimeNano": 396827668709875
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":162,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds2 ds1 WHERE ds1.unique1 >= int64("4976562") and
+ds1.unique1 <= int64("4976642") ; ",
+"start":"2022-10-23 17:29:33.188",
+"end":"2022-10-23 17:29:33.351",
+"content":{
+	"requestID": "8d82058e-f42c-4f48-9b66-efa02b95d11d",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "156.550666ms",
+		"executionTime": "154.827708ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396827728268875,
+		"addedToTheMemoryQueueTimeNano": 396827779100709,
+		"executionStartTimeNano": 396827779392709,
+		"executionEndTimeNano": 396827831612125
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":155,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("12079383") and
+ds1.unique1 <= int64("12079463") ; ",
+"start":"2022-10-23 17:29:33.352",
+"end":"2022-10-23 17:29:33.508",
+"content":{
+	"requestID": "282d50d8-6779-461e-b664-77a1c0a66b73",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "145.030125ms",
+		"executionTime": "144.109083ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396827868202292,
+		"addedToTheMemoryQueueTimeNano": 396827952315667,
+		"executionStartTimeNano": 396827952535417,
+		"executionEndTimeNano": 396827988882500
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":298,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("3532074") and
+ds1.unique1 <= int64("3532154") ; ",
+"start":"2022-10-23 17:29:33.508",
+"end":"2022-10-23 17:29:33.806",
+"content":{
+	"requestID": "c4248a9a-24b5-4ac0-b060-e0c020247d94",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "291.677292ms",
+		"executionTime": "290.151291ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396828236154167,
+		"addedToTheMemoryQueueTimeNano": 396828251177459,
+		"executionStartTimeNano": 396828251366250,
+		"executionEndTimeNano": 396828287049667
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":151,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("12642392") and
+ds1.unique1 <= int64("12642472") ; ",
+"start":"2022-10-23 17:29:33.806",
+"end":"2022-10-23 17:29:33.957",
+"content":{
+	"requestID": "c57efd44-c73a-4bef-b94e-f8ec70db8ed2",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "147.45325ms",
+		"executionTime": "138.775833ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396828353948459,
+		"addedToTheMemoryQueueTimeNano": 396828390571834,
+		"executionStartTimeNano": 396828390780459,
+		"executionEndTimeNano": 396828438499250
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":120,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("3271843") and
+ds1.unique1 <= int64("3271923") ; ",
+"start":"2022-10-23 17:29:33.957",
+"end":"2022-10-23 17:29:34.077",
+"content":{
+	"requestID": "03f6356f-640a-4b4b-aaac-5355cbe3edf2",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "114.318334ms",
+		"executionTime": "112.9685ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396828517947917,
+		"addedToTheMemoryQueueTimeNano": 396828518059417,
+		"executionStartTimeNano": 396828518330834,
+		"executionEndTimeNano": 396828557989459
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":127,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("2248737") and
+ds1.unique1 <= int64("2248817") ; ",
+"start":"2022-10-23 17:29:34.077",
+"end":"2022-10-23 17:29:34.204",
+"content":{
+	"requestID": "7f261dd5-6c29-4236-9cf8-9b7f35895797",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "122.697166ms",
+		"executionTime": "121.56175ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396828643412792,
+		"addedToTheMemoryQueueTimeNano": 396828643520542,
+		"executionStartTimeNano": 396828643839542,
+		"executionEndTimeNano": 396828685039375
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":118,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("13518309") and
+ds1.unique1 <= int64("13518389") ; ",
+"start":"2022-10-23 17:29:34.204",
+"end":"2022-10-23 17:29:34.322",
+"content":{
+	"requestID": "9333a708-2996-4e5c-84e0-9038df74b496",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "112.622542ms",
+		"executionTime": "111.661417ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396828723174792,
+		"addedToTheMemoryQueueTimeNano": 396828723271084,
+		"executionStartTimeNano": 396828735119709,
+		"executionEndTimeNano": 396828803062459
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":84,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("14338012") and
+ds1.unique1 <= int64("14338092") ; ",
+"start":"2022-10-23 17:29:34.322",
+"end":"2022-10-23 17:29:34.406",
+"content":{
+	"requestID": "e9d26545-b609-41ac-81e9-c8f2959a6a60",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "74.017417ms",
+		"executionTime": "73.442375ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396828833188250,
+		"addedToTheMemoryQueueTimeNano": 396828833267334,
+		"executionStartTimeNano": 396828833531250,
+		"executionEndTimeNano": 396828886593375
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":94,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("11890913") and
+ds1.unique1 <= int64("11890993") ; ",
+"start":"2022-10-23 17:29:34.406",
+"end":"2022-10-23 17:29:34.501",
+"content":{
+	"requestID": "126307d4-3e4f-461d-873a-00e1ae192e01",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "87.74275ms",
+		"executionTime": "86.491125ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396828930798625,
+		"addedToTheMemoryQueueTimeNano": 396828931012084,
+		"executionStartTimeNano": 396828936749459,
+		"executionEndTimeNano": 396828981686750
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":129,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("10013433") and
+ds1.unique1 <= int64("10013513") ; ",
+"start":"2022-10-23 17:29:34.501",
+"end":"2022-10-23 17:29:34.632",
+"content":{
+	"requestID": "977d5113-a4be-48f7-a04a-ac6bbe22861a",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "125.531083ms",
+		"executionTime": "124.556875ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396829040287042,
+		"addedToTheMemoryQueueTimeNano": 396829040383667,
+		"executionStartTimeNano": 396829042805834,
+		"executionEndTimeNano": 396829111593542
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":269,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("11204290") and
+ds1.unique1 <= int64("11204370") ; ",
+"start":"2022-10-23 17:29:34.632",
+"end":"2022-10-23 17:29:34.901",
+"content":{
+	"requestID": "84248d82-185c-4b00-8d65-726ca5871330",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "237.524125ms",
+		"executionTime": "235.043917ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396829181611084,
+		"addedToTheMemoryQueueTimeNano": 396829185383875,
+		"executionStartTimeNano": 396829332797917,
+		"executionEndTimeNano": 396829382038042
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":139,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds2 ds1 WHERE ds1.unique1 >= int64("14035913") and
+ds1.unique1 <= int64("14035993") ; ",
+"start":"2022-10-23 17:29:34.901",
+"end":"2022-10-23 17:29:35.04",
+"content":{
+	"requestID": "af6db5e5-3f01-4dbf-893e-2d49c623b2e9",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "131.855ms",
+		"executionTime": "131.04425ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396829458528917,
+		"addedToTheMemoryQueueTimeNano": 396829458635792,
+		"executionStartTimeNano": 396829475782834,
+		"executionEndTimeNano": 396829520864125
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":140,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("13145991") and
+ds1.unique1 <= int64("13146071") ; ",
+"start":"2022-10-23 17:29:35.04",
+"end":"2022-10-23 17:29:35.18",
+"content":{
+	"requestID": "98ccef51-4159-42e5-9d87-b7238a981342",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "136.300792ms",
+		"executionTime": "135.387208ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396829582950084,
+		"addedToTheMemoryQueueTimeNano": 396829583014542,
+		"executionStartTimeNano": 396829610584834,
+		"executionEndTimeNano": 396829661226792
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":153,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds2 ds1 WHERE ds1.unique1 >= int64("1141397") and
+ds1.unique1 <= int64("1141477") ; ",
+"start":"2022-10-23 17:29:35.181",
+"end":"2022-10-23 17:29:35.334",
+"content":{
+	"requestID": "359f3dd3-5650-4fea-8c1c-5b898c4e3bc9",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "148.781709ms",
+		"executionTime": "147.800667ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396829707223875,
+		"addedToTheMemoryQueueTimeNano": 396829707336417,
+		"executionStartTimeNano": 396829716359875,
+		"executionEndTimeNano": 396829814723000
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":139,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("7815205") and
+ds1.unique1 <= int64("7815285") ; ",
+"start":"2022-10-23 17:29:35.334",
+"end":"2022-10-23 17:29:35.473",
+"content":{
+	"requestID": "e99571a0-3915-45d1-80eb-d39cbdfdcc28",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "134.382917ms",
+		"executionTime": "133.308292ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396829864516959,
+		"addedToTheMemoryQueueTimeNano": 396829868655125,
+		"executionStartTimeNano": 396829872999625,
+		"executionEndTimeNano": 396829954253750
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":165,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds2 ds1 WHERE ds1.unique1 >= int64("7805308") and
+ds1.unique1 <= int64("7805388") ; ",
+"start":"2022-10-23 17:29:35.473",
+"end":"2022-10-23 17:29:35.642",
+"content":{
+	"requestID": "45e9cfba-c907-437b-a4f9-734d2557f8a3",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "161.944208ms",
+		"executionTime": "160.040375ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396829997133667,
+		"addedToTheMemoryQueueTimeNano": 396829997244500,
+		"executionStartTimeNano": 396829997511375,
+		"executionEndTimeNano": 396830120906125
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":97,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds5 ds1 WHERE ds1.unique1 >= int64("10590214") and
+ds1.unique1 <= int64("10590294") ; ",
+"start":"2022-10-23 17:29:35.643",
+"end":"2022-10-23 17:29:35.741",
+"content":{
+	"requestID": "f43dd818-7a4e-4544-8c36-242d27d46490",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "93.237583ms",
+		"executionTime": "92.055833ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396830179055334,
+		"addedToTheMemoryQueueTimeNano": 396830179170542,
+		"executionStartTimeNano": 396830180453709,
+		"executionEndTimeNano": 396830221613500
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":221,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("9567386") and
+ds1.unique1 <= int64("9567466") ; ",
+"start":"2022-10-23 17:29:35.741",
+"end":"2022-10-23 17:29:35.963",
+"content":{
+	"requestID": "2563ee4f-9ebe-4207-8dfd-098a035dabc2",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "215.463416ms",
+		"executionTime": "210.786208ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396830318798834,
+		"addedToTheMemoryQueueTimeNano": 396830318933709,
+		"executionStartTimeNano": 396830319261417,
+		"executionEndTimeNano": 396830442689917
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":131,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds2 ds1 WHERE ds1.unique1 >= int64("6499975") and
+ds1.unique1 <= int64("6500055") ; ",
+"start":"2022-10-23 17:29:35.963",
+"end":"2022-10-23 17:29:36.095",
+"content":{
+	"requestID": "9882ade9-0b7a-4331-9f1c-9d03c362829e",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "122.677041ms",
+		"executionTime": "121.736791ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396830503633000,
+		"addedToTheMemoryQueueTimeNano": 396830503967917,
+		"executionStartTimeNano": 396830504396542,
+		"executionEndTimeNano": 396830574102292
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":184,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("8047146") and
+ds1.unique1 <= int64("8047226") ; ",
+"start":"2022-10-23 17:29:36.095",
+"end":"2022-10-23 17:29:36.28",
+"content":{
+	"requestID": "a028d7c3-376d-41ab-bd9b-5164026da929",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "174.422334ms",
+		"executionTime": "172.978292ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396830702558667,
+		"addedToTheMemoryQueueTimeNano": 396830702654625,
+		"executionStartTimeNano": 396830703071750,
+		"executionEndTimeNano": 396830760745459
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":246,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("7367710") and
+ds1.unique1 <= int64("7367790") ; ",
+"start":"2022-10-23 17:29:36.28",
+"end":"2022-10-23 17:29:36.526",
+"content":{
+	"requestID": "e1c73514-5b3c-4e59-9601-9b4c0d8ca9b3",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "240.280791ms",
+		"executionTime": "239.223542ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396830914773167,
+		"addedToTheMemoryQueueTimeNano": 396830915179375,
+		"executionStartTimeNano": 396830915653584,
+		"executionEndTimeNano": 396831007008084
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":147,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("3127471") and
+ds1.unique1 <= int64("3127551") ; ",
+"start":"2022-10-23 17:29:36.527",
+"end":"2022-10-23 17:29:36.683",
+"content":{
+	"requestID": "389cabfe-71c3-4769-96bf-a0422ef58f21",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "134.22325ms",
+		"executionTime": "132.35625ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396831052338417,
+		"addedToTheMemoryQueueTimeNano": 396831052441084,
+		"executionStartTimeNano": 396831096026875,
+		"executionEndTimeNano": 396831155403250
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":167,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds2 ds1 WHERE ds1.unique1 >= int64("5292994") and
+ds1.unique1 <= int64("5293074") ; ",
+"start":"2022-10-23 17:29:36.684",
+"end":"2022-10-23 17:29:36.87",
+"content":{
+	"requestID": "2497aaa6-7b8c-4b7e-a654-dabfdb4645dd",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "144.15225ms",
+		"executionTime": "143.032541ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396831227002042,
+		"addedToTheMemoryQueueTimeNano": 396831230623167,
+		"executionStartTimeNano": 396831234281250,
+		"executionEndTimeNano": 396831315115584
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":146,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds2 ds1 WHERE ds1.unique1 >= int64("15396411") and
+ds1.unique1 <= int64("15396491") ; ",
+"start":"2022-10-23 17:29:36.87",
+"end":"2022-10-23 17:29:37.016",
+"content":{
+	"requestID": "8ed4a5c8-bf55-489d-8ce5-ba3e18a14c37",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "140.272167ms",
+		"executionTime": "138.551209ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396831413253167,
+		"addedToTheMemoryQueueTimeNano": 396831413392000,
+		"executionStartTimeNano": 396831429700667,
+		"executionEndTimeNano": 396831496877084
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":132,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("10145852") and
+ds1.unique1 <= int64("10145932") ; ",
+"start":"2022-10-23 17:29:37.017",
+"end":"2022-10-23 17:29:37.149",
+"content":{
+	"requestID": "a1a10b0b-ae98-40d2-ad7e-1609f944ca04",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "124.954ms",
+		"executionTime": "120.036709ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396831583201375,
+		"addedToTheMemoryQueueTimeNano": 396831583316709,
+		"executionStartTimeNano": 396831583617334,
+		"executionEndTimeNano": 396831630260709
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":152,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("9750120") and
+ds1.unique1 <= int64("9750200") ; ",
+"start":"2022-10-23 17:29:37.149",
+"end":"2022-10-23 17:29:37.301",
+"content":{
+	"requestID": "dd30e336-c91d-4d82-931d-3dc851ee03a8",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "146.039125ms",
+		"executionTime": "144.032708ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396831698315667,
+		"addedToTheMemoryQueueTimeNano": 396831698415584,
+		"executionStartTimeNano": 396831734429709,
+		"executionEndTimeNano": 396831781314292
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":153,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("15417110") and
+ds1.unique1 <= int64("15417190") ; ",
+"start":"2022-10-23 17:29:37.302",
+"end":"2022-10-23 17:29:37.455",
+"content":{
+	"requestID": "62665097-4354-496e-bde1-bc59372d9c58",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "151.073583ms",
+		"executionTime": "148.242833ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396831907670875,
+		"addedToTheMemoryQueueTimeNano": 396831907730792,
+		"executionStartTimeNano": 396831907914209,
+		"executionEndTimeNano": 396831936607084
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":242,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds5 ds1 WHERE ds1.unique1 >= int64("16905525") and
+ds1.unique1 <= int64("16905605") ; ",
+"start":"2022-10-23 17:29:37.456",
+"end":"2022-10-23 17:29:37.702",
+"content":{
+	"requestID": "754cfc2f-dd73-4f86-a9fa-6a2bd6c32dd2",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "229.929292ms",
+		"executionTime": "228.685917ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396832133528167,
+		"addedToTheMemoryQueueTimeNano": 396832133689209,
+		"executionStartTimeNano": 396832133996750,
+		"executionEndTimeNano": 396832178887375
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":87,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("6942949") and
+ds1.unique1 <= int64("6943029") ; ",
+"start":"2022-10-23 17:29:37.702",
+"end":"2022-10-23 17:29:37.79",
+"content":{
+	"requestID": "29bc93eb-a756-4053-b3ca-45b39bf6f896",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "81.539292ms",
+		"executionTime": "80.702375ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396832224980000,
+		"addedToTheMemoryQueueTimeNano": 396832225055834,
+		"executionStartTimeNano": 396832232523292,
+		"executionEndTimeNano": 396832270175834
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":80,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("2251683") and
+ds1.unique1 <= int64("2251763") ; ",
+"start":"2022-10-23 17:29:37.791",
+"end":"2022-10-23 17:29:37.875",
+"content":{
+	"requestID": "023ffd68-6ca9-4b01-bc40-43d139179c8b",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "73.57525ms",
+		"executionTime": "71.66975ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396832288955459,
+		"addedToTheMemoryQueueTimeNano": 396832289035750,
+		"executionStartTimeNano": 396832313668500,
+		"executionEndTimeNano": 396832352282959
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":78,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("1677775") and
+ds1.unique1 <= int64("1677855") ; ",
+"start":"2022-10-23 17:29:37.875",
+"end":"2022-10-23 17:29:37.955",
+"content":{
+	"requestID": "af508400-2ff8-4c03-ba96-b3870730a265",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "68.897917ms",
+		"executionTime": "67.77125ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396832384773709,
+		"addedToTheMemoryQueueTimeNano": 396832384844084,
+		"executionStartTimeNano": 396832400681625,
+		"executionEndTimeNano": 396832433592042
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":117,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("17098214") and
+ds1.unique1 <= int64("17098294") ; ",
+"start":"2022-10-23 17:29:37.955",
+"end":"2022-10-23 17:29:38.072",
+"content":{
+	"requestID": "bd26e597-a026-4634-98e6-beee6e52871b",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "111.0595ms",
+		"executionTime": "109.166542ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396832481859917,
+		"addedToTheMemoryQueueTimeNano": 396832481947750,
+		"executionStartTimeNano": 396832498498959,
+		"executionEndTimeNano": 396832553378459
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":80,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("576052") and
+ds1.unique1 <= int64("576132") ; ",
+"start":"2022-10-23 17:29:38.072",
+"end":"2022-10-23 17:29:38.152",
+"content":{
+	"requestID": "aed8aad8-1bd0-461c-802c-8454c6e8f4f7",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "70.746208ms",
+		"executionTime": "67.743458ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396832588524834,
+		"addedToTheMemoryQueueTimeNano": 396832588584834,
+		"executionStartTimeNano": 396832593658209,
+		"executionEndTimeNano": 396832633361500
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":70,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds5 ds1 WHERE ds1.unique1 >= int64("12962920") and
+ds1.unique1 <= int64("12963000") ; ",
+"start":"2022-10-23 17:29:38.152",
+"end":"2022-10-23 17:29:38.222",
+"content":{
+	"requestID": "7ea6aa12-1905-4510-9844-070c7465abac",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "61.034167ms",
+		"executionTime": "60.366333ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396832663487209,
+		"addedToTheMemoryQueueTimeNano": 396832663543667,
+		"executionStartTimeNano": 396832663745250,
+		"executionEndTimeNano": 396832702572042
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":69,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("2192719") and
+ds1.unique1 <= int64("2192799") ; ",
+"start":"2022-10-23 17:29:38.225",
+"end":"2022-10-23 17:29:38.347",
+"content":{
+	"requestID": "820159bb-6099-46cd-9e6d-bb6bee19d9b8",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "52.892125ms",
+		"executionTime": "51.174291ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396832730487750,
+		"addedToTheMemoryQueueTimeNano": 396832730571667,
+		"executionStartTimeNano": 396832730815084,
+		"executionEndTimeNano": 396832767491542
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":777,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("2265994") and
+ds1.unique1 <= int64("2266074") ; ",
+"start":"2022-10-23 17:29:38.348",
+"end":"2022-10-23 17:29:39.125",
+"content":{
+	"requestID": "e65d54e5-5c99-4d3f-8a96-9b207fb32212",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "763.984042ms",
+		"executionTime": "756.230667ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396832881516375,
+		"addedToTheMemoryQueueTimeNano": 396832881582459,
+		"executionStartTimeNano": 396833562121167,
+		"executionEndTimeNano": 396833605377667
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":90,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("4651944") and
+ds1.unique1 <= int64("4652024") ; ",
+"start":"2022-10-23 17:29:39.125",
+"end":"2022-10-23 17:29:39.215",
+"content":{
+	"requestID": "0e9970db-186e-429d-9894-7f8767d9e1fb",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "73.12175ms",
+		"executionTime": "72.6515ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396833659858292,
+		"addedToTheMemoryQueueTimeNano": 396833659960459,
+		"executionStartTimeNano": 396833660515542,
+		"executionEndTimeNano": 396833696002667
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":98,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("5814701") and
+ds1.unique1 <= int64("5814781") ; ",
+"start":"2022-10-23 17:29:39.216",
+"end":"2022-10-23 17:29:39.315",
+"content":{
+	"requestID": "c00817c7-258f-448a-ab75-fb738ba6b590",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "88.850875ms",
+		"executionTime": "88.083334ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396833731775959,
+		"addedToTheMemoryQueueTimeNano": 396833731844000,
+		"executionStartTimeNano": 396833743300334,
+		"executionEndTimeNano": 396833791704917
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":51,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds2 ds1 WHERE ds1.unique1 >= int64("14005894") and
+ds1.unique1 <= int64("14005974") ; ",
+"start":"2022-10-23 17:29:39.315",
+"end":"2022-10-23 17:29:39.367",
+"content":{
+	"requestID": "08aa6ff7-87c5-4d51-bb3e-3f207a53995f",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "43.077083ms",
+		"executionTime": "41.793583ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396833818746084,
+		"addedToTheMemoryQueueTimeNano": 396833818853125,
+		"executionStartTimeNano": 396833819250167,
+		"executionEndTimeNano": 396833847667792
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":56,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("11767128") and
+ds1.unique1 <= int64("11767208") ; ",
+"start":"2022-10-23 17:29:39.367",
+"end":"2022-10-23 17:29:39.423",
+"content":{
+	"requestID": "893d44c1-7c34-480f-8815-311598f08308",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "52.1445ms",
+		"executionTime": "48.704083ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396833874833084,
+		"addedToTheMemoryQueueTimeNano": 396833874909334,
+		"executionStartTimeNano": 396833879330459,
+		"executionEndTimeNano": 396833904023125
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":124,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("16687398") and
+ds1.unique1 <= int64("16687478") ; ",
+"start":"2022-10-23 17:29:39.423",
+"end":"2022-10-23 17:29:39.548",
+"content":{
+	"requestID": "d55ef329-b14c-44a8-ad21-f14b96f01ed3",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "118.875541ms",
+		"executionTime": "117.562542ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396833988061292,
+		"addedToTheMemoryQueueTimeNano": 396833988155209,
+		"executionStartTimeNano": 396833988408667,
+		"executionEndTimeNano": 396834028947917
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":104,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("544218") and
+ds1.unique1 <= int64("544298") ; ",
+"start":"2022-10-23 17:29:39.548",
+"end":"2022-10-23 17:29:39.652",
+"content":{
+	"requestID": "adaef773-b86f-4f16-a9fd-1f87c47235c6",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "98.778708ms",
+		"executionTime": "97.952792ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396834104315750,
+		"addedToTheMemoryQueueTimeNano": 396834104394459,
+		"executionStartTimeNano": 396834106414209,
+		"executionEndTimeNano": 396834133210375
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":614,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds5 ds1 WHERE ds1.unique1 >= int64("17200975") and
+ds1.unique1 <= int64("17201055") ; ",
+"start":"2022-10-23 17:29:39.653",
+"end":"2022-10-23 17:29:40.267",
+"content":{
+	"requestID": "d46d1b45-0c56-43bb-87b6-664af0189ecf",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "607.713792ms",
+		"executionTime": "606.503375ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396834257111709,
+		"addedToTheMemoryQueueTimeNano": 396834257284875,
+		"executionStartTimeNano": 396834709423584,
+		"executionEndTimeNano": 396834746737584
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":94,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("6405315") and
+ds1.unique1 <= int64("6405395") ; ",
+"start":"2022-10-23 17:29:40.267",
+"end":"2022-10-23 17:29:40.361",
+"content":{
+	"requestID": "1428dbd7-6bbe-4a2a-a0db-5eb6d2b8a0a8",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "83.650167ms",
+		"executionTime": "82.5085ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396834787497209,
+		"addedToTheMemoryQueueTimeNano": 396834787567500,
+		"executionStartTimeNano": 396834803248292,
+		"executionEndTimeNano": 396834839973334
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":74,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("9226034") and
+ds1.unique1 <= int64("9226114") ; ",
+"start":"2022-10-23 17:29:40.361",
+"end":"2022-10-23 17:29:40.435",
+"content":{
+	"requestID": "a97fb817-1746-4708-a9b2-96b9636a5c20",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "68.397916ms",
+		"executionTime": "67.418334ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396834879546667,
+		"addedToTheMemoryQueueTimeNano": 396834881583125,
+		"executionStartTimeNano": 396834887282709,
+		"executionEndTimeNano": 396834916285709
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":109,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds5 ds1 WHERE ds1.unique1 >= int64("6785243") and
+ds1.unique1 <= int64("6785323") ; ",
+"start":"2022-10-23 17:29:40.435",
+"end":"2022-10-23 17:29:40.544",
+"content":{
+	"requestID": "e12e1543-2af3-4426-8e5d-8a565e65467b",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "102.43ms",
+		"executionTime": "101.270292ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396834973782709,
+		"addedToTheMemoryQueueTimeNano": 396834974069584,
+		"executionStartTimeNano": 396834974954917,
+		"executionEndTimeNano": 396835022519000
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":78,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds2 ds1 WHERE ds1.unique1 >= int64("2801961") and
+ds1.unique1 <= int64("2802041") ; ",
+"start":"2022-10-23 17:29:40.544",
+"end":"2022-10-23 17:29:40.622",
+"content":{
+	"requestID": "24fdabb2-7b5d-41f2-a3ac-3fd2c2148930",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "72.722792ms",
+		"executionTime": "71.703209ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396835068921834,
+		"addedToTheMemoryQueueTimeNano": 396835069023125,
+		"executionStartTimeNano": 396835075143167,
+		"executionEndTimeNano": 396835103126042
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":450,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("63411") and
+ds1.unique1 <= int64("63491") ; ",
+"start":"2022-10-23 17:29:40.622",
+"end":"2022-10-23 17:29:41.072",
+"content":{
+	"requestID": "2b8ecf34-ee0e-47fa-acc2-3e1b94c13690",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 81 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "444.076416ms",
+		"executionTime": "443.186083ms",
+		"resultCount": 1,
+		"resultSize": 13,
+		"processedObjects": 162,
+		"addedToTheQueueTimeNano": 396835233010042,
+		"addedToTheMemoryQueueTimeNano": 396835233887542,
+		"executionStartTimeNano": 396835234196167,
+		"executionEndTimeNano": 396835551719125
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":106,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("12844427") and
+ds1.unique1 <= int64("12844507") ; ",
+"start":"2022-10-23 17:29:41.072",
+"end":"2022-10-23 17:29:41.178",
+"content":{
+	"requestID": "06b26bc2-13dc-4d0a-ac75-746e3713f117",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "98.884417ms",
+		"executionTime": "97.371334ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396835629060875,
+		"addedToTheMemoryQueueTimeNano": 396835629239584,
+		"executionStartTimeNano": 396835629562750,
+		"executionEndTimeNano": 396835659254167
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":626,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("6643865") and
+ds1.unique1 <= int64("6643945") ; ",
+"start":"2022-10-23 17:29:41.178",
+"end":"2022-10-23 17:29:41.83",
+"content":{
+	"requestID": "c2796b9c-6900-446f-899a-87714e39f0ed",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "552.898208ms",
+		"executionTime": "552.227833ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396835681918500,
+		"addedToTheMemoryQueueTimeNano": 396835682016292,
+		"executionStartTimeNano": 396836121316000,
+		"executionEndTimeNano": 396836215505625
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":400,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("14132774") and
+ds1.unique1 <= int64("14132854") ; ",
+"start":"2022-10-23 17:29:41.83",
+"end":"2022-10-23 17:29:42.23",
+"content":{
+	"requestID": "46267aee-8e02-421e-b444-c4f707c89936",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "380.439667ms",
+		"executionTime": "370.25625ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396836656616709,
+		"addedToTheMemoryQueueTimeNano": 396836658176334,
+		"executionStartTimeNano": 396836658841959,
+		"executionEndTimeNano": 396836710742959
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":212,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds2 ds1 WHERE ds1.unique1 >= int64("12623540") and
+ds1.unique1 <= int64("12623620") ; ",
+"start":"2022-10-23 17:29:42.231",
+"end":"2022-10-23 17:29:42.444",
+"content":{
+	"requestID": "74e53fd5-dd20-4fa4-8de6-efdebe2473de",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "205.872542ms",
+		"executionTime": "202.207459ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396836845154667,
+		"addedToTheMemoryQueueTimeNano": 396836845465084,
+		"executionStartTimeNano": 396836846437667,
+		"executionEndTimeNano": 396836924277167
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":331,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("14356079") and
+ds1.unique1 <= int64("14356159") ; ",
+"start":"2022-10-23 17:29:42.445",
+"end":"2022-10-23 17:29:42.777",
+"content":{
+	"requestID": "6af5e6f2-259a-4908-a137-1a6b0884da75",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "264.048791ms",
+		"executionTime": "262.078375ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396837163995459,
+		"addedToTheMemoryQueueTimeNano": 396837164128000,
+		"executionStartTimeNano": 396837190962709,
+		"executionEndTimeNano": 396837257584167
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":319,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("3971203") and
+ds1.unique1 <= int64("3971283") ; ",
+"start":"2022-10-23 17:29:42.777",
+"end":"2022-10-23 17:29:43.097",
+"content":{
+	"requestID": "e70b5055-db23-49d1-9c34-38952bbdf4a3",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "287.918833ms",
+		"executionTime": "286.909583ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396837365818042,
+		"addedToTheMemoryQueueTimeNano": 396837366744542,
+		"executionStartTimeNano": 396837368063750,
+		"executionEndTimeNano": 396837576202417
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":430,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("762106") and
+ds1.unique1 <= int64("762186") ; ",
+"start":"2022-10-23 17:29:43.097",
+"end":"2022-10-23 17:29:43.527",
+"content":{
+	"requestID": "8019c3c8-312e-45d2-b014-25c06aadfe73",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "363.407917ms",
+		"executionTime": "354.614333ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396837859276292,
+		"addedToTheMemoryQueueTimeNano": 396837859446875,
+		"executionStartTimeNano": 396837861128625,
+		"executionEndTimeNano": 396838008036584
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":405,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("5421907") and
+ds1.unique1 <= int64("5421987") ; ",
+"start":"2022-10-23 17:29:43.527",
+"end":"2022-10-23 17:29:43.934",
+"content":{
+	"requestID": "39b672f4-03f3-4bca-be1f-23670151fd82",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "364.757625ms",
+		"executionTime": "363.367166ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396838113744625,
+		"addedToTheMemoryQueueTimeNano": 396838113905375,
+		"executionStartTimeNano": 396838114447000,
+		"executionEndTimeNano": 396838412419000
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":735,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds5 ds1 WHERE ds1.unique1 >= int64("10595935") and
+ds1.unique1 <= int64("10596015") ; ",
+"start":"2022-10-23 17:29:43.934",
+"end":"2022-10-23 17:29:44.678",
+"content":{
+	"requestID": "8b57b184-3407-4946-b0d7-3f43dfeda44d",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "715.9535ms",
+		"executionTime": "646.34925ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396838591894500,
+		"addedToTheMemoryQueueTimeNano": 396838592672750,
+		"executionStartTimeNano": 396839092954834,
+		"executionEndTimeNano": 396839150691417
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":171,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds2 ds1 WHERE ds1.unique1 >= int64("2557506") and
+ds1.unique1 <= int64("2557586") ; ",
+"start":"2022-10-23 17:29:44.678",
+"end":"2022-10-23 17:29:44.849",
+"content":{
+	"requestID": "747e9aa6-f4bf-41e5-bd61-71f29f347d52",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "165.030584ms",
+		"executionTime": "161.951875ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396839246056375,
+		"addedToTheMemoryQueueTimeNano": 396839246140792,
+		"executionStartTimeNano": 396839252252250,
+		"executionEndTimeNano": 396839329589584
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":220,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("9769774") and
+ds1.unique1 <= int64("9769854") ; ",
+"start":"2022-10-23 17:29:44.849",
+"end":"2022-10-23 17:29:45.07",
+"content":{
+	"requestID": "268404d4-ad87-4feb-bf63-c99623e052f7",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "205.667042ms",
+		"executionTime": "120.126375ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396839476803042,
+		"addedToTheMemoryQueueTimeNano": 396839476908334,
+		"executionStartTimeNano": 396839503039917,
+		"executionEndTimeNano": 396839550484084
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":70,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("6856096") and
+ds1.unique1 <= int64("6856176") ; ",
+"start":"2022-10-23 17:29:45.07",
+"end":"2022-10-23 17:29:45.14",
+"content":{
+	"requestID": "a5bf7a12-be0f-486d-862c-4c6fcdc3eb7e",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "66.151708ms",
+		"executionTime": "64.51675ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396839597572125,
+		"addedToTheMemoryQueueTimeNano": 396839597662459,
+		"executionStartTimeNano": 396839597920000,
+		"executionEndTimeNano": 396839621413834
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":311,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("12278520") and
+ds1.unique1 <= int64("12278600") ; ",
+"start":"2022-10-23 17:29:45.141",
+"end":"2022-10-23 17:29:45.452",
+"content":{
+	"requestID": "d60541b8-a668-4f07-8a27-a1bde2c4a46d",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "288.785375ms",
+		"executionTime": "271.724375ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396839705180125,
+		"addedToTheMemoryQueueTimeNano": 396839705260542,
+		"executionStartTimeNano": 396839706696959,
+		"executionEndTimeNano": 396839932442834
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":162,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds4 ds1 WHERE ds1.unique1 >= int64("1177612") and
+ds1.unique1 <= int64("1177692") ; ",
+"start":"2022-10-23 17:29:45.452",
+"end":"2022-10-23 17:29:45.614",
+"content":{
+	"requestID": "d1560cad-4bc9-479c-8af6-e77836caf64b",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "150.168625ms",
+		"executionTime": "149.218916ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396840020602250,
+		"addedToTheMemoryQueueTimeNano": 396840021117167,
+		"executionStartTimeNano": 396840053107750,
+		"executionEndTimeNano": 396840095066334
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":703,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds5 ds1 WHERE ds1.unique1 >= int64("2457119") and
+ds1.unique1 <= int64("2457199") ; ",
+"start":"2022-10-23 17:29:45.614",
+"end":"2022-10-23 17:29:46.318",
+"content":{
+	"requestID": "910e43d3-6fcb-478c-a91e-709e09a1df0f",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "679.895416ms",
+		"executionTime": "677.297125ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396840166442917,
+		"addedToTheMemoryQueueTimeNano": 396840166536167,
+		"executionStartTimeNano": 396840741602875,
+		"executionEndTimeNano": 396840797896250
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":1108,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("16162676") and
+ds1.unique1 <= int64("16162756") ; ",
+"start":"2022-10-23 17:29:46.318",
+"end":"2022-10-23 17:29:47.429",
+"content":{
+	"requestID": "4e2161a8-1d2b-467c-b668-3f1cc2f214f3",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "1.045183458s",
+		"executionTime": "976.761333ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396841702405000,
+		"addedToTheMemoryQueueTimeNano": 396841702519625,
+		"executionStartTimeNano": 396841834125167,
+		"executionEndTimeNano": 396841907616000
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":134,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("5549708") and
+ds1.unique1 <= int64("5549788") ; ",
+"start":"2022-10-23 17:29:47.429",
+"end":"2022-10-23 17:29:47.563",
+"content":{
+	"requestID": "b3c0d958-6a67-4167-b16c-4dcccad6a7e4",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "129.635708ms",
+		"executionTime": "119.603959ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396841988142167,
+		"addedToTheMemoryQueueTimeNano": 396841988239459,
+		"executionStartTimeNano": 396841988650917,
+		"executionEndTimeNano": 396842044128459
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":95,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds5 ds1 WHERE ds1.unique1 >= int64("10568004") and
+ds1.unique1 <= int64("10568084") ; ",
+"start":"2022-10-23 17:29:47.564",
+"end":"2022-10-23 17:29:47.661",
+"content":{
+	"requestID": "082ab72b-e6c1-438c-97e3-5e53c600ec5f",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "90.401792ms",
+		"executionTime": "88.720084ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396842086725417,
+		"addedToTheMemoryQueueTimeNano": 396842086793334,
+		"executionStartTimeNano": 396842111023584,
+		"executionEndTimeNano": 396842139467250
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":85,
+"user":"USERID-0=ZERO_Short",
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds3 ds1 WHERE ds1.unique1 >= int64("4317397") and
+ds1.unique1 <= int64("4317477") ; ",
+"start":"2022-10-23 17:29:47.661",
+"end":"2022-10-23 17:29:47.746",
+"content":{
+	"requestID": "30e6796a-4a2c-47ff-aa0f-1bc07190fba3",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 0 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "79.623125ms",
+		"executionTime": "77.957916ms",
+		"resultCount": 1,
+		"resultSize": 12,
+		"processedObjects": 0,
+		"addedToTheQueueTimeNano": 396842170601250,
+		"addedToTheMemoryQueu

@@ -1,0 +1,23 @@
+SET `compiler.joinmemory`
+@PARAM
+;
+use unlimitedMemory;
+
+select ds2.* from
+@PARAM
+ds1,
+@PARAM
+ds2
+
+WHERE ds1.unique2 >=
+@PARAM
+and
+ds1.unique2 <=
+@PARAM
+and
+ds2.unique2 >=
+@PARAM
+and
+ds2.unique2 <=
+@PARAM
+and ds1.unique1=ds2.unique1 limit 1;

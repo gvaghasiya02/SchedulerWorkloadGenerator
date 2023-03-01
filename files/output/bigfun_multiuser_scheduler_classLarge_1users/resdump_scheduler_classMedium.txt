@@ -1,0 +1,31 @@
+{"qidvid": "Q(960000,2)", 
+"rt":586,
+"query":"SET `compiler.joinmemory` "12000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_40960_ds9 ds1, wisconsin_dataset_40960_ds10 ds2 WHERE ds1.unique1 >= int64("6322942") and
+ds1.unique1 <= int64("14978343") and
+ds1.unique2 >= int64("6322942") and
+ds1.unique2 <= int64("14978343") and ds1.unique1=ds2.unique1; ",
+"start":"2022-08-21 19:37:20.327",
+"end":"2022-08-21 19:37:20.937",
+"content":{
+	"requestID": "cfa14459-e1de-4c5b-a803-a308ed933f2e",
+	"signature": {
+		"*": "*"
+	},
+	"errors": [{ 
+		"code": 1,		"msg": "HYR0009: Job requirement (memory: 11.72 GB bytes, CPU cores: 1) exceeds capacity (memory: 9.21 GB bytes, CPU cores: 12)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "159.236994ms",
+		"executionTime": "156.966797ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+

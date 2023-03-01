@@ -1,0 +1,52 @@
+SET `compiler.seqbuild`
+@PARAM
+;
+USE tpch;
+
+SELECT nation, o_year, sum(amount) AS sum_profit
+FROM
+  (
+    SELECT   b.n_name AS nation,
+             `get-year`(a.o_orderdate) AS o_year,
+             a.l_extendedprice * (1 - a.l_discount) -  a.ps_supplycost * a.l_quantity AS amount
+     FROM (SELECT l.l_suppkey , o.o_orderdate , l.l_extendedprice , l.l_discount , ps.ps_supplycost , l.l_quantity
+            FROM
+             LineItem l , Part p ,  Partsupp ps  ,   Orders o
+             WHERE
+             ps.ps_suppkey /*+   build-size
+                           @PARAM
+                           , join-mem
+                           @PARAM
+                            */= l.l_suppkey AND
+             ps.ps_partkey /*+   build-size
+                           @PARAM
+                           , join-mem
+                           @PARAM
+                            */= l.l_partkey AND
+             contains(p.p_name,'green') AND
+             p.p_partkey /*+   build-size
+                         @PARAM
+                         , join-mem
+                         @PARAM
+                          */= l.l_partkey AND
+             o.o_orderkey /*+   build-size
+                          @PARAM
+                          , join-mem
+                          @PARAM
+                           */= l.l_orderkey ) a ,
+     (SELECT s.s_suppkey ,  n.n_name
+     FROM Supplier s , Nation n
+     WHERE n.n_nationkey /*+   build-size
+     @PARAM
+     , join-mem
+     @PARAM
+      */= s.s_nationkey ) b
+                           WHERE b.s_suppkey /*+   build-size
+                         @PARAM
+                         , join-mem
+                         @PARAM
+                          */= a.l_suppkey
+
+  ) AS profit
+GROUP BY nation, o_year
+ORDER BY nation, o_year desc;

@@ -1,0 +1,28 @@
+{"qidvid": "Q(99999,1)", 
+"rt":563,
+"query":"SET `compiler.joinmemory` "1024MB" ;
+use unlimitedMemory;
+
+SELECT ds2.unique1 ,ds2.unique2 ,ds2.two ,ds2.four ,ds2.ten ,ds2.twenty ,ds2.onePercent ,ds2.tenPercent ,ds2.twentyPercent ,ds2.fiftyPercent ,ds2.unique3 ,ds2.evenOnePercent ,ds2.oddOnePercent ,ds2.stringu1 ,ds2.stringu2 ,ds2.string4
+ FROM wisconsin_fixed_record_size_1GB_1000000_ds12 ds1 , wisconsin_fixed_record_size_1GB_1000000_ds13 ds2
+ WHERE ds1.unique1 /*+  min-build-partitions 20 , build-size 1024 */= ds2.unique1 and ds1.unique2 = ds2.unique2 and ds1.two = ds2.two and ds1.four = ds2.four and ds1.ten = ds2.ten and ds1.twenty = ds2.twenty and ds1.onePercent = ds2.onePercent and ds1.tenPercent = ds2.tenPercent and ds1.twentyPercent = ds2.twentyPercent and ds1.fiftyPercent = ds2.fiftyPercent and ds1.unique3 = ds2.unique3 and ds1.evenOnePercent = ds2.evenOnePercent and ds1.oddOnePercent = ds2.oddOnePercent and ds1.stringu1 = ds2.stringu1 and ds1.stringu2 = ds2.stringu2 and ds1.string4 = ds2.string4
+ limit 1; ",
+"start":"2021-11-07 23:17:40.304",
+"end":"2021-11-07 23:17:40.891",
+"content":{
+	"requestID": "a7d69b71-f068-4f7e-adc3-e0359c8576c5",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_fixed_record_size_1GB_1000000_ds12 in dataverse unlimitedMemory nor an alias with name wisconsin_fixed_record_size_1GB_1000000_ds12 (in line 5, at column 7)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "217.881858ms",
+		"executionTime": "64.203666ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+

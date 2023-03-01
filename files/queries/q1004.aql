@@ -1,0 +1,3 @@
+CREATE index unq1_idx ON
+@PARAM
+(unique1:bigint);

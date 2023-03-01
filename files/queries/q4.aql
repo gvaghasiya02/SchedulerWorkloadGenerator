@@ -1,0 +1,2 @@
+select * from w1 ds1,w2 ds2
+ where Meta(ds1).id=Meta(ds2).id limit 1;

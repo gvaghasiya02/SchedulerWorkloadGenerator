@@ -1,0 +1,1276 @@
+{"qidvid": "Q(960000,1)", 
+"rt":640,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds3 ds1, wisconsin_dataset_100_ds5 ds2 WHERE ds1.unique2 >= int64("1300241") and
+ds1.unique2 <= int64("3896861") and
+ds2.unique2 >= int64("1300241") and
+ds2.unique2 <= int64("3896861") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:16.291",
+"end":"2022-08-25 01:23:16.981",
+"content":{
+	"requestID": "37c6c0eb-f7a8-4307-82d7-0f2ee5475d4b",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds3 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds3 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "25.233235ms",
+		"executionTime": "24.072563ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":602,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds4 ds1, wisconsin_dataset_100_ds5 ds2 WHERE ds1.unique2 >= int64("13869021") and
+ds1.unique2 <= int64("16465641") and
+ds2.unique2 >= int64("13869021") and
+ds2.unique2 <= int64("16465641") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:16.314",
+"end":"2022-08-25 01:23:16.979",
+"content":{
+	"requestID": "37c6c0eb-f7a8-4307-82d7-0f2ee5475d4b",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds3 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds3 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "25.233235ms",
+		"executionTime": "24.072563ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":735,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds2 ds1, wisconsin_dataset_100_ds4 ds2 WHERE ds1.unique2 >= int64("6237673") and
+ds1.unique2 <= int64("8834293") and
+ds2.unique2 >= int64("6237673") and
+ds2.unique2 <= int64("8834293") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:16.19",
+"end":"2022-08-25 01:23:17.017",
+"content":null}
+
+{"qidvid": "Q(960000,1)", 
+"rt":470,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds4 ds1, wisconsin_dataset_100_ds3 ds2 WHERE ds1.unique2 >= int64("13618202") and
+ds1.unique2 <= int64("16214822") and
+ds2.unique2 >= int64("13618202") and
+ds2.unique2 <= int64("16214822") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:17.041",
+"end":"2022-08-25 01:23:17.516",
+"content":{
+	"requestID": "4f8a63d2-9eed-4adb-a4bf-bf41694d2ed8",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds4 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds4 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "33.778994ms",
+		"executionTime": "32.561893ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":476,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds5 ds1, wisconsin_dataset_100_ds3 ds2 WHERE ds1.unique2 >= int64("8837589") and
+ds1.unique2 <= int64("11434209") and
+ds2.unique2 >= int64("8837589") and
+ds2.unique2 <= int64("11434209") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:17.058",
+"end":"2022-08-25 01:23:17.55",
+"content":{
+	"requestID": "79d2eadf-d334-4c92-8be9-0c7e92a15e3d",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds5 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds5 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "26.166332ms",
+		"executionTime": "25.151105ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":490,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds5 ds1, wisconsin_dataset_100_ds3 ds2 WHERE ds1.unique2 >= int64("8837589") and
+ds1.unique2 <= int64("11434209") and
+ds2.unique2 >= int64("8837589") and
+ds2.unique2 <= int64("11434209") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:17.058",
+"end":"2022-08-25 01:23:17.558",
+"content":{
+	"requestID": "4dc1fdc2-f1b4-451d-a926-80970fe59ae0",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds5 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds5 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "30.094454ms",
+		"executionTime": "29.111612ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":462,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds3 ds1, wisconsin_dataset_100_ds4 ds2 WHERE ds1.unique2 >= int64("5528572") and
+ds1.unique2 <= int64("8125192") and
+ds2.unique2 >= int64("5528572") and
+ds2.unique2 <= int64("8125192") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:17.536",
+"end":"2022-08-25 01:23:17.999",
+"content":{
+	"requestID": "6e7d0f4c-2368-4874-b2f9-5ab4af769dae",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds3 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds3 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "50.855192ms",
+		"executionTime": "50.013524ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":462,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds2 ds1, wisconsin_dataset_100_ds4 ds2 WHERE ds1.unique2 >= int64("5100864") and
+ds1.unique2 <= int64("7697484") and
+ds2.unique2 >= int64("5100864") and
+ds2.unique2 <= int64("7697484") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:17.553",
+"end":"2022-08-25 01:23:18.017",
+"content":{
+	"requestID": "d7e2c27a-c8b4-446c-bc70-6b5c2442301c",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds2 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds2 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "41.226386ms",
+		"executionTime": "40.420179ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":461,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds5 ds1, wisconsin_dataset_100_ds4 ds2 WHERE ds1.unique2 >= int64("8854557") and
+ds1.unique2 <= int64("11451177") and
+ds2.unique2 >= int64("8854557") and
+ds2.unique2 <= int64("11451177") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:17.563",
+"end":"2022-08-25 01:23:18.027",
+"content":{
+	"requestID": "6716dcfe-fe4d-49da-9f5f-f6154f931d64",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds5 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds5 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "23.515985ms",
+		"executionTime": "22.671477ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":479,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds3 ds1, wisconsin_dataset_100_ds4 ds2 WHERE ds1.unique2 >= int64("11544327") and
+ds1.unique2 <= int64("14140947") and
+ds2.unique2 >= int64("11544327") and
+ds2.unique2 <= int64("14140947") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:18.034",
+"end":"2022-08-25 01:23:18.514",
+"content":{
+	"requestID": "91e82a0f-2705-4efe-ba59-fa75e6dea852",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds3 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds3 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "20.156125ms",
+		"executionTime": "17.782604ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":513,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds2 ds1, wisconsin_dataset_100_ds1 ds2 WHERE ds1.unique2 >= int64("6812273") and
+ds1.unique2 <= int64("9408893") and
+ds2.unique2 >= int64("6812273") and
+ds2.unique2 <= int64("9408893") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:18.001",
+"end":"2022-08-25 01:23:18.522",
+"content":{
+	"requestID": "e3a71536-e7d9-4d31-a2fb-4f9821cc3bff",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds2 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds2 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "44.530611ms",
+		"executionTime": "43.565808ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":494,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds2 ds1, wisconsin_dataset_100_ds1 ds2 WHERE ds1.unique2 >= int64("14131273") and
+ds1.unique2 <= int64("16727893") and
+ds2.unique2 >= int64("14131273") and
+ds2.unique2 <= int64("16727893") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:18.035",
+"end":"2022-08-25 01:23:18.543",
+"content":{
+	"requestID": "d3694cd0-8e3c-4a63-a647-aea4e56c3b9b",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds2 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds2 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "24.320049ms",
+		"executionTime": "23.517228ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":415,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds3 ds1, wisconsin_dataset_100_ds1 ds2 WHERE ds1.unique2 >= int64("574017") and
+ds1.unique2 <= int64("3170637") and
+ds2.unique2 >= int64("574017") and
+ds2.unique2 <= int64("3170637") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:18.515",
+"end":"2022-08-25 01:23:18.93",
+"content":{
+	"requestID": "5502f2ed-3e3f-4b14-8209-e72e0bfe9e0b",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds3 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds3 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "9.470466ms",
+		"executionTime": "8.768961ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":437,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds4 ds1, wisconsin_dataset_100_ds2 ds2 WHERE ds1.unique2 >= int64("3557351") and
+ds1.unique2 <= int64("6153971") and
+ds2.unique2 >= int64("3557351") and
+ds2.unique2 <= int64("6153971") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:18.537",
+"end":"2022-08-25 01:23:18.974",
+"content":{
+	"requestID": "3050cdf5-b539-4194-a78f-5768cb5883e5",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds4 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds4 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "35.637923ms",
+		"executionTime": "34.862314ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":451,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds3 ds1, wisconsin_dataset_100_ds4 ds2 WHERE ds1.unique2 >= int64("3981887") and
+ds1.unique2 <= int64("6578507") and
+ds2.unique2 >= int64("3981887") and
+ds2.unique2 <= int64("6578507") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:18.545",
+"end":"2022-08-25 01:23:18.997",
+"content":{
+	"requestID": "3ebf4731-d3f1-40c7-9032-d40c34767eac",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds3 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds3 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "43.526384ms",
+		"executionTime": "42.773053ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":419,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds4 ds1, wisconsin_dataset_100_ds3 ds2 WHERE ds1.unique2 >= int64("839809") and
+ds1.unique2 <= int64("3436429") and
+ds2.unique2 >= int64("839809") and
+ds2.unique2 <= int64("3436429") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:18.934",
+"end":"2022-08-25 01:23:19.353",
+"content":{
+	"requestID": "521053a5-5f13-4c5b-a4bc-8bfb5016ad89",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds4 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds4 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "9.966042ms",
+		"executionTime": "9.214658ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":411,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds5 ds1, wisconsin_dataset_100_ds1 ds2 WHERE ds1.unique2 >= int64("1815615") and
+ds1.unique2 <= int64("4412235") and
+ds2.unique2 >= int64("1815615") and
+ds2.unique2 <= int64("4412235") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:18.975",
+"end":"2022-08-25 01:23:19.387",
+"content":{
+	"requestID": "83743d02-b47e-4aa8-9735-b20bb938d209",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds5 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds5 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "11.622443ms",
+		"executionTime": "10.835231ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":474,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds2 ds1, wisconsin_dataset_100_ds4 ds2 WHERE ds1.unique2 >= int64("6654661") and
+ds1.unique2 <= int64("9251281") and
+ds2.unique2 >= int64("6654661") and
+ds2.unique2 <= int64("9251281") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:19.003",
+"end":"2022-08-25 01:23:19.477",
+"content":{
+	"requestID": "ee6c6f1e-c7c5-41b0-8a76-816e6da96119",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds2 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds2 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "30.028767ms",
+		"executionTime": "20.933074ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":411,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds1 ds1, wisconsin_dataset_100_ds5 ds2 WHERE ds1.unique2 >= int64("13684436") and
+ds1.unique2 <= int64("16281056") and
+ds2.unique2 >= int64("13684436") and
+ds2.unique2 <= int64("16281056") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:19.354",
+"end":"2022-08-25 01:23:19.766",
+"content":{
+	"requestID": "85b50b10-39e9-4b72-9c0b-c8463d44026f",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds1 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds1 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "10.898143ms",
+		"executionTime": "10.040408ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":403,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds3 ds1, wisconsin_dataset_100_ds2 ds2 WHERE ds1.unique2 >= int64("1473251") and
+ds1.unique2 <= int64("4069871") and
+ds2.unique2 >= int64("1473251") and
+ds2.unique2 <= int64("4069871") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:19.387",
+"end":"2022-08-25 01:23:19.791",
+"content":{
+	"requestID": "d3522063-985a-4c07-9949-fc8db848435a",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds3 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds3 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "9.071585ms",
+		"executionTime": "8.405257ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":434,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds5 ds1, wisconsin_dataset_100_ds1 ds2 WHERE ds1.unique2 >= int64("9542120") and
+ds1.unique2 <= int64("12138740") and
+ds2.unique2 >= int64("9542120") and
+ds2.unique2 <= int64("12138740") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:19.478",
+"end":"2022-08-25 01:23:19.912",
+"content":{
+	"requestID": "ab34ea53-d8ed-4912-b056-9163eec5d81d",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds5 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds5 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "34.657457ms",
+		"executionTime": "33.768475ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":413,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds3 ds1, wisconsin_dataset_100_ds1 ds2 WHERE ds1.unique2 >= int64("2794642") and
+ds1.unique2 <= int64("5391262") and
+ds2.unique2 >= int64("2794642") and
+ds2.unique2 <= int64("5391262") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:19.767",
+"end":"2022-08-25 01:23:20.181",
+"content":{
+	"requestID": "aa473d90-3f97-4019-9813-d8eaf41b7513",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds3 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds3 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "9.5894ms",
+		"executionTime": "8.239808ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":410,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds4 ds1, wisconsin_dataset_100_ds1 ds2 WHERE ds1.unique2 >= int64("1727227") and
+ds1.unique2 <= int64("4323847") and
+ds2.unique2 >= int64("1727227") and
+ds2.unique2 <= int64("4323847") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:19.791",
+"end":"2022-08-25 01:23:20.201",
+"content":{
+	"requestID": "4fd1109e-f421-47db-9a2a-d04becd8310b",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds4 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds4 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "8.432809ms",
+		"executionTime": "7.866055ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":417,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds2 ds1, wisconsin_dataset_100_ds4 ds2 WHERE ds1.unique2 >= int64("3223082") and
+ds1.unique2 <= int64("5819702") and
+ds2.unique2 >= int64("3223082") and
+ds2.unique2 <= int64("5819702") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:19.913",
+"end":"2022-08-25 01:23:20.331",
+"content":{
+	"requestID": "ce63cec8-e0ff-4f0c-96d9-93a6f4b9de0d",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds2 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds2 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "12.061719ms",
+		"executionTime": "11.455613ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":408,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds4 ds1, wisconsin_dataset_100_ds2 ds2 WHERE ds1.unique2 >= int64("1248527") and
+ds1.unique2 <= int64("3845147") and
+ds2.unique2 >= int64("1248527") and
+ds2.unique2 <= int64("3845147") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:20.182",
+"end":"2022-08-25 01:23:20.59",
+"content":{
+	"requestID": "5a783de8-c91c-402d-b906-6be62cac9dca",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds4 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds4 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "11.53541ms",
+		"executionTime": "10.742801ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":412,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds4 ds1, wisconsin_dataset_100_ds1 ds2 WHERE ds1.unique2 >= int64("11675640") and
+ds1.unique2 <= int64("14272260") and
+ds2.unique2 >= int64("11675640") and
+ds2.unique2 <= int64("14272260") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:20.201",
+"end":"2022-08-25 01:23:20.613",
+"content":{
+	"requestID": "c9551c76-ebf2-461f-a606-c1934aacb3d8",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds4 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds4 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "9.360948ms",
+		"executionTime": "8.679799ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":416,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds3 ds1, wisconsin_dataset_100_ds2 ds2 WHERE ds1.unique2 >= int64("14323626") and
+ds1.unique2 <= int64("16920246") and
+ds2.unique2 >= int64("14323626") and
+ds2.unique2 <= int64("16920246") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:20.331",
+"end":"2022-08-25 01:23:20.747",
+"content":{
+	"requestID": "cbf8fec1-ce35-424f-aeef-6e9a20558f7d",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds3 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds3 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "14.98889ms",
+		"executionTime": "14.479034ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":411,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds2 ds1, wisconsin_dataset_100_ds3 ds2 WHERE ds1.unique2 >= int64("7395204") and
+ds1.unique2 <= int64("9991824") and
+ds2.unique2 >= int64("7395204") and
+ds2.unique2 <= int64("9991824") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:20.591",
+"end":"2022-08-25 01:23:21.003",
+"content":{
+	"requestID": "3f3838a4-11f5-4ca8-a977-5c716deb4d02",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds2 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds2 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "8.758387ms",
+		"executionTime": "7.728576ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":406,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds4 ds1, wisconsin_dataset_100_ds2 ds2 WHERE ds1.unique2 >= int64("4029804") and
+ds1.unique2 <= int64("6626424") and
+ds2.unique2 >= int64("4029804") and
+ds2.unique2 <= int64("6626424") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:20.614",
+"end":"2022-08-25 01:23:21.02",
+"content":{
+	"requestID": "54123a67-8cea-4114-93f0-14945d0d5bad",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds4 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds4 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "8.110712ms",
+		"executionTime": "7.215003ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":406,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds5 ds1, wisconsin_dataset_100_ds2 ds2 WHERE ds1.unique2 >= int64("12004287") and
+ds1.unique2 <= int64("14600907") and
+ds2.unique2 >= int64("12004287") and
+ds2.unique2 <= int64("14600907") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:20.747",
+"end":"2022-08-25 01:23:21.153",
+"content":{
+	"requestID": "9f877b71-a8a1-49db-a422-427a42a93ddc",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds5 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds5 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "9.118244ms",
+		"executionTime": "8.642111ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":413,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds3 ds1, wisconsin_dataset_100_ds1 ds2 WHERE ds1.unique2 >= int64("12951009") and
+ds1.unique2 <= int64("15547629") and
+ds2.unique2 >= int64("12951009") and
+ds2.unique2 <= int64("15547629") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:21.003",
+"end":"2022-08-25 01:23:21.417",
+"content":{
+	"requestID": "ee04592c-40bb-41f9-8f09-726eed812aaf",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds3 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds3 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "9.256087ms",
+		"executionTime": "8.765827ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":404,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds5 ds1, wisconsin_dataset_100_ds1 ds2 WHERE ds1.unique2 >= int64("6873771") and
+ds1.unique2 <= int64("9470391") and
+ds2.unique2 >= int64("6873771") and
+ds2.unique2 <= int64("9470391") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:21.028",
+"end":"2022-08-25 01:23:21.441",
+"content":{
+	"requestID": "6f04ce14-2c5d-4bde-8826-06d4063e003a",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds5 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds5 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "7.128732ms",
+		"executionTime": "6.437866ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":423,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds5 ds1, wisconsin_dataset_100_ds3 ds2 WHERE ds1.unique2 >= int64("4688704") and
+ds1.unique2 <= int64("7285324") and
+ds2.unique2 >= int64("4688704") and
+ds2.unique2 <= int64("7285324") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:21.153",
+"end":"2022-08-25 01:23:21.577",
+"content":{
+	"requestID": "4b181a58-bad9-4e52-97b7-66cb11f43318",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds5 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds5 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "8.878349ms",
+		"executionTime": "8.43329ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":416,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds3 ds1, wisconsin_dataset_100_ds4 ds2 WHERE ds1.unique2 >= int64("7118426") and
+ds1.unique2 <= int64("9715046") and
+ds2.unique2 >= int64("7118426") and
+ds2.unique2 <= int64("9715046") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:21.418",
+"end":"2022-08-25 01:23:21.835",
+"content":{
+	"requestID": "bf2f64e3-87ba-4e45-ab26-28157096f85e",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds3 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds3 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "19.05502ms",
+		"executionTime": "18.361983ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":406,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds4 ds1, wisconsin_dataset_100_ds5 ds2 WHERE ds1.unique2 >= int64("3849992") and
+ds1.unique2 <= int64("6446612") and
+ds2.unique2 >= int64("3849992") and
+ds2.unique2 <= int64("6446612") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:21.449",
+"end":"2022-08-25 01:23:21.856",
+"content":{
+	"requestID": "512f6337-3093-4447-8de1-dabbb23a2f1e",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds4 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds4 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "8.542615ms",
+		"executionTime": "7.859275ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":404,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds1 ds1, wisconsin_dataset_100_ds2 ds2 WHERE ds1.unique2 >= int64("10504147") and
+ds1.unique2 <= int64("13100767") and
+ds2.unique2 >= int64("10504147") and
+ds2.unique2 <= int64("13100767") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:21.578",
+"end":"2022-08-25 01:23:21.982",
+"content":{
+	"requestID": "5d3b7ed6-ca22-444f-9450-4f1ef0f331d8",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds1 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds1 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "8.095985ms",
+		"executionTime": "7.639696ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":410,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds3 ds1, wisconsin_dataset_100_ds2 ds2 WHERE ds1.unique2 >= int64("2705980") and
+ds1.unique2 <= int64("5302600") and
+ds2.unique2 >= int64("2705980") and
+ds2.unique2 <= int64("5302600") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:21.838",
+"end":"2022-08-25 01:23:22.249",
+"content":{
+	"requestID": "f328bf10-d727-43e4-a466-58d6f178cfa1",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds3 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds3 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "13.568268ms",
+		"executionTime": "13.116689ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":408,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds3 ds1, wisconsin_dataset_100_ds5 ds2 WHERE ds1.unique2 >= int64("13908878") and
+ds1.unique2 <= int64("16505498") and
+ds2.unique2 >= int64("13908878") and
+ds2.unique2 <= int64("16505498") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:21.856",
+"end":"2022-08-25 01:23:22.264",
+"content":{
+	"requestID": "ed345072-e500-489a-b480-98220bed0dd7",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds3 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds3 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "7.596396ms",
+		"executionTime": "6.892169ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":410,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds4 ds1, wisconsin_dataset_100_ds1 ds2 WHERE ds1.unique2 >= int64("2806361") and
+ds1.unique2 <= int64("5402981") and
+ds2.unique2 >= int64("2806361") and
+ds2.unique2 <= int64("5402981") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:21.982",
+"end":"2022-08-25 01:23:22.392",
+"content":{
+	"requestID": "10166c9d-164d-4286-9ee2-3eb006eb8e76",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds4 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds4 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "8.896433ms",
+		"executionTime": "8.380839ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":420,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds2 ds1, wisconsin_dataset_100_ds4 ds2 WHERE ds1.unique2 >= int64("4787916") and
+ds1.unique2 <= int64("7384536") and
+ds2.unique2 >= int64("4787916") and
+ds2.unique2 <= int64("7384536") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:22.25",
+"end":"2022-08-25 01:23:22.67",
+"content":{
+	"requestID": "bf05b181-c35a-4579-b682-a652d9162f3f",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds2 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds2 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "17.894842ms",
+		"executionTime": "17.471388ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":412,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds2 ds1, wisconsin_dataset_100_ds3 ds2 WHERE ds1.unique2 >= int64("1425584") and
+ds1.unique2 <= int64("4022204") and
+ds2.unique2 >= int64("1425584") and
+ds2.unique2 <= int64("4022204") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:22.265",
+"end":"2022-08-25 01:23:22.677",
+"content":{
+	"requestID": "451145a5-9478-48b0-a31e-2436cf18ffc0",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds2 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds2 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "10.962545ms",
+		"executionTime": "10.374737ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":417,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds3 ds1, wisconsin_dataset_100_ds4 ds2 WHERE ds1.unique2 >= int64("11483740") and
+ds1.unique2 <= int64("14080360") and
+ds2.unique2 >= int64("11483740") and
+ds2.unique2 <= int64("14080360") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:22.392",
+"end":"2022-08-25 01:23:22.809",
+"content":{
+	"requestID": "5a427ad8-434c-4057-a28a-7795f4b45882",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds3 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds3 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "16.764952ms",
+		"executionTime": "16.386605ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":435,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds5 ds1, wisconsin_dataset_100_ds2 ds2 WHERE ds1.unique2 >= int64("14641033") and
+ds1.unique2 <= int64("17237653") and
+ds2.unique2 >= int64("14641033") and
+ds2.unique2 <= int64("17237653") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:22.67",
+"end":"2022-08-25 01:23:23.107",
+"content":{
+	"requestID": "9090ce87-1424-4272-bd8e-d23409aab67b",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds5 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds5 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "30.124928ms",
+		"executionTime": "29.776739ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":428,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds4 ds1, wisconsin_dataset_100_ds3 ds2 WHERE ds1.unique2 >= int64("12349194") and
+ds1.unique2 <= int64("14945814") and
+ds2.unique2 >= int64("12349194") and
+ds2.unique2 <= int64("14945814") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:22.677",
+"end":"2022-08-25 01:23:23.107",
+"content":{
+	"requestID": "200ef8c1-3d07-4e14-9468-44a56522050e",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds4 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds4 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "30.449172ms",
+		"executionTime": "30.069095ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":414,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds5 ds1, wisconsin_dataset_100_ds1 ds2 WHERE ds1.unique2 >= int64("137971") and
+ds1.unique2 <= int64("2734591") and
+ds2.unique2 >= int64("137971") and
+ds2.unique2 <= int64("2734591") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:22.809",
+"end":"2022-08-25 01:23:23.228",
+"content":{
+	"requestID": "9885022c-c263-4fb0-8892-c86c5e569e91",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds5 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds5 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "14.676275ms",
+		"executionTime": "14.300262ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":433,
+"query":"SET `compiler.joinmemory` "4000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_100_ds1 ds1, wisconsin_dataset_100_ds3 ds2 WHERE ds1.unique2 >= int64("12960998") and
+ds1.unique2 <= int64("15557618") and
+ds2.unique2 >= int64("12960998") and
+ds2.unique2 <= int64("15557618") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 01:23:23.108",
+"end":"2022-08-25 01:23:23.545",
+"content":{
+	"requestID": "0515b60f-4590-426d-9f79-7d0b66f55092",
+	"errors": [{ 
+		"code": 1,		"msg": "ASX1077: Cannot find dataset wisconsin_dataset_100_ds1 in dataverse unlimitedMemory nor an alias with name wisconsin_dataset_100_ds1 (in line 4, at column 19)"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "26.443858ms",
+		"executionTime": "26.022334ms",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
+{"qidvid": "Q(960000,1)", 
+"rt":403,
+"query":"SET `compiler.joinmemory` "4000MB

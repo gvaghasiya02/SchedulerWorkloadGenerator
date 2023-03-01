@@ -1,0 +1,31 @@
+{"qidvid": "Q(960000,2)", 
+"rt":537828,
+"query":"SET `compiler.joinmemory` "12000MB" ;
+use unlimitedMemory;
+
+select ds2.* from wisconsin_dataset_40960_ds2 ds1, wisconsin_dataset_40960_ds1 ds2 WHERE ds1.unique2 >= int64("8287475") and
+ds1.unique2 <= int64("16942848") and
+ds2.unique2 >= int64("8287475") and
+ds2.unique2 <= int64("16942848") and ds1.unique1=ds2.unique1 limit 1; ",
+"start":"2022-08-25 11:01:29.46",
+"end":"2022-08-25 11:10:27.297",
+"content":{
+	"requestID": "abf05fd8-2569-4223-a00f-0a7c681df299",
+	"signature": {
+		"*": "*"
+	},
+	"errors": [{ 
+		"code": 1,		"msg": "ASX0041: Request abf05fd8-2569-4223-a00f-0a7c681df299 has been cancelled"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "491.376244864s",
+		"executionTime": "491.37492569s",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+

@@ -1,0 +1,5 @@
+960000,1,wisconsin_dataset_409600_ds,wisconsin_dataset_409600_ds,0.05,0.25
+960000,2,wisconsin_dataset_409600_ds,wisconsin_dataset_409600_ds,0.26,0.75
+960000,3,wisconsin_dataset_409600_ds,wisconsin_dataset_409600_ds,0.76,0.95
+960001,1,wisconsin_dataset_409600_ds,80
+960002,1,wisconsin_dataset_409600_ds,0.95

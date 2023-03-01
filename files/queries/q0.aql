@@ -1,0 +1,2 @@
+USE unlimitedMemory;
+select count(*) from clear_cache;

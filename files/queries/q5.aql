@@ -1,0 +1,1 @@
+select * from w1 ds1 where ds1.unique4=10;

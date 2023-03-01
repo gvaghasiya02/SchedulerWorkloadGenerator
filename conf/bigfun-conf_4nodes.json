@@ -1,0 +1,14 @@
+[
+  {
+    "clientType" : "AsterixdbReadOnly",
+    "workload": "sleep.txt",
+    "cc" : "54.188.12.11",
+    "server": "couchbase",
+    "num-concurrent-readers" : 1,
+    "dataverse" : "unlimitedMemory;",
+    "iterations" :12,
+    "ignore_rounds" : 2,
+    "seed" : 5,
+    "max_id" : 56000000
+  }
+]

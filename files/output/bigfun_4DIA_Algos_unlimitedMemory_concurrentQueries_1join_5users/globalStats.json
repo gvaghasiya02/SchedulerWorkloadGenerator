@@ -1,0 +1,9 @@
+{"concurrent_users":5,
+"total_queries(sum_for_all_users)":0,
+,"total_avg_elapsed(sec)":NaN,
+"total_avg_execution(sec)":NaN,
+"total_avg_client_response_time(sec)":NaN,
+"throughput(elapsed_time)(query/sec)":NaN,
+"throughput(execution_time)(query/sec)":NaN,
+"throughput(client_time)(query/sec)":NaN
+}

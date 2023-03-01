@@ -1,0 +1,15 @@
+[
+  {
+    "clientType" : "AsterixdbReadOnly",
+    "cc" : "35.163.23.106",
+    "server": "asterixdb",
+    "num-concurrent-readers" : 1,
+    "dataverse" : "unlimitedMemory;",
+    "iterations" :10,
+    "ignore_rounds" : 1,
+    "seed" : 5,
+    "max_id" : 14000000,
+    "thinking_min_ms" : 0,
+    "thinking_max_ms" : 0
+  }
+]

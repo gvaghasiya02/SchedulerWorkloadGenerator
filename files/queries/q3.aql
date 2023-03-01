@@ -1,0 +1,2 @@
+select * from w1 ds1,w2 ds2
+ where ds1.unique2=Meta(ds2).id limit 1;

@@ -1,0 +1,18 @@
+USE unlimitedMemory;
+set `compiler.joinmemory`
+@PARAM
+;
+select * from
+@PARAM
+ds1,
+@PARAM
+ds2 where
+ @PARAM
+ /*+ build-size
+@PARAM
+, min-build-partitions 20, data-insertion APPEND 8 , victim-selection
+@PARAM
+, join-inmem , role-reversal
+*/=
+@PARAM
+limit 1;

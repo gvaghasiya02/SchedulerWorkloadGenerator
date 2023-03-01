@@ -1,0 +1,34 @@
+SET `compiler.seqbuild` 'true';
+SET `compiler.parallelism`
+@PARAM
+;
+SET `compiler.joinmemory`
+@PARAM
+;
+         use unlimitedMemory;
+
+         SELECT ds9.unique1 ,ds9.unique2 ,ds9.two ,ds9.four ,ds9.ten ,ds9.twenty ,ds9.onePercent ,ds9.tenPercent ,ds9.twentyPercent ,ds9.fiftyPercent ,ds9.unique3 ,ds9.evenOnePercent ,ds9.oddOnePercent ,ds9.stringu1 ,ds9.stringu2 ,ds9.string4
+         FROM wisconsin_fixed_record_size_1GB_1000000_ds8 ds8 ,
+         ( SELECT ds7.unique1 ,ds7.unique2 ,ds7.two ,ds7.four ,ds7.ten ,ds7.twenty ,ds7.onePercent ,ds7.tenPercent ,ds7.twentyPercent ,ds7.fiftyPercent ,ds7.unique3 ,ds7.evenOnePercent ,ds7.oddOnePercent ,ds7.stringu1 ,ds7.stringu2 ,ds7.string4
+         FROM wisconsin_fixed_record_size_1GB_1000000_ds6 ds6 ,
+         ( SELECT ds5.unique1 ,ds5.unique2 ,ds5.two ,ds5.four ,ds5.ten ,ds5.twenty ,ds5.onePercent ,ds5.tenPercent ,ds5.twentyPercent ,ds5.fiftyPercent ,ds5.unique3 ,ds5.evenOnePercent ,ds5.oddOnePercent ,ds5.stringu1 ,ds5.stringu2 ,ds5.string4
+         FROM wisconsin_fixed_record_size_1GB_1000000_ds4 ds4 ,
+         ( SELECT ds1.unique1 ,ds1.unique2 ,ds1.two ,ds1.four ,ds1.ten ,ds1.twenty ,ds1.onePercent ,ds1.tenPercent ,ds1.twentyPercent ,ds1.fiftyPercent ,ds1.unique3 ,ds1.evenOnePercent ,ds1.oddOnePercent ,ds1.stringu1 ,ds1.stringu2 ,ds1.string4
+          FROM wisconsin_fixed_record_size_1GB_1000000_ds1 ds1 ,wisconsin_fixed_record_size_1GB_1000000_ds2 ds2 ,wisconsin_fixed_record_size_1GB_1000000_ds3 ds3
+          WHERE
+         ds1.unique1 /*+  min-build-partitions 20 , build-size 1024  */= ds2.unique1 and ds1.unique2 = ds2.unique2 and ds1.two = ds2.two and ds1.four = ds2.four and ds1.ten = ds2.ten and ds1.twenty = ds2.twenty and ds1.onePercent = ds2.onePercent and ds1.tenPercent = ds2.tenPercent and ds1.twentyPercent = ds2.twentyPercent and ds1.fiftyPercent = ds2.fiftyPercent and ds1.unique3 = ds2.unique3 and ds1.evenOnePercent = ds2.evenOnePercent and ds1.oddOnePercent = ds2.oddOnePercent and ds1.stringu1 = ds2.stringu1 and ds1.stringu2 = ds2.stringu2 and ds1.string4 = ds2.string4 and
+         ds2.unique1 /*+  min-build-partitions 20 , build-size 1024  , zigzag */= ds3.unique1 and ds2.unique2 = ds3.unique2 and ds2.two = ds3.two and ds2.four = ds3.four and ds2.ten = ds3.ten and ds2.twenty = ds3.twenty and ds2.onePercent = ds3.onePercent and ds2.tenPercent = ds3.tenPercent and ds2.twentyPercent = ds3.twentyPercent and ds2.fiftyPercent = ds3.fiftyPercent and ds2.unique3 = ds3.unique3 and ds2.evenOnePercent = ds3.evenOnePercent and ds2.oddOnePercent = ds3.oddOnePercent and ds2.stringu1 = ds3.stringu1 and ds2.stringu2 = ds3.stringu2 and ds2.string4 = ds3.string4 ) temp1
+         , wisconsin_fixed_record_size_1GB_1000000_ds5 ds5
+         WHERE
+         ds4.unique1 /*+  min-build-partitions 20 , build-size 1024   */= temp1.unique1 and ds4.unique2 = temp1.unique2 and ds4.two = temp1.two and ds4.four = temp1.four and ds4.ten = temp1.ten and ds4.twenty = temp1.twenty and ds4.onePercent = temp1.onePercent and ds4.tenPercent = temp1.tenPercent and ds4.twentyPercent = temp1.twentyPercent and ds4.fiftyPercent = temp1.fiftyPercent and ds4.unique3 = temp1.unique3 and ds4.evenOnePercent = temp1.evenOnePercent and ds4.oddOnePercent = temp1.oddOnePercent and ds4.stringu1 = temp1.stringu1 and ds4.stringu2 = temp1.stringu2 and ds4.string4 = temp1.string4 and
+         ds4.unique1 /*+  min-build-partitions 20 , build-size 1024  , zigzag */= ds5.unique1 and ds4.unique2 = ds5.unique2 and ds4.two = ds5.two and ds4.four = ds5.four and ds4.ten = ds5.ten and ds4.twenty = ds5.twenty and ds4.onePercent = ds5.onePercent and ds4.tenPercent = ds5.tenPercent and ds4.twentyPercent = ds5.twentyPercent and ds4.fiftyPercent = ds5.fiftyPercent and ds4.unique3 = ds5.unique3 and ds4.evenOnePercent = ds5.evenOnePercent and ds4.oddOnePercent = ds5.oddOnePercent and ds4.stringu1 = ds5.stringu1 and ds4.stringu2 = ds5.stringu2 and ds4.string4 = ds5.string4 ) temp2
+         , wisconsin_fixed_record_size_1GB_1000000_ds7 ds7
+         WHERE
+         temp2.unique1 /*+  min-build-partitions 20 , build-size 1024  */= ds6.unique1 and temp2.unique2 = ds6.unique2 and temp2.two = ds6.two and temp2.four = ds6.four and temp2.ten = ds6.ten and temp2.twenty = ds6.twenty and temp2.onePercent = ds6.onePercent and temp2.tenPercent = ds6.tenPercent and temp2.twentyPercent = ds6.twentyPercent and temp2.fiftyPercent = ds6.fiftyPercent and temp2.unique3 = ds6.unique3 and temp2.evenOnePercent = ds6.evenOnePercent and temp2.oddOnePercent = ds6.oddOnePercent and temp2.stringu1 = ds6.stringu1 and temp2.stringu2 = ds6.stringu2 and temp2.string4 = ds6.string4 and
+         ds6.unique1 /*+  min-build-partitions 20 , build-size 1024 , zigzag */= ds7.unique1 and ds6.unique2 = ds7.unique2 and ds6.two = ds7.two and ds6.four = ds7.four and ds6.ten = ds7.ten and ds6.twenty = ds7.twenty and ds6.onePercent = ds7.onePercent and ds6.tenPercent = ds7.tenPercent and ds6.twentyPercent = ds7.twentyPercent and ds6.fiftyPercent = ds7.fiftyPercent and ds6.unique3 = ds7.unique3 and ds6.evenOnePercent = ds7.evenOnePercent and ds6.oddOnePercent = ds7.oddOnePercent and ds6.stringu1 = ds7.stringu1 and ds6.stringu2 = ds7.stringu2 and ds6.string4 = ds7.string4 ) temp3
+         , wisconsin_fixed_record_size_1GB_1000000_ds9 ds9
+         WHERE
+         temp3.unique1 /*+  min-build-partitions 20 , build-size 1024  */= ds8.unique1 and temp3.unique2 = ds8.unique2 and temp3.two = ds8.two and temp3.four = ds8.four and temp3.ten = ds8.ten and temp3.twenty = ds8.twenty and temp3.onePercent = ds8.onePercent and temp3.tenPercent = ds8.tenPercent and temp3.twentyPercent = ds8.twentyPercent and temp3.fiftyPercent = ds8.fiftyPercent and temp3.unique3 = ds8.unique3 and temp3.evenOnePercent = ds8.evenOnePercent and temp3.oddOnePercent = ds8.oddOnePercent and temp3.stringu1 = ds8.stringu1 and temp3.stringu2 = ds8.stringu2 and temp3.string4 = ds8.string4 and
+         ds8.unique1 /*+  min-build-partitions 20 , build-size 1024  */= ds9.unique1 and ds8.unique2 = ds9.unique2 and ds8.two = ds9.two and ds8.four = ds9.four and ds8.ten = ds9.ten and ds8.twenty = ds9.twenty and ds8.onePercent = ds9.onePercent and ds8.tenPercent = ds9.tenPercent and ds8.twentyPercent = ds9.twentyPercent and ds8.fiftyPercent = ds9.fiftyPercent and ds8.unique3 = ds9.unique3 and ds8.evenOnePercent = ds9.evenOnePercent and ds8.oddOnePercent = ds9.oddOnePercent and ds8.stringu1 = ds9.stringu1 and ds8.stringu2 = ds9.stringu2 and ds8.string4 = ds9.string4
+
+          limit 1;

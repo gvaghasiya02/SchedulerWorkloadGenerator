@@ -1,0 +1,3 @@
+USE tpch;
+
+select count(*) from LineItem2 l;

@@ -1,0 +1,37 @@
+SET `compiler.seqbuild` "1";
+SET `compiler.joinmemory`
+@PARAM
+;
+use unlimitedMemory;
+
+SELECT ds1.unique1 ,ds1.unique2 ,ds1.two ,ds1.four ,ds1.ten ,ds1.twenty ,ds1.onePercent ,ds1.tenPercent ,ds1.twentyPercent ,ds1.fiftyPercent ,ds1.unique3 ,ds1.evenOnePercent ,ds1.oddOnePercent ,ds1.stringu1 ,ds1.stringu2 ,ds1.string4
+ FROM
+   @PARAM
+    ds1 ,
+   @PARAM
+    ds2 ,
+   @PARAM
+    ds3 ,
+   @PARAM
+    ds4 ,
+   @PARAM
+    ds5 ,
+   @PARAM
+    ds6 ,
+   @PARAM
+    ds7 ,
+   @PARAM
+    ds8 ,
+   @PARAM
+    ds9
+ WHERE
+ds1.unique1 /*+  min-build-partitions 20 , build-size 1024 */= ds2.unique1 and ds1.unique2 = ds2.unique2 and ds1.two = ds2.two and ds1.four = ds2.four and ds1.ten = ds2.ten and ds1.twenty = ds2.twenty and ds1.onePercent = ds2.onePercent and ds1.tenPercent = ds2.tenPercent and ds1.twentyPercent = ds2.twentyPercent and ds1.fiftyPercent = ds2.fiftyPercent and ds1.unique3 = ds2.unique3 and ds1.evenOnePercent = ds2.evenOnePercent and ds1.oddOnePercent = ds2.oddOnePercent and ds1.stringu1 = ds2.stringu1 and ds1.stringu2 = ds2.stringu2 and ds1.string4 = ds2.string4 and
+ds1.unique1 /*+  min-build-partitions 20 , build-size 1024  */= ds3.unique1 and ds1.unique2 = ds3.unique2 and ds1.two = ds3.two and ds1.four = ds3.four and ds1.ten = ds3.ten and ds1.twenty = ds3.twenty and ds1.onePercent = ds3.onePercent and ds1.tenPercent = ds3.tenPercent and ds1.twentyPercent = ds3.twentyPercent and ds1.fiftyPercent = ds3.fiftyPercent and ds1.unique3 = ds3.unique3 and ds1.evenOnePercent = ds3.evenOnePercent and ds1.oddOnePercent = ds3.oddOnePercent and ds1.stringu1 = ds3.stringu1 and ds1.stringu2 = ds3.stringu2 and ds1.string4 = ds3.string4 and
+ds1.unique1 /*+  min-build-partitions 20 , build-size 1024  */= ds4.unique1 and ds1.unique2 = ds4.unique2 and ds1.two = ds4.two and ds1.four = ds4.four and ds1.ten = ds4.ten and ds1.twenty = ds4.twenty and ds1.onePercent = ds4.onePercent and ds1.tenPercent = ds4.tenPercent and ds1.twentyPercent = ds4.twentyPercent and ds1.fiftyPercent = ds4.fiftyPercent and ds1.unique3 = ds4.unique3 and ds1.evenOnePercent = ds4.evenOnePercent and ds1.oddOnePercent = ds4.oddOnePercent and ds1.stringu1 = ds4.stringu1 and ds1.stringu2 = ds4.stringu2 and ds1.string4 = ds4.string4 and
+ds1.unique1 /*+  min-build-partitions 20 , build-size 1024 */= ds5.unique1 and ds1.unique2 = ds5.unique2 and ds1.two = ds5.two and ds1.four = ds5.four and ds1.ten = ds5.ten and ds1.twenty = ds5.twenty and ds1.onePercent = ds5.onePercent and ds1.tenPercent = ds5.tenPercent and ds1.twentyPercent = ds5.twentyPercent and ds1.fiftyPercent = ds5.fiftyPercent and ds1.unique3 = ds5.unique3 and ds1.evenOnePercent = ds5.evenOnePercent and ds1.oddOnePercent = ds5.oddOnePercent and ds1.stringu1 = ds5.stringu1 and ds1.stringu2 = ds5.stringu2 and ds1.string4 = ds5.string4 and
+ds1.unique1 /*+  min-build-partitions 20 , build-size 1024  */= ds6.unique1 and ds1.unique2 = ds6.unique2 and ds1.two = ds6.two and ds1.four = ds6.four and ds1.ten = ds6.ten and ds1.twenty = ds6.twenty and ds1.onePercent = ds6.onePercent and ds1.tenPercent = ds6.tenPercent and ds1.twentyPercent = ds6.twentyPercent and ds1.fiftyPercent = ds6.fiftyPercent and ds1.unique3 = ds6.unique3 and ds1.evenOnePercent = ds6.evenOnePercent and ds1.oddOnePercent = ds6.oddOnePercent and ds1.stringu1 = ds6.stringu1 and ds1.stringu2 = ds6.stringu2 and ds1.string4 = ds6.string4 and
+ds1.unique1 /*+  min-build-partitions 20 , build-size 1024  */= ds7.unique1 and ds1.unique2 = ds7.unique2 and ds1.two = ds7.two and ds1.four = ds7.four and ds1.ten = ds7.ten and ds1.twenty = ds7.twenty and ds1.onePercent = ds7.onePercent and ds1.tenPercent = ds7.tenPercent and ds1.twentyPercent = ds7.twentyPercent and ds1.fiftyPercent = ds7.fiftyPercent and ds1.unique3 = ds7.unique3 and ds1.evenOnePercent = ds7.evenOnePercent and ds1.oddOnePercent = ds7.oddOnePercent and ds1.stringu1 = ds7.stringu1 and ds1.stringu2 = ds7.stringu2 and ds1.string4 = ds7.string4 and
+ds1.unique1 /*+  min-build-partitions 20 , build-size 1024  , temp  */= ds8.unique1 and ds1.unique2 = ds8.unique2 and ds1.two = ds8.two and ds1.four = ds8.four and ds1.ten = ds8.ten and ds1.twenty = ds8.twenty and ds1.onePercent = ds8.onePercent and ds1.tenPercent = ds8.tenPercent and ds1.twentyPercent = ds8.twentyPercent and ds1.fiftyPercent = ds8.fiftyPercent and ds1.unique3 = ds8.unique3 and ds1.evenOnePercent = ds8.evenOnePercent and ds1.oddOnePercent = ds8.oddOnePercent and ds1.stringu1 = ds8.stringu1 and ds1.stringu2 = ds8.stringu2 and ds1.string4 = ds8.string4 and
+ds1.unique1 /*+  min-build-partitions 20 , build-size 1024 */= ds9.unique1 and ds1.unique2 = ds9.unique2 and ds1.two = ds9.two and ds1.four = ds9.four and ds1.ten = ds9.ten and ds1.twenty = ds9.twenty and ds1.onePercent = ds9.onePercent and ds1.tenPercent = ds9.tenPercent and ds1.twentyPercent = ds9.twentyPercent and ds1.fiftyPercent = ds9.fiftyPercent and ds1.unique3 = ds9.unique3 and ds1.evenOnePercent = ds9.evenOnePercent and ds1.oddOnePercent = ds9.oddOnePercent and ds1.stringu1 = ds9.stringu1 and ds1.stringu2 = ds9.stringu2 and ds1.string4 = ds9.string4
+
+ limit 1;

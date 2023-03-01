@@ -1,0 +1,8 @@
+950001,39,"322MB",wisconsin_fixed_record_size_ROC_large_ds1,wisconsin_fixed_record_size_ROC_large_ds2
+0,1
+950001,42,"500MB",wisconsin_fixed_record_size_ROC_large_ds1,wisconsin_fixed_record_size_ROC_large_ds2
+0,1
+950001,51,"5000MB",wisconsin_fixed_record_size_ROC_large_ds1,wisconsin_fixed_record_size_ROC_large_ds2
+0,1
+950001,57,"12288MB",wisconsin_fixed_record_size_ROC_large_ds1,wisconsin_fixed_record_size_ROC_large_ds2
+0,1

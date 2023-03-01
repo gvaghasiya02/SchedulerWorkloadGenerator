@@ -1,0 +1,49 @@
+USE tpch;
+SELECT nation, o_year, sum(amount) AS sum_profit
+FROM
+  (
+    SELECT   a4.n_name AS nation,
+             `get-year`(o.o_orderdate) AS o_year,
+             a4.l_extendedprice * (1 - a4.l_discount) -  a4.ps_supplycost * a4.l_quantity AS amount
+    FROM
+      Orders o ,
+         (SELECT a3.l_extendedprice, a3.l_discount, a3.l_quantity, a3.l_orderkey, n.n_name , a3.ps_supplycost
+     FROM Nation n ,
+          ( SELECT s.s_nationkey , a2.l_extendedprice, a2.l_discount, a2.l_quantity, a2.ps_supplycost , a2.l_orderkey , a2.l_partkey
+       FROM Supplier s ,
+            (SELECT a1.l_suppkey , a1.l_extendedprice, a1.l_discount, a1.l_quantity, a1.l_partkey, a1.l_orderkey , ps.ps_supplycost
+             FROM Partsupp ps ,
+               ( SELECT l.l_suppkey , l.l_partkey , l.l_extendedprice, l.l_discount, l.l_quantity, l.l_orderkey, l.ps_supplycost
+                FROM  LineItem l , Part p
+                WHERE contains(p.p_name,'green') AND p.p_partkey /*+   build-size
+                                                                 @PARAM
+                                                                 , join-mem
+                                                                 @PARAM
+                                                                  */= l.l_partkey
+               ) a1 WHERE ps.ps_suppkey /*+   build-size
+                                        @PARAM
+                                        , join-mem
+                                        @PARAM
+                                         */= a1.l_suppkey AND ps.ps_partkey /*+   build-size
+                                                                            @PARAM
+                                                                            , join-mem
+                                                                            @PARAM
+                                                                             */= a1.l_partkey
+         ) a2 WHERE s.s_suppkey /*+   build-size
+                                @PARAM
+                                , join-mem
+                                @PARAM
+                                 */= a2.l_suppkey
+     ) a3 WHERE n.n_nationkey /*+   build-size
+                              @PARAM
+                              , join-mem
+                              @PARAM
+                               */= a3.s_nationkey
+     ) a4 where o.o_orderkey /*+   build-size
+                             @PARAM
+                             , join-mem
+                             @PARAM
+                              */= a4.l_orderkey
+  ) profit
+GROUP BY nation, o_year
+ORDER BY nation, o_year desc;

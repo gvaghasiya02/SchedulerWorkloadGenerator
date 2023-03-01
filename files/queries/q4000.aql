@@ -1,0 +1,3 @@
+USE unlimitedMemory;
+ set `compiler.joinmemory` "1200MB";
+select * from wisconsin_unlimited_200000_ds1 ds1, wisconsin_unlimited_200000_ds2 ds2 where ds1.unique2 /*+ build-size 372, min-build-partitions 20, data-insertion APPEND */=ds2.unique2 limit 1;

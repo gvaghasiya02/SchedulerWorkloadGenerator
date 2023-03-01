@@ -1,0 +1,3 @@
+select value v from
+ @PARAM
+ v limit 1;

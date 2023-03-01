@@ -1,0 +1,10 @@
+use unlimitedMemory;
+
+select count(*) from
+@PARAM
+ds1 WHERE ds1.unique1 /*+ skip-index*/ >=
+@PARAM
+and
+ds1.unique1 /*+ skip-index*/ <=
+@PARAM
+;

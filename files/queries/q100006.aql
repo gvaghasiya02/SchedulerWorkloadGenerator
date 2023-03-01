@@ -1,0 +1,42 @@
+SET `compiler.joinmemory`
+@PARAM
+;
+use unlimitedMemory;
+
+SELECT ds9.unique1 ,ds9.unique2 ,ds9.two ,ds9.four ,ds9.ten ,ds9.twenty ,ds9.onePercent ,ds9.tenPercent ,ds9.twentyPercent ,ds9.fiftyPercent ,ds9.unique3 ,ds9.evenOnePercent ,ds9.oddOnePercent ,ds9.stringu1 ,ds9.stringu2 ,ds9.string4
+FROM
+ @PARAM
+ ds9, ( SELECT ds8.unique1 ,ds8.unique2 ,ds8.two ,ds8.four ,ds8.ten ,ds8.twenty ,ds8.onePercent ,ds8.tenPercent ,ds8.twentyPercent ,ds8.fiftyPercent ,ds8.unique3 ,ds8.evenOnePercent ,ds8.oddOnePercent ,ds8.stringu1 ,ds8.stringu2 ,ds8.string4
+FROM
+ @PARAM
+ ds8, ( SELECT ds7.unique1 ,ds7.unique2 ,ds7.two ,ds7.four ,ds7.ten ,ds7.twenty ,ds7.onePercent ,ds7.tenPercent ,ds7.twentyPercent ,ds7.fiftyPercent ,ds7.unique3 ,ds7.evenOnePercent ,ds7.oddOnePercent ,ds7.stringu1 ,ds7.stringu2 ,ds7.string4
+FROM
+ @PARAM
+ ds7, ( SELECT ds6.unique1 ,ds6.unique2 ,ds6.two ,ds6.four ,ds6.ten ,ds6.twenty ,ds6.onePercent ,ds6.tenPercent ,ds6.twentyPercent ,ds6.fiftyPercent ,ds6.unique3 ,ds6.evenOnePercent ,ds6.oddOnePercent ,ds6.stringu1 ,ds6.stringu2 ,ds6.string4
+FROM
+ @PARAM
+ ds6, ( SELECT ds5.unique1 ,ds5.unique2 ,ds5.two ,ds5.four ,ds5.ten ,ds5.twenty ,ds5.onePercent ,ds5.tenPercent ,ds5.twentyPercent ,ds5.fiftyPercent ,ds5.unique3 ,ds5.evenOnePercent ,ds5.oddOnePercent ,ds5.stringu1 ,ds5.stringu2 ,ds5.string4
+FROM
+ @PARAM
+ ds5, ( SELECT ds4.unique1 ,ds4.unique2 ,ds4.two ,ds4.four ,ds4.ten ,ds4.twenty ,ds4.onePercent ,ds4.tenPercent ,ds4.twentyPercent ,ds4.fiftyPercent ,ds4.unique3 ,ds4.evenOnePercent ,ds4.oddOnePercent ,ds4.stringu1 ,ds4.stringu2 ,ds4.string4
+FROM
+ @PARAM
+ ds4, ( SELECT ds3.unique1 ,ds3.unique2 ,ds3.two ,ds3.four ,ds3.ten ,ds3.twenty ,ds3.onePercent ,ds3.tenPercent ,ds3.twentyPercent ,ds3.fiftyPercent ,ds3.unique3 ,ds3.evenOnePercent ,ds3.oddOnePercent ,ds3.stringu1 ,ds3.stringu2 ,ds3.string4
+FROM
+ @PARAM
+ ds3, ( SELECT ds2.unique1 ,ds2.unique2 ,ds2.two ,ds2.four ,ds2.ten ,ds2.twenty ,ds2.onePercent ,ds2.tenPercent ,ds2.twentyPercent ,ds2.fiftyPercent ,ds2.unique3 ,ds2.evenOnePercent ,ds2.oddOnePercent ,ds2.stringu1 ,ds2.stringu2 ,ds2.string4
+ FROM
+  @PARAM
+  ds1 ,
+   @PARAM
+   ds2
+ WHERE ds1.unique1 /*+  min-build-partitions 20 , build-size 1024 */= ds2.unique1 and ds1.unique2 = ds2.unique2 and ds1.two = ds2.two and ds1.four = ds2.four and ds1.ten = ds2.ten and ds1.twenty = ds2.twenty and ds1.onePercent = ds2.onePercent and ds1.tenPercent = ds2.tenPercent and ds1.twentyPercent = ds2.twentyPercent and ds1.fiftyPercent = ds2.fiftyPercent and ds1.unique3 = ds2.unique3 and ds1.evenOnePercent = ds2.evenOnePercent and ds1.oddOnePercent = ds2.oddOnePercent and ds1.stringu1 = ds2.stringu1 and ds1.stringu2 = ds2.stringu2 and ds1.string4 = ds2.string4
+ )  temp1
+ WHERE temp1.unique1 /*+  min-build-partitions 20 , build-size 1024 */= ds3.unique1 and temp1.unique2 = ds3.unique2 and temp1.two = ds3.two and temp1.four = ds3.four and temp1.ten = ds3.ten and temp1.twenty = ds3.twenty and temp1.onePercent = ds3.onePercent and temp1.tenPercent = ds3.tenPercent and temp1.twentyPercent = ds3.twentyPercent and temp1.fiftyPercent = ds3.fiftyPercent and temp1.unique3 = ds3.unique3 and temp1.evenOnePercent = ds3.evenOnePercent and temp1.oddOnePercent = ds3.oddOnePercent and temp1.stringu1 = ds3.stringu1 and temp1.stringu2 = ds3.stringu2 and temp1.string4 = ds3.string4 )  temp2
+ WHERE temp2.unique1 /*+  min-build-partitions 20 , build-size 1024 */= ds4.unique1 and temp2.unique2 = ds4.unique2 and temp2.two = ds4.two and temp2.four = ds4.four and temp2.ten = ds4.ten and temp2.twenty = ds4.twenty and temp2.onePercent = ds4.onePercent and temp2.tenPercent = ds4.tenPercent and temp2.twentyPercent = ds4.twentyPercent and temp2.fiftyPercent = ds4.fiftyPercent and temp2.unique3 = ds4.unique3 and temp2.evenOnePercent = ds4.evenOnePercent and temp2.oddOnePercent = ds4.oddOnePercent and temp2.stringu1 = ds4.stringu1 and temp2.stringu2 = ds4.stringu2 and temp2.string4 = ds4.string4 )  temp3
+ WHERE temp3.unique1 /*+  min-build-partitions 20 , build-size 1024 */= ds5.unique1 and temp3.unique2 = ds5.unique2 and temp3.two = ds5.two and temp3.four = ds5.four and temp3.ten = ds5.ten and temp3.twenty = ds5.twenty and temp3.onePercent = ds5.onePercent and temp3.tenPercent = ds5.tenPercent and temp3.twentyPercent = ds5.twentyPercent and temp3.fiftyPercent = ds5.fiftyPercent and temp3.unique3 = ds5.unique3 and temp3.evenOnePercent = ds5.evenOnePercent and temp3.oddOnePercent = ds5.oddOnePercent and temp3.stringu1 = ds5.stringu1 and temp3.stringu2 = ds5.stringu2 and temp3.string4 = ds5.string4 )  temp4
+ WHERE temp4.unique1 /*+  min-build-partitions 20 , build-size 1024 */= ds6.unique1 and temp4.unique2 = ds6.unique2 and temp4.two = ds6.two and temp4.four = ds6.four and temp4.ten = ds6.ten and temp4.twenty = ds6.twenty and temp4.onePercent = ds6.onePercent and temp4.tenPercent = ds6.tenPercent and temp4.twentyPercent = ds6.twentyPercent and temp4.fiftyPercent = ds6.fiftyPercent and temp4.unique3 = ds6.unique3 and temp4.evenOnePercent = ds6.evenOnePercent and temp4.oddOnePercent = ds6.oddOnePercent and temp4.stringu1 = ds6.stringu1 and temp4.stringu2 = ds6.stringu2 and temp4.string4 = ds6.string4 )  temp5
+ WHERE temp5.unique1 /*+  min-build-partitions 20 , build-size 1024 */= ds7.unique1 and temp5.unique2 = ds7.unique2 and temp5.two = ds7.two and temp5.four = ds7.four and temp5.ten = ds7.ten and temp5.twenty = ds7.twenty and temp5.onePercent = ds7.onePercent and temp5.tenPercent = ds7.tenPercent and temp5.twentyPercent = ds7.twentyPercent and temp5.fiftyPercent = ds7.fiftyPercent and temp5.unique3 = ds7.unique3 and temp5.evenOnePercent = ds7.evenOnePercent and temp5.oddOnePercent = ds7.oddOnePercent and temp5.stringu1 = ds7.stringu1 and temp5.stringu2 = ds7.stringu2 and temp5.string4 = ds7.string4 )  temp6
+ WHERE temp6.unique1 /*+  min-build-partitions 20 , build-size 1024 */= ds8.unique1 and temp6.unique2 = ds8.unique2 and temp6.two = ds8.two and temp6.four = ds8.four and temp6.ten = ds8.ten and temp6.twenty = ds8.twenty and temp6.onePercent = ds8.onePercent and temp6.tenPercent = ds8.tenPercent and temp6.twentyPercent = ds8.twentyPercent and temp6.fiftyPercent = ds8.fiftyPercent and temp6.unique3 = ds8.unique3 and temp6.evenOnePercent = ds8.evenOnePercent and temp6.oddOnePercent = ds8.oddOnePercent and temp6.stringu1 = ds8.stringu1 and temp6.stringu2 = ds8.stringu2 and temp6.string4 = ds8.string4 )  temp7
+ WHERE temp7.unique1 /*+  min-build-partitions 20 , build-size 1024 */= ds9.unique1 and temp7.unique2 = ds9.unique2 and temp7.two = ds9.two and temp7.four = ds9.four and temp7.ten = ds9.ten and temp7.twenty = ds9.twenty and temp7.onePercent = ds9.onePercent and temp7.tenPercent = ds9.tenPercent and temp7.twentyPercent = ds9.twentyPercent and temp7.fiftyPercent = ds9.fiftyPercent and temp7.unique3 = ds9.unique3 and temp7.evenOnePercent = ds9.evenOnePercent and temp7.oddOnePercent = ds9.oddOnePercent and temp7.stringu1 = ds9.stringu1 and temp7.stringu2 = ds9.stringu2 and temp7.string4 = ds9.string4
+ limit 1;

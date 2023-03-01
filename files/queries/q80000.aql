@@ -1,0 +1,15 @@
+USE unlimitedMemory;
+set `compiler.joinmemory`
+@PARAM
+;
+select * from
+@PARAM
+ ds1 ,
+@PARAM
+ds2 where
+ds1.unique2
+ /*+ build-size -1
+, min-build-partitions 20, data-insertion APPEND 8 , GrowSteal , victim-selection LARGEST_SIZE , role-reversal , join-inmem
+*/=
+ds2.unique2
+limit 1;

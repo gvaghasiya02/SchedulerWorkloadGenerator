@@ -1,0 +1,10 @@
+60001,6,"1024MB",wisconsin_uniform_small_1200_ds1,wisconsin_uniform_small_1200_ds2,ds1.unique2,-1,LARGEST_SIZE_SELF,ds2.unique2
+60001,7,"1024MB",wisconsin_uniform_small_2048_ds1,wisconsin_uniform_small_2048_ds2,ds1.unique2,-1,LARGEST_SIZE_SELF,ds2.unique2
+60001,8,"1024MB",wisconsin_uniform_small_10240_ds1,wisconsin_uniform_small_10240_ds2,ds1.unique2,-1,LARGEST_SIZE_SELF,ds2.unique2
+60001,9,"1024MB",wisconsin_uniform_small_20480_ds1,wisconsin_uniform_small_20480_ds2,ds1.unique2,-1,LARGEST_SIZE_SELF,ds2.unique2
+0,1
+60000,1,"1024MB",wisconsin_uniform_small_1200_ds1,wisconsin_uniform_small_1200_ds2,ds1.unique2,-1,LARGEST_SIZE_SELF,ds2.unique2
+60000,2,"1024MB",wisconsin_uniform_small_2048_ds1,wisconsin_uniform_small_2048_ds2,ds1.unique2,-1,LARGEST_SIZE_SELF,ds2.unique2
+60000,3,"1024MB",wisconsin_uniform_small_10240_ds1,wisconsin_uniform_small_10240_ds2,ds1.unique2,-1,LARGEST_SIZE_SELF,ds2.unique2
+60000,4,"1024MB",wisconsin_uniform_small_20480_ds1,wisconsin_uniform_small_20480_ds2,ds1.unique2,-1,LARGEST_SIZE_SELF,ds2.unique2
+0,1

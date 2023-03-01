@@ -1,0 +1,55 @@
+SET `compiler.seqbuild`
+@PARAM
+;
+USE tpch;
+
+SELECT  year,
+  SUM( CASE t.s_name = 'BRAZIL' WHEN true THEN t.revenue ELSE 0.0 END ) / SUM(t.revenue) AS mkt_share
+FROM  (
+  SELECT `get-year`(a.o_orderdate) AS year,
+     a.l_extendedprice * (1 - a.l_discount) AS revenue,
+     b.n_name AS s_name
+  FROM
+
+  (SELECT l.l_suppkey , o.o_orderdate, l.l_extendedprice, l.l_discount
+  FROM LineItem l , Part p  , Orders o , Customer c , Nation n1 , Region r
+  WHERE p.p_partkey /*+   build-size
+    @PARAM
+    , join-mem
+    @PARAM
+     */= l.l_partkey AND l.l_orderkey /*+   build-size
+    @PARAM
+    , join-mem
+    @PARAM
+     */= o.o_orderkey AND c.c_custkey /*+   build-size
+  @PARAM
+  , join-mem
+  @PARAM
+   */= o.o_custkey
+   AND c.c_nationkey /*+   build-size
+     @PARAM
+     , join-mem
+     @PARAM
+  */= n1.n_nationkey AND n1.n_regionkey /*+   build-size
+    @PARAM
+    , join-mem
+    @PARAM
+     */= r.r_regionkey AND r.r_name = 'AMERICA' AND
+   o.o_orderdate >= '1995-01-01' and o.o_orderdate < '1996-12-31'
+     AND  p.p_type = 'ECONOMY ANODIZED STEEL' ) a ,
+     (SELECT n2.n_name , s.s_suppkey
+     FROM Supplier s ,  Nation2 n2
+     WHERE s.s_nationkey /*+   build-size
+  @PARAM
+  , join-mem
+  @PARAM
+   */= n2.n_nationkey ) b
+WHERE b.s_suppkey /*+   build-size
+     @PARAM
+     , join-mem
+     @PARAM
+  */= a.l_suppkey ) AS t
+
+GROUP BY year
+ORDER BY year
+;

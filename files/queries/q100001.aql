@@ -1,0 +1,23 @@
+SET `compiler.joinmemory`
+@PARAM
+;
+use unlimitedMemory;
+SELECT ds4.unique1 ,ds4.unique2 ,ds4.two ,ds4.four ,ds4.ten ,ds4.twenty ,ds4.onePercent ,ds4.tenPercent ,ds4.twentyPercent ,ds4.fiftyPercent ,ds4.unique3 ,ds4.evenOnePercent ,ds4.oddOnePercent ,ds4.stringu1 ,ds4.stringu2 ,ds4.string4
+FROM
+@PARAM
+ds4, ( SELECT ds3.unique1 ,ds3.unique2 ,ds3.two ,ds3.four ,ds3.ten ,ds3.twenty ,ds3.onePercent ,ds3.tenPercent ,ds3.twentyPercent ,ds3.fiftyPercent ,ds3.unique3 ,ds3.evenOnePercent ,ds3.oddOnePercent ,ds3.stringu1 ,ds3.stringu2 ,ds3.string4
+FROM
+@PARAM
+ds3
+, ( SELECT ds2.unique1 ,ds2.unique2 ,ds2.two ,ds2.four ,ds2.ten ,ds2.twenty ,ds2.onePercent ,ds2.tenPercent ,ds2.twentyPercent ,ds2.fiftyPercent ,ds2.unique3 ,ds2.evenOnePercent ,ds2.oddOnePercent ,ds2.stringu1 ,ds2.stringu2 ,ds2.string4
+ FROM
+  @PARAM
+  ds1
+  ,
+  @PARAM
+  ds2
+ WHERE ds1.unique1 /*+  min-build-partitions 20 , build-size 1024 */= ds2.unique1 and ds1.unique2 = ds2.unique2 and ds1.two = ds2.two and ds1.four = ds2.four and ds1.ten = ds2.ten and ds1.twenty = ds2.twenty and ds1.onePercent = ds2.onePercent and ds1.tenPercent = ds2.tenPercent and ds1.twentyPercent = ds2.twentyPercent and ds1.fiftyPercent = ds2.fiftyPercent and ds1.unique3 = ds2.unique3 and ds1.evenOnePercent = ds2.evenOnePercent and ds1.oddOnePercent = ds2.oddOnePercent and ds1.stringu1 = ds2.stringu1 and ds1.stringu2 = ds2.stringu2 and ds1.string4 = ds2.string4
+ )  temp1
+ WHERE temp1.unique1 /*+  min-build-partitions 20 , build-size 1024 */= ds3.unique1 and temp1.unique2 = ds3.unique2 and temp1.two = ds3.two and temp1.four = ds3.four and temp1.ten = ds3.ten and temp1.twenty = ds3.twenty and temp1.onePercent = ds3.onePercent and temp1.tenPercent = ds3.tenPercent and temp1.twentyPercent = ds3.twentyPercent and temp1.fiftyPercent = ds3.fiftyPercent and temp1.unique3 = ds3.unique3 and temp1.evenOnePercent = ds3.evenOnePercent and temp1.oddOnePercent = ds3.oddOnePercent and temp1.stringu1 = ds3.stringu1 and temp1.stringu2 = ds3.stringu2 and temp1.string4 = ds3.string4 )  temp2
+ WHERE temp2.unique1 /*+  min-build-partitions 20 , build-size 1024 */= ds4.unique1 and temp2.unique2 = ds4.unique2 and temp2.two = ds4.two and temp2.four = ds4.four and temp2.ten = ds4.ten and temp2.twenty = ds4.twenty and temp2.onePercent = ds4.onePercent and temp2.tenPercent = ds4.tenPercent and temp2.twentyPercent = ds4.twentyPercent and temp2.fiftyPercent = ds4.fiftyPercent and temp2.unique3 = ds4.unique3 and temp2.evenOnePercent = ds4.evenOnePercent and temp2.oddOnePercent = ds4.oddOnePercent and temp2.stringu1 = ds4.stringu1 and temp2.stringu2 = ds4.stringu2 and temp2.string4 = ds4.string4
+ limit 1;

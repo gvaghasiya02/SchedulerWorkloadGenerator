@@ -1,0 +1,5 @@
+960000,1,"500MB",wisconsin_dataset_40960_ds,wisconsin_dataset_40960_ds,0.12
+960000,2,"1500MB",wisconsin_dataset_40960_ds,wisconsin_dataset_40960_ds,0.45
+960000,3,"2500MB",wisconsin_dataset_40960_ds,wisconsin_dataset_40960_ds,0.80
+960001,1,wisconsin_dataset_40960_ds,80
+960002,1,wisconsin_dataset_40960_ds,0.95

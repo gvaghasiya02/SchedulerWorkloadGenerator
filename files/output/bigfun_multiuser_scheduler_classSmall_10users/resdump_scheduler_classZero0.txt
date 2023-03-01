@@ -1,0 +1,84 @@
+{"qidvid": "Q(960001,1)", 
+"rt":194678,
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("2947546") and
+ds1.unique1 <= int64("7275232") ; ",
+"start":"2022-08-25 11:01:29.461",
+"end":"2022-08-25 11:04:44.218",
+"content":{
+	"requestID": "9db4f68c-f1c4-4dc3-9bf8-855c5e503bf3",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 4327687 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "148.809436931s",
+		"executionTime": "148.806306401s",
+		"resultCount": 1,
+		"resultSize": 18,
+		"processedObjects": 8655374
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":345600,
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds2 ds1 WHERE ds1.unique1 >= int64("2390262") and
+ds1.unique1 <= int64("6717948") ; ",
+"start":"2022-08-25 11:01:29.419",
+"end":"2022-08-25 11:07:15.04",
+"content":{
+	"requestID": "babd1fb9-fba7-4ac4-9346-2b80dd3b25b2",
+	"signature": {
+		"*": "*"
+	},
+	"results": [ { "$1": 4327687 }
+ ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "89.060859412s",
+		"executionTime": "89.059717986s",
+		"resultCount": 1,
+		"resultSize": 18,
+		"processedObjects": 8655374
+	}
+}
+}
+
+{"qidvid": "Q(960001,1)", 
+"rt":537738,
+"query":"use unlimitedMemory;
+
+select count(*) from wisconsin_dataset_40960_ds1 ds1 WHERE ds1.unique1 >= int64("5720860") and
+ds1.unique1 <= int64("10048546") ; ",
+"start":"2022-08-25 11:01:29.55",
+"end":"2022-08-25 11:10:27.297",
+"content":{
+	"requestID": "b11cdcd7-1849-4c2b-b3b4-ab2feab0efd9",
+	"signature": {
+		"*": "*"
+	},
+	"errors": [{ 
+		"code": 1,		"msg": "ASX0041: Request b11cdcd7-1849-4c2b-b3b4-ab2feab0efd9 has been cancelled"	} 
+	],
+	"status": "fatal",
+	"metrics": {
+		"elapsedTime": "78.179551589s",
+		"executionTime": "78.178101235s",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0,
+		"errorCount": 1
+	}
+}
+}
+
