@@ -91,11 +91,11 @@ public class Driver {
                     }
 
                     //Create output file
-                    outputFolder = BIGFUN_HOME+"/files/output/"+confName.split(".json")[0]+"_"+workload.split(".txt")[0]+"_"+numberOfThreads+"users";
-                    File dir = new File(outputFolder+"/avg");
-                    if (!dir.exists()){
-                        dir.mkdirs();
-                    }
+//                    outputFolder = BIGFUN_HOME+"/files/output/"+confName.split(".json")[0]+"_"+workload.split(".txt")[0]+"_"+numberOfThreads+"users";
+//                    File dir = new File(outputFolder+"/avg");
+//                    if (!dir.exists()){
+//                        dir.mkdirs();
+//                    }
 
                     String clientTypeTag = (String) clientConfig.getParamValue(Constants.CLIENT_TYPE, c);
                     AbstractClient client = null;
@@ -152,31 +152,31 @@ public class Driver {
         return commandLineConfig;
     }
 
-    private static void printGlobalStats() throws FileNotFoundException {
-        PrintWriter globalPW = new PrintWriter(outputFolder+"/globalStats.json");
-        globalPW.println("{\"concurrent_users\":"+numberOfConcurrentThreads+",");
-        globalPW.println("\"total_queries(sum_for_all_users)\":"+count_all_queries+",");
-        int count = 0;
-        for(String qidvid:totalElapsedTime_perqidvid.keySet()) {
-            if (count > 0)
-                globalPW.println(",");
-            globalPW.println("\""+qidvid+"\":{");
-            globalPW.println("\"total_avg_elapsed(sec)\":" + (double) ((totalElapsedTime_perqidvid.get(qidvid) / 1000 * 1.0) / (numberOfConcurrentThreads * 1.0)) + ",");
-            globalPW.println("\"total_avg_execution(sec)\":" + (double) ((totalExecutionTime_perqidvid.get(qidvid) / 1000 * 1.0) / (numberOfConcurrentThreads * 1.0)) + ",");
-            globalPW.println("\"total_avg_client_response_time(sec)\":" + (double) ((totalClientResponseTime_perqidvid.get(qidvid) / 1000 * 1.0) / (numberOfConcurrentThreads * 1.0)) + ",");
-            globalPW.println("\"throughput(elapsed_time)(query/sec)\":" + (double) (count_all_queries.get()/numberOfConcurrentThreads * 1.0) / (totalElapsedTime_perqidvid.get(qidvid) / 1000 * 1.0) + ",");
-            globalPW.println("\"throughput(execution_time)(query/sec)\":" + (double) (count_all_queries.get()/numberOfConcurrentThreads * 1.0) / (totalExecutionTime_perqidvid.get(qidvid) / 1000 * 1.0) + ",");
-            globalPW.println("\"throughput(client_time)(query/sec)\":" + (double) (count_all_queries.get()/numberOfConcurrentThreads * 1.0) / (totalClientResponseTime_perqidvid.get(qidvid) / 1000 * 1.0));
-            globalPW.println("}\n");
-            count++;
-        }
-        globalPW.println(",\"total_avg_elapsed(sec)\":" + (double) ((totalElapsedTime_perqidvid.values().stream().reduce((double)0,Double::sum) / 1000 * 1.0) / (count_all_queries.get() * 1.0)) + ",");
-        globalPW.println("\"total_avg_execution(sec)\":" + (double) ((totalExecutionTime_perqidvid.values().stream().reduce((double)0,Double::sum) / 1000 * 1.0) / (count_all_queries.get() * 1.0)) + ",");
-        globalPW.println("\"total_avg_client_response_time(sec)\":" + (double) ((totalClientResponseTime_perqidvid.values().stream().reduce((double)0,Double::sum) / 1000 * 1.0) / (count_all_queries.get() * 1.0)) + ",");
-        globalPW.println("\"throughput(elapsed_time)(query/sec)\":" + (double) (count_all_queries.get() * 1.0) / (totalElapsedTime_perqidvid.values().stream().reduce((double)0,Double::sum) / 1000 * 1.0)+ ",");
-        globalPW.println("\"throughput(execution_time)(query/sec)\":" + (double) (count_all_queries.get()* 1.0) / (totalExecutionTime_perqidvid.values().stream().reduce((double)0,Double::sum) / 1000 * 1.0) + ",");
-        globalPW.println("\"throughput(client_time)(query/sec)\":" + (double) (count_all_queries.get() * 1.0) / (totalClientResponseTime_perqidvid.values().stream().reduce((double)0,Double::sum) / 1000 * 1.0));
-        globalPW.println("}");
-        globalPW.close();
-    }
+//    private static void printGlobalStats() throws FileNotFoundException {
+//        PrintWriter globalPW = new PrintWriter(outputFolder+"/globalStats.json");
+//        globalPW.println("{\"concurrent_users\":"+numberOfConcurrentThreads+",");
+//        globalPW.println("\"total_queries(sum_for_all_users)\":"+count_all_queries+",");
+//        int count = 0;
+//        for(String qidvid:totalElapsedTime_perqidvid.keySet()) {
+//            if (count > 0)
+//                globalPW.println(",");
+//            globalPW.println("\""+qidvid+"\":{");
+//            globalPW.println("\"total_avg_elapsed(sec)\":" + (double) ((totalElapsedTime_perqidvid.get(qidvid) / 1000 * 1.0) / (numberOfConcurrentThreads * 1.0)) + ",");
+//            globalPW.println("\"total_avg_execution(sec)\":" + (double) ((totalExecutionTime_perqidvid.get(qidvid) / 1000 * 1.0) / (numberOfConcurrentThreads * 1.0)) + ",");
+//            globalPW.println("\"total_avg_client_response_time(sec)\":" + (double) ((totalClientResponseTime_perqidvid.get(qidvid) / 1000 * 1.0) / (numberOfConcurrentThreads * 1.0)) + ",");
+//            globalPW.println("\"throughput(elapsed_time)(query/sec)\":" + (double) (count_all_queries.get()/numberOfConcurrentThreads * 1.0) / (totalElapsedTime_perqidvid.get(qidvid) / 1000 * 1.0) + ",");
+//            globalPW.println("\"throughput(execution_time)(query/sec)\":" + (double) (count_all_queries.get()/numberOfConcurrentThreads * 1.0) / (totalExecutionTime_perqidvid.get(qidvid) / 1000 * 1.0) + ",");
+//            globalPW.println("\"throughput(client_time)(query/sec)\":" + (double) (count_all_queries.get()/numberOfConcurrentThreads * 1.0) / (totalClientResponseTime_perqidvid.get(qidvid) / 1000 * 1.0));
+//            globalPW.println("}\n");
+//            count++;
+//        }
+//        globalPW.println(",\"total_avg_elapsed(sec)\":" + (double) ((totalElapsedTime_perqidvid.values().stream().reduce((double)0,Double::sum) / 1000 * 1.0) / (count_all_queries.get() * 1.0)) + ",");
+//        globalPW.println("\"total_avg_execution(sec)\":" + (double) ((totalExecutionTime_perqidvid.values().stream().reduce((double)0,Double::sum) / 1000 * 1.0) / (count_all_queries.get() * 1.0)) + ",");
+//        globalPW.println("\"total_avg_client_response_time(sec)\":" + (double) ((totalClientResponseTime_perqidvid.values().stream().reduce((double)0,Double::sum) / 1000 * 1.0) / (count_all_queries.get() * 1.0)) + ",");
+//        globalPW.println("\"throughput(elapsed_time)(query/sec)\":" + (double) (count_all_queries.get() * 1.0) / (totalElapsedTime_perqidvid.values().stream().reduce((double)0,Double::sum) / 1000 * 1.0)+ ",");
+//        globalPW.println("\"throughput(execution_time)(query/sec)\":" + (double) (count_all_queries.get()* 1.0) / (totalExecutionTime_perqidvid.values().stream().reduce((double)0,Double::sum) / 1000 * 1.0) + ",");
+//        globalPW.println("\"throughput(client_time)(query/sec)\":" + (double) (count_all_queries.get() * 1.0) / (totalClientResponseTime_perqidvid.values().stream().reduce((double)0,Double::sum) / 1000 * 1.0));
+//        globalPW.println("}");
+//        globalPW.close();
+//    }
 }

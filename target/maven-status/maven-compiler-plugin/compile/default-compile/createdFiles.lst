@@ -12,12 +12,12 @@ client/AbstractReadOnlyClientUtility.class
 datatype/DateTimeArgument.class
 structure/StatsCollector.class
 driver/Driver.class
-datatype/DoubleArgument.class
-datatype/ArgumentParser.class
 Prometheus/BigFunCollector.class
+datatype/ArgumentParser.class
+datatype/DoubleArgument.class
 structure/AqlUpdate$1.class
-asterixReadOnlyClient/AsterixReadOnlyClientUtility.class
 structure/UpdateTag.class
+asterixReadOnlyClient/AsterixReadOnlyClientUtility.class
 client/AbstractClientUtility.class
 config/AbstractClientConfig$1.class
 datatype/IntArgument.class
@@ -27,8 +27,8 @@ client/AbstractUpdateClientUtility.class
 datatype/DateArgument.class
 structure/Pair.class
 client/AbstractReadOnlyClient.class
-asterixReadOnlyClient/AsterixConcurrentReadUtil.class
 asterixUpdateClient/AsterixClientUpdateWorkload.class
+asterixReadOnlyClient/AsterixConcurrentReadUtil.class
 client/AbstractClient.class
 asterixUpdateClient/AsterixUpdateClientUtility.class
 asterixReadOnlyClient/AsterixClientReadOnlyWorkload.class
